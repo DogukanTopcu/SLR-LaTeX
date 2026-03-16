@@ -1,6 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1773625633.42264 "/Users/dogukantopcu/Desktop/Final Project/Springer_Lecture_Notes_in_Computer_Science/samplepaper.tex" "samplepaper.pdf" "samplepaper" 1773625633.65914 0
-  "/Users/dogukantopcu/Desktop/Final Project/Springer_Lecture_Notes_in_Computer_Science/samplepaper.tex" 1773625097.39282 47889 f5410da5aa16c8f68a3ca070ff635395 ""
+["pdflatex"] 1773627264.24712 "samplepaper.tex" "samplepaper.pdf" "samplepaper" 1773627264.47873 0
   "/Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0700.600pk" 1773619894.80537 17356 021fd418b1e1984b7e1ac7992356ed68 ""
   "/Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk" 1773618089.59812 22480 f5e47267f43de0f3ef95c00c243375a8 ""
   "/Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk" 1773618088.63497 25396 59c03c5c56ffa29fb5065c20407b3a98 ""
@@ -17,6 +16,7 @@
   "/usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1136768653 3584 2d666ecf6d466d8b007246bc2f94d9da ""
   "/usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
   "/usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm" 1136768653 3584 13049b61b922a28b158a38aeff75ee9b ""
+  "/usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm" 1136768653 3584 291a5713401683441e0a8c8f4417b17b ""
   "/usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecrm0700.tfm" 1136768653 3584 cf973739aac7ab6247f9150296af7954 ""
   "/usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecrm0900.tfm" 1136768653 3584 d3d8ac8b25ca19c0a40b86a5db1e8ccc ""
   "/usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1136768653 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
@@ -39,6 +39,9 @@
   "/usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1136768653 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
   "/usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2026basic/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm" 1136768653 1116 25a7bf822c58caf309a702ef79f4afbb ""
+  "/usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1248133631 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
+  "/usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
+  "/usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb" 1248133631 32442 c975af247b6702f7ca0c299af3616b80 ""
@@ -70,8 +73,8 @@
   "/usr/local/texlive/2026basic/texmf-var/web2c/pdftex/pdflatex.fmt" 1773617360 2966197 e704d392c0640a13226a7531e1c34cc5 ""
   "/usr/local/texlive/2026basic/texmf.cnf" 1772405582 628 bbc09d6d38872d53c11bb48dc9b14e88 ""
   "llncs.cls" 1773600002 43402 5fb5a2dc40571aa40f3d199c00cbb986 ""
-  "samplepaper.aux" 1773625633.61513 6176 85ca4d19e3c8f10e47d96898614c4d7f "pdflatex"
-  "samplepaper.tex" 1773625097.39282 47889 f5410da5aa16c8f68a3ca070ff635395 ""
+  "samplepaper.aux" 1773627264.41861 6294 ebcef175a046ae83cb27ddf670c8e4c7 "pdflatex"
+  "samplepaper.tex" 1773627259.7262 48192 863af1d9fb1e573b57df67407ef8f391 ""
   (generated)
   "samplepaper.aux"
   "samplepaper.log"
