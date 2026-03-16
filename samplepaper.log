@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.16)  16 MAR 2026 05:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.16)  16 MAR 2026 05:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -278,17 +278,20 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
 
  (/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
 
 
 (/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Underfull \vbox (badness 4454) has occurred while \output is active []
+
+ [1
 
 {/usr/local/texlive/2026basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 ]
@@ -300,13 +303,13 @@ L3 programming layer <2026-01-19>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2794 strings out of 469006
- 39967 string characters out of 5454813
+ 2791 strings out of 469006
+ 39929 string characters out of 5454813
  458834 words of memory out of 5000000
- 31474 multiletter control sequences out of 15000+600000
- 642336 words of font info for 74 fonts, out of 8000000 for 9000
+ 31472 multiletter control sequences out of 15000+600000
+ 641570 words of font info for 73 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 57i,11n,65p,1435b,350s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,11n,65p,1435b,351s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jkn
 appen/ec/ecrm0700.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-v
 ar/fonts/pk/ljfour/jknappen/ec/ecbx0700.600pk> </Users/dogukantopcu/Library/tex
@@ -322,17 +325,16 @@ onts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </Users/dogukantopcu/Library/texlive
 /2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </Users/doguka
 ntopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440
 .600pk></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi7.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr7.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy7.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/p
-ublic/amsfonts/symbols/msam7.pfb>
-Output written on samplepaper.pdf (16 pages, 231929 bytes).
+cmr6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr7.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy7.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy9.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/publi
+c/amsfonts/symbols/msam7.pfb>
+Output written on samplepaper.pdf (16 pages, 223246 bytes).
 PDF statistics:
- 603 PDF objects out of 1000 (max. 8388607)
- 102 compressed objects within 2 object streams
+ 594 PDF objects out of 1000 (max. 8388607)
+ 99 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
