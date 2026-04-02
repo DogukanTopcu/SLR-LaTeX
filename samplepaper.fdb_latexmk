@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1775151902.36952 "samplepaper.tex" "samplepaper.pdf" "samplepaper" 1775151903.23384 0
+["pdflatex"] 1775157419.93344 "samplepaper.tex" "samplepaper.pdf" "samplepaper" 1775157420.72513 0
   "/etc/texmf/web2c/texmf.cnf" 1774307257.44755 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0700.600pk" 1775143885.06794 17356 343fd964342bcdd87e9cd3eed384d78b ""
   "/home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk" 1775143886.74796 22480 dd0398d6832bf10081ffe5002e92a6a3 ""
@@ -83,16 +83,16 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1774307262.28909 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1774307290 6800798 9c7380112eb3a947e6949055ad6d8bd5 ""
   "llncs.cls" 1774306834.61601 43402 5fb5a2dc40571aa40f3d199c00cbb986 ""
-  "samplepaper.aux" 1775151903.05159 9364 2bcea6e50f5c6343d2f0084125610b48 "pdflatex"
+  "samplepaper.aux" 1775157420.55091 9683 86d041bc95e3a90dbe75e35613dcf369 "pdflatex"
   "samplepaper.tex" 1775151898.68977 1505 bb524c289ed37a7846a8a57cef32b69a ""
   "sections/00-abstract.tex" 1774306834.62101 1603 89b466c0ebfe3bb034857f8868394083 ""
   "sections/01-introduction.tex" 1774306834.6224 8685 0d5368ca1da9566dec8f09a716fbf307 ""
   "sections/02-related-works.tex" 1774306834.6224 5120 68a7e76af13e2faa05e73f7ab2ba346b ""
   "sections/03-research-methodology.tex" 1774306834.6224 9421 73afbc3e43674ac350c316cf37615750 ""
-  "sections/04-findings.tex" 1775151858.07263 39601 f01ee6ebcfa8563520368201cee55620 ""
+  "sections/04-findings.tex" 1775157401.4617 39801 d14fa3f99c82e7cabb3cfe2e8d7be111 ""
   "sections/05-threats-to-validity.tex" 1774306834.6224 2339 538ebbb2bc683b0c9be2a79e331bb701 ""
   "sections/06-conclusion.tex" 1774306834.6224 1840 d7937237345675fa8ac09d871b179edd ""
-  "sections/07-references.tex" 1775151880.57304 9181 12342c58819f99feb95ea64991448b0c ""
+  "sections/07-references.tex" 1775157412.62049 11581 7531c93b0958d95bb4c7fcaf1570d0a6 ""
   (generated)
   "samplepaper.aux"
   "samplepaper.log"
