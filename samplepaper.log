@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.16)  3 APR 2026 04:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.16)  4 APR 2026 15:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -758,10 +758,7 @@ Overfull \hbox (1.82022pt too wide) in paragraph at lines 135--135
 ] [9] [10] [11] [12] [13] [14] [15
 
 
-] [16] [17] [18] [19]) (./sections/05-threats-to-validity.tex) (./sections/06-conclusion.tex
-Underfull \vbox (badness 1715) has occurred while \output is active []
-
- [20]) (./sections/07-references.tex [21] [22]
+] [16] [17] [18] [19]) (./sections/05-threats-to-validity.tex) (./sections/06-conclusion.tex [20]) (./sections/07-references.tex [21] [22]
 Underfull \hbox (badness 1122) in paragraph at lines 145--146
 []\T1/cmr/m/n/9 Gao, Y., et al.: Dis-till-ing Math-e-mat-i-cal Rea-son-ing Ca-pa-bil-i-ties into Small Lan-guage Mod-els.
  []
@@ -781,7 +778,7 @@ Here is how much of TeX's memory you used:
  319 hyphenation exceptions out of 8191
  64i,11n,65p,1551b,351s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0700.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on samplepaper.pdf (23 pages, 250505 bytes).
+Output written on samplepaper.pdf (23 pages, 250846 bytes).
 PDF statistics:
  637 PDF objects out of 1000 (max. 8388607)
  114 compressed objects within 2 object streams
