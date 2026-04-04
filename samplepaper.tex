@@ -12,6 +12,8 @@
 \usepackage{longtable} % Allows tables to span multiple pages
 \usepackage{booktabs}  % For \toprule, \midrule, \bottomrule
 \usepackage{array}     % For better column control
+\usepackage{xcolor}
+\usepackage{forest}
 
 \begin{document}
 
@@ -35,6 +37,7 @@ Advisors \\
 % Keep major paper sections in separate files to reduce merge conflicts.
 \input{sections/00-abstract}
 \input{sections/01-introduction}
+\clearpage
 \input{sections/02-related-works}
 \input{sections/03-research-methodology}
 \input{sections/04-findings}

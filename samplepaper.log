@@ -1,11 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.16)  3 APR 2026 04:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.4)  4 APR 2026 17:20
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **samplepaper.tex
 (./samplepaper.tex
 LaTeX2e <2025-11-01>
-L3 programming layer <2026-01-19>
+L3 programming layer <2026-03-20>
 (./llncs.cls
 Document Class: llncs 2024/01/29 v2.24 
  LaTeX document class for Lecture Notes in Computer Science
@@ -24,28 +25,28 @@ File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \c@table=\count282
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\bibindent=\dimen148
+\bibindent=\dimen150
 )
 (/usr/local/texlive/2026basic/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \c@tracingmulticols=\count283
 \mult@box=\box53
-\multicol@leftmargin=\dimen149
+\multicol@leftmargin=\dimen151
 \c@unbalance=\count284
 \c@collectmore=\count285
 \doublecol@number=\count286
 \multicoltolerance=\count287
 \multicolpretolerance=\count288
-\full@width=\dimen150
-\page@free=\dimen151
-\premulticols=\dimen152
-\postmulticols=\dimen153
+\full@width=\dimen152
+\page@free=\dimen153
+\premulticols=\dimen154
+\postmulticols=\dimen155
 \multicolsep=\skip51
 \multicolbaselineskip=\skip52
 \partial@page=\box54
 \last@line=\box55
 \mc@boxedresult=\box56
-\maxbalancingoverflow=\dimen154
+\maxbalancingoverflow=\dimen156
 \mult@rightbox=\box57
 \mult@grightbox=\box58
 \mult@firstbox=\box59
@@ -89,16 +90,16 @@ Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \c@minrows=\count289
 \c@columnbadness=\count290
 \c@finalcolumnbadness=\count291
-\last@try=\dimen155
-\multicolovershoot=\dimen156
-\multicolundershoot=\dimen157
+\last@try=\dimen157
+\multicolovershoot=\dimen158
+\multicolundershoot=\dimen159
 \mult@nat@firstbox=\box97
 \colbreak@box=\box98
 \mc@col@check@num=\count292
 \g__mc_curr_col_int=\count293
 )
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/oberdiek/aliascnt.sty
-Package: aliascnt 2018/09/07 v1.5 Alias counters (HO)
+(./aliascnt.sty
+Package: aliascnt 2026/04/04 Local fallback for LNCS builds
 )
 \c@chapter=\count294
 LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 379.
@@ -113,22 +114,22 @@ LaTeX Font Info:    Redeclaring math symbol \Phi on input line 387.
 LaTeX Font Info:    Redeclaring math symbol \Psi on input line 388.
 LaTeX Font Info:    Redeclaring math symbol \Omega on input line 389.
 LaTeX Info: Redefining \vec on input line 394.
-\tocchpnum=\dimen158
-\tocsecnum=\dimen159
-\tocsectotal=\dimen160
-\tocsubsecnum=\dimen161
-\tocsubsectotal=\dimen162
-\tocsubsubsecnum=\dimen163
-\tocsubsubsectotal=\dimen164
-\tocparanum=\dimen165
-\tocparatotal=\dimen166
-\tocsubparanum=\dimen167
+\tocchpnum=\dimen160
+\tocsecnum=\dimen161
+\tocsectotal=\dimen162
+\tocsubsecnum=\dimen163
+\tocsubsectotal=\dimen164
+\tocsubsubsecnum=\dimen165
+\tocsubsubsectotal=\dimen166
+\tocparanum=\dimen167
+\tocparatotal=\dimen168
+\tocsubparanum=\dimen169
 \@tempcntc=\count295
-\fnindent=\dimen168
+\fnindent=\dimen170
 \c@@inst=\count296
 \c@@auth=\count297
 \c@auco=\count298
-\instindent=\dimen169
+\instindent=\dimen171
 \authrun=\box99
 \authorrunning=\toks17
 \tocauthor=\toks18
@@ -150,7 +151,7 @@ LaTeX Info: Redefining \vec on input line 394.
 \c@question=\count311
 \c@solution=\count312
 \c@remark=\count313
-\headlineindent=\dimen170
+\headlineindent=\dimen172
 )
 (/usr/local/texlive/2026basic/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
@@ -176,47 +177,47 @@ Package graphics Info: Driver file: pdftex.def on input line 106.
 (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen171
-\Gin@req@width=\dimen172
+\Gin@req@height=\dimen173
+\Gin@req@width=\dimen174
 )
 (/usr/local/texlive/2026basic/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen173
-\lightrulewidth=\dimen174
-\cmidrulewidth=\dimen175
-\belowrulesep=\dimen176
-\belowbottomsep=\dimen177
-\aboverulesep=\dimen178
-\abovetopsep=\dimen179
-\cmidrulesep=\dimen180
-\cmidrulekern=\dimen181
-\defaultaddspace=\dimen182
+\heavyrulewidth=\dimen175
+\lightrulewidth=\dimen176
+\cmidrulewidth=\dimen177
+\belowrulesep=\dimen178
+\belowbottomsep=\dimen179
+\aboverulesep=\dimen180
+\abovetopsep=\dimen181
+\cmidrulesep=\dimen182
+\cmidrulekern=\dimen183
+\defaultaddspace=\dimen184
 \@cmidla=\count314
 \@cmidlb=\count315
-\@aboverulesep=\dimen183
-\@belowrulesep=\dimen184
+\@aboverulesep=\dimen185
+\@belowrulesep=\dimen186
 \@thisruleclass=\count316
 \@lastruleclass=\count317
-\@thisrulewidth=\dimen185
+\@thisrulewidth=\dimen187
 )
 (/usr/local/texlive/2026basic/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 
 (/usr/local/texlive/2026basic/texmf-dist/tex/latex/tools/array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
-\col@sep=\dimen186
+\col@sep=\dimen188
 \ar@mcellbox=\box101
-\extrarowheight=\dimen187
+\extrarowheight=\dimen189
 \NC@list=\toks22
 \extratabsurround=\skip53
 \backup@length=\skip54
 \ar@cellbox=\box102
 )
-\TX@col@width=\dimen188
-\TX@old@table=\dimen189
-\TX@old@col=\dimen190
-\TX@target=\dimen191
-\TX@delta=\dimen192
+\TX@col@width=\dimen190
+\TX@old@table=\dimen191
+\TX@old@col=\dimen192
+\TX@target=\dimen193
+\TX@delta=\dimen194
 \TX@cols=\count318
 \TX@ftn=\toks23
 )
@@ -233,7 +234,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
 (/usr/local/texlive/2026basic/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
+Package: geometry 2026/03/07 v6.0 Page Geometry
 
 (/usr/local/texlive/2026basic/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
@@ -244,14 +245,14 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@cnth=\count319
 \Gm@cntv=\count320
 \c@Gm@tempcnt=\count321
-\Gm@bindingoffset=\dimen193
-\Gm@wd@mp=\dimen194
-\Gm@odd@mp=\dimen195
-\Gm@even@mp=\dimen196
-\Gm@layoutwidth=\dimen197
-\Gm@layoutheight=\dimen198
-\Gm@layouthoffset=\dimen199
-\Gm@layoutvoffset=\dimen256
+\Gm@bindingoffset=\dimen195
+\Gm@wd@mp=\dimen196
+\Gm@odd@mp=\dimen197
+\Gm@even@mp=\dimen198
+\Gm@layoutwidth=\dimen199
+\Gm@layoutheight=\dimen256
+\Gm@layouthoffset=\dimen257
+\Gm@layoutvoffset=\dimen258
 \Gm@dimlist=\toks25
 )
 (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/rotating.sty
@@ -284,7 +285,7 @@ Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LTpre=\skip59
 \LTpost=\skip60
 \LTchunksize=\count323
-\LTcapwidth=\dimen257
+\LTcapwidth=\dimen259
 \LT@head=\box104
 \LT@firsthead=\box105
 \LT@foot=\box106
@@ -296,41 +297,514 @@ Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \c@LT@chunks=\count327
 \LT@p@ftn=\toks27
 )
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/forest/forest.sty
+Package: forest 2017/07/14 v2.1.5 Drawing (linguistic) trees
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/utilities/pgfutil-comm
+on.tex
+\pgfutil@everybye=\toks28
+\pgfutil@tempdima=\dimen260
+\pgfutil@tempdimb=\dimen261
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/utilities/pgfutil-late
+x.def
+\pgfutil@abb=\box109
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.
+tex (/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty 
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.cod
+e.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code
+.tex
+\pgfkeys@pathtoks=\toks29
+\pgfkeys@temptoks=\toks30
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibra
+ryfiltered.code.tex
+\pgfkeys@tmptoks=\toks31
+))
+\pgf@x=\dimen262
+\pgf@y=\dimen263
+\pgf@xa=\dimen264
+\pgf@ya=\dimen265
+\pgf@xb=\dimen266
+\pgf@yb=\dimen267
+\pgf@xc=\dimen268
+\pgf@yc=\dimen269
+\pgf@xd=\dimen270
+\pgf@yd=\dimen271
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count328
+\c@pgf@countb=\count329
+\c@pgf@countc=\count330
+\c@pgf@countd=\count331
+\t@pgf@toka=\toks32
+\t@pgf@tokb=\toks33
+\t@pgf@tokc=\toks34
+\pgf@sys@id@count=\count332
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdf
+tex.def
+File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-com
+mon-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoft
+path.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count333
+\pgfsyssoftpath@bigbuffer@items=\count334
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprot
+ocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.cod
+e.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.
+tex)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathparser.cod
+e.tex
+\pgfmath@dimen=\dimen272
+\pgfmath@count=\count335
+\pgfmath@box=\box110
+\pgfmath@toks=\toks35
+\pgfmath@stack@operand=\toks36
+\pgfmath@stack@operation=\toks37
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+code.tex)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+basic.code.tex)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+trigonometric.code.tex)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+random.code.tex)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+comparison.code.tex)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+base.code.tex)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+round.code.tex)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+misc.code.tex)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+integerarithmetics.code.tex)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.
+tex)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code
+.tex
+\c@pgfmathroundto@lastzeros=\count336
+))
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoin
+ts.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen273
+\pgf@picmaxx=\dimen274
+\pgf@picminy=\dimen275
+\pgf@picmaxy=\dimen276
+\pgf@pathminx=\dimen277
+\pgf@pathmaxx=\dimen278
+\pgf@pathminy=\dimen279
+\pgf@pathmaxy=\dimen280
+\pgf@xx=\dimen281
+\pgf@xy=\dimen282
+\pgf@yx=\dimen283
+\pgf@yy=\dimen284
+\pgf@zx=\dimen285
+\pgf@zy=\dimen286
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepath
+construct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen287
+\pgf@path@lasty=\dimen288
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepath
+usage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen289
+\pgf@shorten@start@additional=\dimen290
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescop
+es.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box111
+\pgf@hbox=\box112
+\pgf@layerbox@main=\box113
+\pgf@picture@serial@count=\count337
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregrap
+hicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen291
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretran
+sformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen292
+\pgf@pt@y=\dimen293
+\pgf@pt@temp=\dimen294
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequic
+k.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobje
+cts.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepath
+processing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearro
+ws.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen295
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshad
+e.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen296
+\pgf@sys@shading@range@num=\count338
+\pgf@shadingcount=\count339
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimag
+e.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexte
+rnal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box114
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelaye
+rs.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretran
+sparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatt
+erns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.
+code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/modules/pgfmoduleshape
+s.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box115
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.
+code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-ve
+rsion-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen297
+\pgf@nodesepend=\dimen298
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-ve
+rsion-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+))
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code
+.tex)) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/utilities/pgffor.code.
+tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen299
+\pgffor@skip=\dimen300
+\pgffor@stack=\toks38
+\pgffor@toks=\toks39
+))
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tik
+z.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/libraries/pgflibrarypl
+othandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count340
+\pgfplotmarksize=\dimen301
+)
+\tikz@lastx=\dimen302
+\tikz@lasty=\dimen303
+\tikz@lastxsaved=\dimen304
+\tikz@lastysaved=\dimen305
+\tikz@lastmovetox=\dimen306
+\tikz@lastmovetoy=\dimen307
+\tikzleveldistance=\dimen308
+\tikzsiblingdistance=\dimen309
+\tikz@figbox=\box116
+\tikz@figbox@bg=\box117
+\tikz@tempbox=\box118
+\tikz@tempbox@bg=\box119
+\tikztreelevel=\count341
+\tikznumberofchildren=\count342
+\tikznumberofcurrentchild=\count343
+\tikz@fig@count=\count344
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/modules/pgfmodulematri
+x.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count345
+\pgfmatrixcurrentcolumn=\count346
+\pgf@matrix@numberofcolumns=\count347
+)
+\tikz@expandcount=\count348
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/libraries/shapes/pgfli
+braryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/libraries/shapes/pgfli
+braryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/libraries/shapes/pgfli
+braryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/libraries/shapes/pgfli
+braryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibraryshapes.callouts.code.tex
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/libraries/shapes/pgfli
+braryshapes.callouts.code.tex))
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/libraries/shapes/pgfli
+braryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodepartlowerbox=\box120
+\pgfnodeparttwobox=\box121
+\pgfnodepartthreebox=\box122
+\pgfnodepartfourbox=\box123
+\pgfnodeparttwentybox=\box124
+\pgfnodepartnineteenbox=\box125
+\pgfnodeparteighteenbox=\box126
+\pgfnodepartseventeenbox=\box127
+\pgfnodepartsixteenbox=\box128
+\pgfnodepartfifteenbox=\box129
+\pgfnodepartfourteenbox=\box130
+\pgfnodepartthirteenbox=\box131
+\pgfnodeparttwelvebox=\box132
+\pgfnodepartelevenbox=\box133
+\pgfnodeparttenbox=\box134
+\pgfnodepartninebox=\box135
+\pgfnodeparteightbox=\box136
+\pgfnodepartsevenbox=\box137
+\pgfnodepartsixbox=\box138
+\pgfnodepartfivebox=\box139
+)))
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/libraries/pgflibraryin
+tersections.code.tex
+(/usr/local/texlive/2026basic/texmf-dist/tex/generic/pgf/libraries/pgflibraryfp
+u.code.tex)
+\pgf@intersect@solutions=\count349
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks40
+\pgfopts@list@add@b@toks=\toks41
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count350
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/elocalloc/elocalloc.sty
+Package: elocalloc 2016/12/15 v0.03 local allocation for LaTeX 2015+ (DPC)
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks42
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2026-03-20 L3 programming layer (loader) 
+
 (/usr/local/texlive/2026basic/texmf-dist/tex/latex/l3backend/l3backend-pdftex.d
 ef
-File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count328
-) (./samplepaper.aux)
+File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count351
+))
+Package: xparse 2025-10-09 L3 Experimental document command parser
+)
+(/usr/local/texlive/2026basic/texmf-dist/tex/latex/inlinedef/inlinedef.sty
+Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
+\ID@toks=\toks43
+\ID@count=\count352
+)
+\ID@usercommands=\toks44
+\safeloop@depth=\count353
+\safeRKloop@depth=\count354
+\forest@temp@dimen=\dimen310
+\forest@temp@count=\count355
+\forest@n=\count356
+\forest@temp@global@count=\count357
+\forest@temp@toks=\toks45
+\forest@temparray@M=\count358
+\forest@temparray@N=\count359
+\forest@global@temparray@M=\count360
+\forest@global@temparray@N=\count361
+\forest@isnum@count=\count362
+\forest@isdim@nonintpart=\count363
+\forest@isdim@dimen=\dimen311
+\forest@sort@m=\count364
+\forest@sort@k=\count365
+\forest@sort@p=\count366
+\bracket@content=\toks46
+\bracket@afterthought=\toks47
+\forest@node@maxid=\count367
+\forest@process@left@M=\count368
+\forest@process@left@N=\count369
+\forest@process@right@M=\count370
+\forest@process@right@N=\count371
+\forest@process@saved@M=\count372
+\forest@process@saved@N=\count373
+\forest@process@result@M=\count374
+\forest@process@result@N=\count375
+\forest@process@n=\count376
+\forest@nodewalk@branch@toks=\toks48
+\forest@nodewalk@shortsteps@resolution=\toks49
+\forest@do@dynamics=\toks50
+\forest@box=\box140
+\forest@xg=\dimen312
+\forest@yg=\dimen313
+\forest@xs=\dimen314
+\forest@ys=\dimen315
+\forest@pi@toks=\toks51
+\forest@segment@toks=\toks52
+\forest@PIi@toks=\toks53
+\forest@PIii@toks=\toks54
+\forest@copy@in=\read3
+\forest@copy@out=\write4
+\forest@externalize@max@outer@n=\count377
+\forest@externalize@inner@n=\count378
+)
+(./samplepaper.aux)
 \openout1 = `samplepaper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 
 (/usr/local/texlive/2026basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count329
-\scratchdimen=\dimen258
-\scratchbox=\box109
-\nofMPsegments=\count330
-\nofMParguments=\count331
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count332
-\MPscratchDim=\dimen259
-\MPnumerator=\count333
-\makeMPintoPDFobject=\count334
-\everyMPtoPDFconversion=\toks29
+\scratchcounter=\count379
+\scratchdimen=\dimen316
+\scratchbox=\box141
+\nofMPsegments=\count380
+\nofMParguments=\count381
+\everyMPshowfont=\toks55
+\MPscratchCnt=\count382
+\MPscratchDim=\dimen317
+\MPnumerator=\count383
+\makeMPintoPDFobject=\count384
+\everyMPtoPDFconversion=\toks56
 )
 (/usr/local/texlive/2026basic/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.s
 ty
@@ -348,8 +822,7 @@ e
 * driver: pdftex
 * paper: <default>
 * layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
+* layoutoffset:(h,v): twoside 
 * h-part:(L,W,R)=(73.71613pt, 430.00462pt, 110.57425pt)
 * v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
 * \paperwidth=614.295pt
@@ -376,26 +849,22 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
 (/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
-
-
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsb.fd
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-(./sections/00-abstract.tex) (./sections/01-introduction.tex [1
+) (./sections/00-abstract.tex) (./sections/01-introduction.tex [1
 
-{/usr/local/texlive/2026basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
-(./sections/02-related-works.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
+{/usr/local/texlive/2026basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
- [2]
-[3]) (./sections/03-research-methodology.tex [4] [5])
-(./sections/04-findings.tex [6] [7]
+LaTeX Warning: Float too large for page by 28.18619pt on input line 95.
+
+) [2] [3] (./sections/02-related-works.tex [4
+
+]) (./sections/03-research-methodology.tex [5] [6]) (./sections/04-findings.tex [7] [8]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
@@ -524,9 +993,448 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--67
  []
 
 
+Overfull \hbox (7.61415pt too wide) in paragLaTeX Warning: Citation `han2025chest' on page 2 undefined on input line 16.
+
+
+LaTeX Warning: Citation `pietrzak2025evaluation' on page 2 undefined on input l
+ine 16.
+
+
+LaTeX Warning: Citation `energytoken2025' on page 2 undefined on input line 92.
+
+
+
+LaTeX Warning: Citation `qwqrouting2025' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `egi2025' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `tigani2025cpu' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `aydin2025integrated' on page 2 undefined on input line
+ 92.
+
+
+LaTeX Warning: Citation `xie2025fusing' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `hao2024hybrid' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `lee2024orchestrallm' on page 2 undefined on input line
+ 92.
+
+
+LaTeX Warning: Citation `shao2025dot' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `multiagent2025' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `page2021prisma' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `tigani2025cpu' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `aydin2025integrated' on page 2 undefined on input line
+ 92.
+
+
+LaTeX Warning: Citation `hao2024hybrid' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `multiagent2025' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `pacheco2025flight' on page 2 undefined on input line 9
+2.
+
+
+LaTeX Warning: Citation `alabbasi2024teleoracle' on page 2 undefined on input l
+ine 92.
+
+
+LaTeX Warning: Citation `ji2025raprag' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `lee2024orchestrallm' on page 2 undefined on input line
+ 92.
+
+
+LaTeX Warning: Citation `qwqrouting2025' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `hao2024hybrid' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `lee2024orchestrallm' on page 2 undefined on input line
+ 92.
+
+
+LaTeX Warning: Citation `han2025chest' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `hao2024hybrid' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `multiagent2025' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `pacheco2025flight' on page 2 undefined on input line 9
+2.
+
+
+LaTeX Warning: Citation `han2025chest' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `qwqrouting2025' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `energytoken2025' on page 2 undefined on input line 92.
+
+
+
+LaTeX Warning: Citation `chatzistefanidis2025symbiotic' on page 2 undefined on 
+input line 92.
+
+
+LaTeX Warning: Citation `chatzistefanidis2025symbiotic' on page 2 undefined on 
+input line 92.
+
+
+LaTeX Warning: Citation `hao2024hybrid' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `energytoken2025' on page 2 undefined on input line 92.
+
+
+
+LaTeX Warning: Citation `tigani2025cpu' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `qwqrouting2025' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `alabbasi2024teleoracle' on page 2 undefined on input l
+ine 92.
+
+
+LaTeX Warning: Citation `ji2025raprag' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `lee2024orchestrallm' on page 2 undefined on input line
+ 92.
+
+
+LaTeX Warning: Citation `alabbasi2024teleoracle' on page 2 undefined on input l
+ine 92.
+
+
+LaTeX Warning: Citation `ji2025raprag' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `lee2024orchestrallm' on page 2 undefined on input line
+ 92.
+
+
+LaTeX Warning: Citation `xie2025fusing' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `aydin2025integrated' on page 2 undefined on input line
+ 92.
+
+
+LaTeX Warning: Citation `rethinkllm2025' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `xie2025fusing' on page 2 undefined on input line 92.
+
+
+LaTeX Warning: Citation `aydin2025integrated' on page 2 undefined on input line
+ 92.
+
+
+LaTeX Warning: Citation `distillingmath2024' on page 2 undefined on input line 
+92.
+
+
+LaTeX Warning: Citation `page2021prisma' on page 2 undefined on input line 93.
+
+
+LaTeX Warning: Citation `page2021prisma' on page 2 undefined on input line 93.
+
+
+LaTeX Warning: Float too large for page by 37.47581pt on input line 95.
+
+) [2] [3] (./sections/02-related-works.tex [4
+
+])
+(./sections/03-research-methodology.tex
+
+LaTeX Warning: Citation `page2021prisma' on page 5 undefined on input line 3.
+
+[5]
+
+LaTeX Warning: Reference `tab:corpus-overview' on page 6 undefined on input lin
+e 17.
+
+
+LaTeX Warning: Reference `tab:rq-matrix' on page 6 undefined on input line 40.
+
+
+LaTeX Warning: Reference `tab:representative-studies' on page 6 undefined on in
+put line 71.
+
+[6]
+
+LaTeX Warning: Citation `hao2024hybrid' on page 7 undefined on input line 91.
+
+
+LaTeX Warning: Citation `oh2025uncertainty' on page 7 undefined on input line 9
+1.
+
+
+LaTeX Warning: Citation `lee2024orchestrallm' on page 7 undefined on input line
+ 91.
+
+
+LaTeX Warning: Citation `alabbasi2024teleoracle' on page 7 undefined on input l
+ine 91.
+
+
+LaTeX Warning: Citation `shao2025dot' on page 7 undefined on input line 91.
+
+
+LaTeX Warning: Citation `cao2025enersafe' on page 7 undefined on input line 91.
+
+
+
+LaTeX Warning: Citation `mixeddistill2024' on page 7 undefined on input line 91
+.
+
+
+LaTeX Warning: Citation `amarasinghe2025fipo' on page 7 undefined on input line
+ 91.
+
+) (./sections/04-findings.tex
+
+LaTeX Warning: Reference `tab:architecture_comparison' on page 7 undefined on i
+nput line 2.
+
+[7] [8]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
+* v-part:(T,H,B)=(28.45274pt, 738.0645pt, 28.45274pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=557.38951pt
+* \textheight=738.0645pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-71.81725pt
+* \headheight=12.0pt
+* \headsep=16.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=90.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+
+LaTeX Warning: Citation `tigani2025cpu' on page 9 undefined on input line 29.
+
+
+LaTeX Warning: Citation `hao2024hybrid' on page 9 undefined on input line 31.
+
+
+LaTeX Warning: Citation `xie2025fusing' on page 9 undefined on input line 33.
+
+
+Overfull \hbox (3.62534pt too wide) in paragraph at lines 33--33
+[]|\T1/cmr/m/n/10 Untuned|  
+ []
+
+
+LaTeX Warning: Citation `alabbasi2024teleoracle' on page 9 undefined on input l
+ine 35.
+
+
+LaTeX Warning: Citation `cao2025enersafe' on page 9 undefined on input line 37.
+
+
+
+LaTeX Warning: Citation `lee2024orchestrallm' on page 9 undefined on input line
+ 39.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+[]|\T1/cmr/m/n/10 62%
+ []
+
+
+LaTeX Warning: Citation `han2025commentagent' on page 9 undefined on input line
+ 41.
+
+
+LaTeX Warning: Citation `aydin2025integrated' on page 9 undefined on input line
+ 43.
+
+
+LaTeX Warning: Citation `demir2025dpatransllm' on page 9 undefined on input lin
+e 45.
+
+
+LaTeX Warning: Citation `ji2025raprag' on page 9 undefined on input line 47.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+[]|\T1/cmr/m/n/10 15%
+ []
+
+
+LaTeX Warning: Citation `pacheco2025flight' on page 9 undefined on input line 4
+9.
+
+
+Overfull \hbox (8.30843pt too wide) in paragraph at lines 49--49
+[]|\T1/cmr/m/n/10 BERTScore|  
+ []
+
+
+LaTeX Warning: Citation `dorfner2024comparing' on page 9 undefined on input lin
+e 51.
+
+
+Overfull \hbox (9.61366pt too wide) in paragraph at lines 51--51
+[]|\T1/cmr/m/n/10 Comparison|  
+ []
+
+
+LaTeX Warning: Citation `zhu2024ofslms' on page 9 undefined on input line 53.
+
+
+Overfull \hbox (7.44753pt too wide) in paragraph at lines 53--53
+[]|\T1/cmr/m/n/10 CodeBLEU|  
+ []
+
+
+LaTeX Warning: Citation `jeong2023testtime' on page 9 undefined on input line 5
+5.
+
+
+LaTeX Warning: Citation `relora2025' on page 9 undefined on input line 57.
+
+
+Overfull \hbox (3.86507pt too wide) in paragraph at lines 57--57
+[]|\T1/cmr/m/n/10 Perplexity, 
+ []
+
+
+Overfull \hbox (1.40366pt too wide) in paragraph at lines 57--57
+\T1/cmr/m/n/10 AdamW|  
+ []
+
+
+Overfull \hbox (10.457pt too wide) in paragraph at lines 57--57
+[]|\T1/cmr/m/n/10 Perplexity 
+ []
+
+
+LaTeX Warning: Citation `chatzistefanidis2025survey' on page 9 undefined on inp
+ut line 59.
+
+
+Overfull \hbox (14.17831pt too wide) in paragraph at lines 59--59
+[]|\T1/cmr/m/n/10 Standalone 
+ []
+
+
+Overfull \hbox (14.17831pt too wide) in paragraph at lines 59--59
+[]|\T1/cmr/m/n/10 Standalone 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
+[]|\T1/cmr/m/n/10 44%
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
+\T1/cmr/m/n/10 PRB
+ []
+
+
+LaTeX Warning: Citation `han2025chest' on page 9 undefined on input line 61.
+
+
+Overfull \hbox (6.40244pt too wide) in paragraph at lines 61--61
+[]|\T1/cmr/m/n/10 RaDialog 
+ []
+
+
+Overfull \hbox (5.2916pt too wide) in paragraph at lines 61--61
+[]|\T1/cmr/m/n/10 MedViT, 
+ []
+
+
+LaTeX Warning: Citation `pietrzak2025evaluation' on page 9 undefined on input l
+ine 63.
+
+
+Overfull \hbox (13.69966pt too wide) in paragraph at lines 63--63
+\T1/cmr/m/n/10 Gen/Detection|  
+ []
+
+
+LaTeX Warning: Citation `diagnosis2025' on page 9 undefined on input line 65.
+
+
+LaTeX Warning: Citation `resiliomate2025' on page 9 undefined on input line 67.
+
+
+
+Overfull \hbox (10.02pt too wide) in paragraph at lines 67--67
+[]|\T1/cmr/m/n/10 LeptoConnect 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--67
+[]|\T1/cmr/m/n/10 Edge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--67
+\T1/cmr/m/n/10 ben-e-
+ []
+
+
+LaTeX Warning: Citation `arabic2025' on page 9 undefined on input line 69.
+
+
 Overfull \hbox (7.61415pt too wide) in paragraph at lines 69--69
 \T1/cmr/m/n/10 GraphRAG|  
  []
+
+
+LaTeX Warning: Citation `prompt2024' on page 9 undefined on input line 71.
 
 
 Overfull \hbox (36.94032pt too wide) in paragraph at lines 71--71
@@ -539,14 +1447,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--71
  []
 
 
+LaTeX Warning: Citation `feedback2025' on page 9 undefined on input line 73.
+
+
+LaTeX Warning: Citation `tcm2025' on page 9 undefined on input line 75.
+
+
+LaTeX Warning: Citation `psa2026' on page 9 undefined on input line 77.
+
+
+LaTeX Warning: Citation `vte2024' on page 9 undefined on input line 79.
+
+
 Overfull \hbox (6.40244pt too wide) in paragraph at lines 79--79
 \T1/cmr/m/n/10 (Mamba)|  
  []
 
 
+LaTeX Warning: Citation `multiagent2025' on page 9 undefined on input line 81.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 81--81
 []|\T1/cmr/m/n/10 Token
  []
+
+
+LaTeX Warning: Citation `compos2024' on page 9 undefined on input line 83.
 
 
 Overfull \hbox (7.38176pt too wide) in paragraph at lines 83--83
@@ -569,6 +1495,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--83
  []
 
 
+LaTeX Warning: Citation `networkrl2025' on page 9 undefined on input line 85.
+
+
+LaTeX Warning: Citation `tele3gpp2025' on page 9 undefined on input line 87.
+
+
+LaTeX Warning: Citation `academicrag2024' on page 9 undefined on input line 89.
+
+
+
+LaTeX Warning: Citation `rethinkllm2025' on page 9 undefined on input line 91.
+
+
 Overfull \hbox (2.99394pt too wide) in paragraph at lines 91--91
 []|\T1/cmr/m/n/10 DistilBERT, 
  []
@@ -589,6 +1528,9 @@ Overfull \hbox (10.62105pt too wide) in paragraph at lines 91--91
  []
 
 
+LaTeX Warning: Citation `fedhlm2025' on page 9 undefined on input line 93.
+
+
 Overfull \hbox (14.4838pt too wide) in paragraph at lines 93--93
 []|\T1/cmr/m/n/10 Traditional 
  []
@@ -602,6 +1544,10 @@ Overfull \hbox (8.90182pt too wide) in paragraph at lines 93--93
 Overfull \hbox (19.72993pt too wide) in paragraph at lines 93--93
 []|\T1/cmr/m/n/10 Bandwidth
  []
+
+
+LaTeX Warning: Citation `energytoken2025' on page 9 undefined on input line 95.
+
 
 
 Overfull \hbox (2.92451pt too wide) in paragraph at lines 95--95
@@ -629,6 +1575,9 @@ Overfull \hbox (4.17818pt too wide) in paragraph at lines 95--95
  []
 
 
+LaTeX Warning: Citation `arasum2025' on page 9 undefined on input line 97.
+
+
 Overfull \hbox (27.56393pt too wide) in paragraph at lines 97--97
 []|\T1/cmr/m/n/10 Outperformed 
  []
@@ -644,14 +1593,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--97
  []
 
 
+LaTeX Warning: Citation `hlmea2025' on page 9 undefined on input line 99.
+
+
 Overfull \hbox (4.514pt too wide) in paragraph at lines 99--99
 \T1/cmr/m/n/10 (Hits@1)|  
  []
 
 
+LaTeX Warning: Citation `debateagents2025' on page 9 undefined on input line 10
+1.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 101--101
 []|\T1/cmr/m/n/10 1.2k
  []
+
+
+LaTeX Warning: Citation `phishing2024' on page 9 undefined on input line 103.
 
 
 Overfull \hbox (2.99394pt too wide) in paragraph at lines 103--103
@@ -669,9 +1628,15 @@ Overfull \hbox (2.65335pt too wide) in paragraph at lines 103--103
  []
 
 
+LaTeX Warning: Citation `transport2025' on page 9 undefined on input line 105.
+
+
 Overfull \hbox (9.61366pt too wide) in paragraph at lines 105--105
 []|\T1/cmr/m/n/10 Comparison|  
  []
+
+
+LaTeX Warning: Citation `textnex2025' on page 9 undefined on input line 107.
 
 
 Overfull \hbox (4.32695pt too wide) in paragraph at lines 107--107
@@ -689,9 +1654,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--107
  []
 
 
+LaTeX Warning: Citation `olfactory2025' on page 9 undefined on input line 109.
+
+
+LaTeX Warning: Citation `staticanalysis2025' on page 9 undefined on input line 
+111.
+
+
 Overfull \hbox (9.61366pt too wide) in paragraph at lines 111--111
 []|\T1/cmr/m/n/10 Comparison|  
  []
+
+
+LaTeX Warning: Citation `distillingmath2024' on page 9 undefined on input line 
+113.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 113--113
@@ -702,6 +1678,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--113
 Underfull \hbox (badness 10000) in paragraph at lines 113--113
 \T1/cmr/m/n/10 hard-
  []
+
+
+LaTeX Warning: Citation `colbertrag2024' on page 9 undefined on input line 115.
+
+
+
+LaTeX Warning: Citation `oh2025uncertainty' on page 9 undefined on input line 1
+17.
 
 
 Overfull \hbox (3.6531pt too wide) in paragraph at lines 117--117
@@ -719,6 +1703,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--117
  []
 
 
+LaTeX Warning: Citation `citer2025' on page 9 undefined on input line 119.
+
+
 Overfull \hbox (10.54765pt too wide) in paragraph at lines 119--119
 []|\T1/cmr/m/n/10 Commonsense 
  []
@@ -734,6 +1721,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--119
  []
 
 
+LaTeX Warning: Citation `sentensemble2026' on page 9 undefined on input line 12
+1.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 121--121
 []|\T1/cmr/m/n/10 AWS
  []
@@ -744,6 +1735,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--121
  []
 
 
+LaTeX Warning: Citation `qwqrouting2025' on page 9 undefined on input line 123.
+
+
+
 Overfull \hbox (5.70816pt too wide) in paragraph at lines 123--123
 \T1/cmr/m/n/10 (MMLU)|  
  []
@@ -752,6 +1747,9 @@ Overfull \hbox (5.70816pt too wide) in paragraph at lines 123--123
 Overfull \hbox (5.70816pt too wide) in paragraph at lines 123--123
 \T1/cmr/m/n/10 (MMLU)|  
  []
+
+
+LaTeX Warning: Citation `egi2025' on page 9 undefined on input line 125.
 
 
 Overfull \hbox (46.93788pt too wide) in paragraph at lines 125--125
@@ -764,14 +1762,31 @@ Overfull \hbox (10.11354pt too wide) in paragraph at lines 125--125
  []
 
 
+LaTeX Warning: Citation `itemdiff2025' on page 9 undefined on input line 127.
+
+
+LaTeX Warning: Citation `bioagents2025' on page 9 undefined on input line 129.
+
+
 Overfull \hbox (18.61513pt too wide) in paragraph at lines 129--129
 []|\T1/cmr/m/n/10 Genomics/Code|  
  []
 
 
+LaTeX Warning: Citation `amarasinghe2025fipo' on page 9 undefined on input line
+ 131.
+
+
+LaTeX Warning: Citation `shao2025dot' on page 9 undefined on input line 133.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 133--133
 []|\T1/cmr/m/n/10 83.5%
  []
+
+
+LaTeX Warning: Citation `mixeddistill2024' on page 9 undefined on input line 13
+5.
 
 
 Overfull \hbox (9.04068pt too wide) in paragraph at lines 135--135
@@ -788,63 +1803,162 @@ Overfull \hbox (1.82022pt too wide) in paragraph at lines 135--135
 \T1/cmr/m/n/10 (CodeL- 
  []
 
-[8
+[9
 
 
 
-] [9] [10] [11] [12] [13] [14] [15
+] [10] [11] [12] [13] [14] [15]
+
+LaTeX Warning: Citation `hao2024hybrid' on page 16 undefined on input line 152.
 
 
-] [16] [17] [18] [19])
-(./sections/05-threats-to-validity.tex) (./sections/06-conclusion.tex
+
+LaTeX Warning: Citation `oh2025uncertainty' on page 16 undefined on input line 
+154.
+
+
+LaTeX Warning: Citation `lee2024orchestrallm' on page 16 undefined on input lin
+e 156.
+
+[16
+
+
+]
+
+LaTeX Warning: Citation `alabbasi2024teleoracle' on page 17 undefined on input 
+line 158.
+
+
+LaTeX Warning: Citation `cao2025enersafe' on page 17 undefined on input line 16
+0.
+
+
+LaTeX Warning: Citation `mixeddistill2024' on page 17 undefined on input line 1
+62.
+
+
+LaTeX Warning: Citation `amarasinghe2025fipo' on page 17 undefined on input lin
+e 162.
+
+
+LaTeX Warning: Citation `hao2024hybrid' on page 17 undefined on input line 169.
+
+
+
+LaTeX Warning: Citation `shao2025dot' on page 17 undefined on input line 169.
+
+[17]
+
+LaTeX Warning: Citation `oh2025uncertainty' on page 18 undefined on input line 
+171.
+
+
+LaTeX Warning: Citation `shao2025dot' on page 18 undefined on input line 171.
+
+
+LaTeX Warning: Citation `lee2024orchestrallm' on page 18 undefined on input lin
+e 173.
+
+
+LaTeX Warning: Citation `hao2024hybrid' on page 18 undefined on input line 183.
+
+
+
+LaTeX Warning: Citation `oh2025uncertainty' on page 18 undefined on input line 
+183.
+
+
+LaTeX Warning: Citation `lee2024orchestrallm' on page 18 undefined on input lin
+e 186.
+
+[18]
+
+LaTeX Warning: Citation `shao2025dot' on page 19 undefined on input line 192.
+
+
+LaTeX Warning: Citation `amarasinghe2025fipo' on page 19 undefined on input lin
+e 192.
+
+
+LaTeX Warning: Citation `cao2025enersafe' on page 19 undefined on input line 19
+5.
+
+
+LaTeX Warning: Citation `alabbasi2024teleoracle' on page 19 undefined on input 
+line 203.
+
+[19]
+
+LaTeX Warning: Citation `mixeddistill2024' on page 20 undefined on input line 2
+09.
+
+
+LaTeX Warning: Citation `amarasinghe2025fipo' on page 20 undefined on input lin
+e 209.
+
+
+LaTeX Warning: Citation `shao2025dot' on page 20 undefined on input line 209.
+
+
+LaTeX Warning: Citation `cao2025enersafe' on page 20 undefined on input line 21
+5.
+
+[20]) (./sections/05-threats-to-validity.tex) (./sections/06-conclusion.tex
 Underfull \vbox (badness 1715) has occurred while \output is active []
 
- [20])
-(./sections/07-references.tex [21] [22]
+ [21])
+(./sections/07-references.tex [22] [23]
 Underfull \hbox (badness 1122) in paragraph at lines 145--146
 []\T1/cmr/m/n/9 Gao, Y., et al.: Dis-till-ing Math-e-mat-i-cal Rea-son-ing Ca-p
 a-bil-i-ties into Small Lan-guage Mod-els.
  []
 
-) [23] (./samplepaper.aux)
+) [24] (./samplepaper.aux)
  ***********
 LaTeX2e <2025-11-01>
-L3 programming layer <2026-01-19>
+L3 programming layer <2026-03-20>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 3781 strings out of 469006
- 57142 string characters out of 5454813
- 671980 words of memory out of 5000000
- 32408 multiletter control sequences out of 15000+600000
+ 28763 strings out of 468830
+ 654601 string characters out of 5451467
+ 1249375 words of memory out of 5000000
+ 57268 multiletter control sequences out of 15000+600000
  641570 words of font info for 73 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 64i,11n,65p,1464b,351s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jkn
-appen/ec/ecrm0700.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-v
-ar/fonts/pk/ljfour/jknappen/ec/ecbx0700.600pk> </Users/dogukantopcu/Library/tex
-live/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </Users/do
-gukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx
-1000.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/l
-jfour/jknappen/ec/ecbx1200.600pk> </Users/dogukantopcu/Library/texlive/2026basi
-c/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk> </Users/dogukantopcu/Li
-brary/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> <
-/Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappe
-n/ec/ectt0900.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/f
-onts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </Users/dogukantopcu/Library/texlive
-/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </Users/doguka
-ntopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440
-.600pk></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr7.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy7.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy9.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/publi
-c/amsfonts/symbols/msam7.pfb>
-Output written on samplepaper.pdf (23 pages, 250505 bytes).
+ 135i,14n,140p,1587b,3452s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknap
+pen/ec/ecrm0700.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/f
+onts/pk/ljfour/jknappen/ec/ecbx0700.600pk> </Users/bakiceltik/Library/texlive/2
+026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </Users/bakicelt
+ik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600
+pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jkna
+ppen/ec/ecbx1200.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/
+fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk> </Users/bakiceltik/Library/texlive/
+2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </Users/bakicel
+tik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.60
+0pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jkn
+appen/ec/ecrm0900.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var
+/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </Users/bakiceltik/Library/texlive
+/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk></usr/local/tex
+live/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
+exlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
+/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
+ocal/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
+r/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><
+/usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msa
+m7.pfb>
+Output written on samplepaper.pdf (24 pages, 259192 bytes).
 PDF statistics:
- 637 PDF objects out of 1000 (max. 8388607)
- 114 compressed objects within 2 object streams
+ 656 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

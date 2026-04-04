@@ -1,21 +1,98 @@
+
 \section{Introduction}
-Large language models (LLMs) excel at reasoning, coding, and multimodal tasks. However, due to the high hardware requirements (RAM, GPU, etc.) they demand, these models are usually run only on cloud-based infrastructures or very advanced local systems. This creates a significant bottleneck for system developers seeking to reduce cloud dependency, ensure data privacy, and avoid high operational costs.
+Large language models (LLMs) excel at reasoning, coding, and multimodal tasks~\cite{egi2025,staticanalysis2025,olfactory2025}. However, due to the high hardware requirements (RAM, GPU, etc.) they demand, these models are usually run only on cloud-based infrastructures or very advanced local systems~\cite{energytoken2025,qwqrouting2025}. This creates a significant bottleneck for system developers seeking to reduce cloud dependency, ensure data privacy, and avoid high operational costs~\cite{tigani2025cpu,aydin2025integrated}.
 
-As a result of these limitations, small language models (SLMs) are emerging as a strong alternative. Their ability to run on local machines provides a significant advantage in terms of data security, and their operational costs are much lower compared to LLMs. The ability to fine-tune them for specific domains, their easy integration with explicit control modules, and their collaborative operation structure make them quite attractive. However, SLMs cannot provide the broad expertise offered by a single massive model (like GPT-4o). They still fall short in tasks requiring logical reasoning, deep contextual understanding, and extensive world knowledge. Therefore, reducing the issue to a simple "SLM or LLM?" competition is no longer a fair or comprehensive approach. Instead, current research revolves around questions such as in which areas a single SLM is sufficient, when an LLM is needed, when a hybrid or agent-based architecture should be used, and how a customized SLM system can outperform a single LLM.
+As a result of these limitations, small language models (SLMs) are emerging as a strong alternative. 
+Their ability to run on local machines provides a significant advantage in terms of data security and deployment autonomy, while also offering substantially lower operational costs than cloud-scale LLM setups~\cite{tigani2025cpu,aydin2025integrated}. 
+Moreover, recent studies show that SLMs can be adapted to specific domains via fine-tuning or distillation, enabling competitive performance in specialized tasks~\cite{xie2025fusing,distillingmath2024,rethinkllm2025}. 
+In practical systems, SLMs are also attractive because they integrate well with explicit control modules (e.g., rule-based filters, routing/verification thresholds, or planners), improving controllability and reliability beyond prompt-only solutions~\cite{aydin2025integrated,qwqrouting2025,ji2025raprag}. 
+However, SLMs still struggle to match the broad expertise and robust reasoning of massive frontier models, especially on tasks requiring deep contextual understanding and extensive world knowledge~\cite{egi2025,dorfner2024comparing}. 
+Therefore, framing the problem as a simple ``SLM or LLM?'' competition is no longer sufficient; instead, current research investigates when a single SLM is adequate, when an LLM is necessary, and when hybrid or agent-based architectures are preferable~\cite{hao2024hybrid,shao2025dot,multiagent2025}.
 
-The existing literature provides concrete examples of how these architectural choices are shaped by the dynamics of the field. For example, in the telecommunications sector, the Symbiotic Agents study has managed to significantly reduce error rates and resource consumption by using hybrid and multi-agent systems \cite{chatzistefanidis2025survey}. In medicine, the Self-Reflective Chest X-Ray Report Generation study combined three different AI models in a single pipeline---a self-reflective agent (LLaMA-8B) and an LLM judge---to create a hybrid structure that maximized diagnostic accuracy and minimized error rates \cite{han2025chest}. Similarly, in cybersecurity, Pietrzak and colleagues solved a complex fake report detection problem using only a fine-tuned single SLM (TinyLlama) and detection models (TinyBERT, DistilBERT) \cite{pietrzak2025evaluation}. They achieved this success with just standard consumer-grade GPU hardware, achieving higher detection rates compared to large models like GPT-4 \cite{pietrzak2025evaluation}.
+The existing literature provides concrete, domain-specific examples showing that the choice between SLMs, LLMs, and hybrid designs is primarily a systems decision. In telecommunications, Symbiotic Agents reports up to a fivefold reduction in decision error and near-real-time operation (82~ms loops) with up to 99.9\% lower GPU overhead using SLM variants~\cite{chatzistefanidis2025symbiotic}. In medicine, self-reflective pipelines pair a compact generator with an LLM-based judge to iteratively refine outputs and improve diagnostic reliability~\cite{han2025chest}.
 
-These developments provide practical alternatives for scenarios where relying on a single large language model is insufficient or excessively costly. Moreover, research in this area not only focuses on basic accuracy rates but also aims to provide tangible improvements in computational load, operational cost, and latency. Researchers have clearly demonstrated which types of hybrid designs work for specific tasks and what kinds of architectures are effective in real-world conditions.
+These developments provide practical alternatives for scenarios where relying on a single monolithic LLM is either insufficient for task demands or impractical under strict resource constraints. Accordingly, recent work increasingly targets measurable improvements beyond raw accuracy, including reduced computational load, lower operational cost, and tighter latency budgets~\cite{hao2024hybrid,qwqrouting2025,chatzistefanidis2025symbiotic,energytoken2025}. Across domains, researchers have reported which hybrid design patterns are effective for specific task classes---for example, selective edge--cloud verification, expert routing, and retrieval- or planner-centered pipelines---and how these choices translate to real-world deployments~\cite{hao2024hybrid,lee2024orchestrallm,alabbasi2024teleoracle,ji2025raprag}.
 
-This review investigates how hybrid models converge across different fields, when LLMs should play a more active role, and in which cases control can be delegated to SLMs. It examines in which specific domains fine-tuned SLMs perform best and where they naturally fall short. By analyzing recurring hybrid methods in the literature, the article reveals scenarios where SLMs can realistically replace or complement large language models. Since the scope is fundamentally built on the resource-performance trade-off, this review places special emphasis on hybrid and multi-agent systems.
+Motivated by these trends, this review analyzes when a single SLM is sufficient, when an LLM remains necessary, and when hybrid or multi-agent architectures provide the best trade-off between capability and efficiency~\cite{tigani2025cpu,xie2025fusing,hao2024hybrid,shao2025dot}. We further examine domain conditions under which fine-tuned SLMs can realistically replace or complement larger models, and where they still fall short, synthesizing recurring architectural motifs across telecom, medical, and cybersecurity settings~\cite{chatzistefanidis2025symbiotic,han2025chest,pietrzak2025evaluation}.
 
-The main contributions of this review are as follows:
-\begin{itemize}
-    \item It provides a synthesized overview of 54 studies covering cloud-based monolithic LLMs, hybrid SLM-LLM architectures, the performance of fine-tuned SLMs versus large models, and multi-agent workflows.
-    \item It frames the literature around four distinct practical research questions: Performance, Efficiency, Architecture, and Domain Suitability.
-    \item It creates an analytical review matrix that reveals the commonalities and differences among the studies, mapping which specific research question each study addresses.
-\end{itemize}
-
+The main contributions of this review are as follows: (1) It provides a synthesized overview of 56 studies covering cloud-based monolithic LLMs, hybrid SLM--LLM architectures, the performance of fine-tuned SLMs versus large models, and multi-agent workflows. (2) It reframes the literature around four distinct practical research questions: Performance, Efficiency, Architecture, and Domain Suitability. (3) It creates an analytical review matrix that reveals the commonalities and differences among the studies, mapping which specific research question each study addresses.
+\begin{figure}[htbp]
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{forest}
+for tree={
+  grow'=east,
+  parent anchor=east,
+  child anchor=west,
+  anchor=west,
+  align=left,
+  edge={draw=red!65, line width=0.7pt},
+  calign=center,
+  edge path={
+    \noexpand\path[\forestoption{edge}]
+    (!u.parent anchor) -- ++(12pt,0) |- (.child anchor)\forestoption{edge label};
+  },
+  l sep=16pt,
+  s sep=14pt,
+  font=\small,
+  rounded corners,
+  draw=red!60,
+  line width=0.6pt,
+  fill=red!3,
+  inner xsep=7pt,
+  inner ysep=4pt,
+}
+[{{SLR: Hybrid \& SLM Systems}}
+  [{{Motivation (Intro)}}
+    [{{LLM constraints: cost, latency, privacy~\cite{energytoken2025,qwqrouting2025,egi2025}}}]
+    [{{SLM opportunities: local, adaptable, controllable~\cite{tigani2025cpu,aydin2025integrated,xie2025fusing}}}]
+    [{{System view: hybrid / routing / agents~\cite{hao2024hybrid,lee2024orchestrallm,shao2025dot,multiagent2025}}}]
+  ]
+  [{{Corpus \& Method}}
+    [{{PRISMA + Selection~\cite{page2021prisma}}}]
+    [{{Data extraction (54 studies)}}]
+    [{{Taxonomy / Labels (this review)}}]
+  ]
+  [{{Models / Architectural Families}}
+    [{{Single SLM (local/on-device)~\cite{tigani2025cpu,aydin2025integrated}}}]
+    [{{Hybrid SLM+LLM (edge--cloud)~\cite{hao2024hybrid}}}]
+    [{{Multi-agent systems~\cite{multiagent2025,pacheco2025flight}}}]
+    [{{RAG-centric pipelines~\cite{alabbasi2024teleoracle,ji2025raprag}}}]
+    [{{Control / routing modules~\cite{lee2024orchestrallm,qwqrouting2025}}}]
+  ]
+  [{{Research Questions (RQs)}}
+    [{{RQ1: Performance~\cite{hao2024hybrid,lee2024orchestrallm,han2025chest}}}
+      [{{Hybrid SLM+LLM (draft--verify)~\cite{hao2024hybrid}}}]
+      [{{Multi-agent collaboration~\cite{multiagent2025,pacheco2025flight}}}]
+      [{{Self-reflective / judge-in-the-loop~\cite{han2025chest}}}]
+    ]
+    [{{RQ2: Efficiency~\cite{qwqrouting2025,energytoken2025,chatzistefanidis2025symbiotic}}}
+      [{{Latency / VRAM / cost proxies~\cite{chatzistefanidis2025symbiotic,hao2024hybrid}}}]
+      [{{Energy / energy-per-token~\cite{energytoken2025}}}]
+      [{{Edge feasibility~\cite{tigani2025cpu,qwqrouting2025}}}]
+    ]
+    [{{RQ3: Architecture~\cite{alabbasi2024teleoracle,ji2025raprag,lee2024orchestrallm}}}
+      [{{RAG + rerank / long-context support~\cite{alabbasi2024teleoracle}}}]
+      [{{Planner / adaptive retrieval~\cite{ji2025raprag}}}]
+      [{{Expert routing / orchestration~\cite{lee2024orchestrallm}}}]
+    ]
+    [{{RQ4: Domain suitability~\cite{xie2025fusing,aydin2025integrated,rethinkllm2025}}}
+      [{{Fine-tuned SLMs / domain fusion~\cite{xie2025fusing}}}]
+      [{{Privacy-sensitive local domains~\cite{aydin2025integrated}}}]
+      [{{Where SLMs fall short (reasoning gap)~\cite{distillingmath2024}}}]
+    ]
+  ]
+  [{{Contributions}}
+    [{{(1) 54-study synthesis}}]
+    [{{(2) RQ framing}}]
+    [{{(3) Review matrix}}]
+  ]
+]
+\end{forest}
+}
+\caption{Overview of the review structure and taxonomy used in this SLR (synthesized from the reviewed corpus; reporting guided by PRISMA~\cite{page2021prisma}).}
+\label{fig:slr-overview}
+\end{figure}
 % \section{Findings}
 % \subsection{Corpus-Level Trends Before the RQ Analysis}
 % Before answering the four research questions directly, three corpus-level observations are worth emphasizing.
