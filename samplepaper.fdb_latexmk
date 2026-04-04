@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1775312421.10367 "/Users/bakiceltik/SLR-LaTeX/samplepaper.tex" "samplepaper.pdf" "samplepaper" 1775312422.68924 0
+["pdflatex"] 1775312658.84737 "/Users/bakiceltik/SLR-LaTeX/samplepaper.tex" "samplepaper.pdf" "samplepaper" 1775312660.7162 0
   "/Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0700.600pk" 1774186925.96105 17356 99ecc8816cb0960004159524818cfce7 ""
   "/Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk" 1774186927.09795 22480 63255b967a23e9432b88f931bd50ad7c ""
   "/Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk" 1774186926.44889 25396 45cab27c0a1edc3c70b0653cda3d9248 ""
@@ -172,15 +172,15 @@
   "/usr/local/texlive/2026basic/texmf.cnf" 1772405582 628 bbc09d6d38872d53c11bb48dc9b14e88 ""
   "aliascnt.sty" 1775310885.19295 498 8448538725a50d9bd56ad086d063466f ""
   "llncs.cls" 1775310742.84914 43402 5fb5a2dc40571aa40f3d199c00cbb986 ""
-  "samplepaper.aux" 1775312422.6582 11463 c667769a9486f3961def7f921e920799 "pdflatex"
+  "samplepaper.aux" 1775312660.60319 11463 52d7dcf432127c324df63ff708e89d0c "pdflatex"
   "samplepaper.tex" 1775312419.51501 1556 b287f6f19ae1fe9ba5d6ddae27e25db9 ""
   "sections/00-abstract.tex" 1774180372.53204 1603 89b466c0ebfe3bb034857f8868394083 ""
-  "sections/01-introduction.tex" 1775312338.68178 12122 95a253ad45c09722b20465acf10e4838 ""
+  "sections/01-introduction.tex" 1775312656.78012 7611 c8d104581bddce38b29f335a8dd44f69 ""
   "sections/02-related-works.tex" 1774180372.53259 5120 68a7e76af13e2faa05e73f7ab2ba346b ""
   "sections/03-research-methodology.tex" 1775310928.92615 9426 2479fa62b3081bd47b9085de258ebe9c ""
   "sections/04-findings.tex" 1775310928.92653 39625 bddb279c498924d9903450c55093ff7c ""
-  "sections/05-threats-to-validity.tex" 1774180372.53306 2339 538ebbb2bc683b0c9be2a79e331bb701 ""
-  "sections/06-conclusion.tex" 1774180372.53329 1840 d7937237345675fa8ac09d871b179edd ""
+  "sections/05-threats-to-validity.tex" 1775312604.72398 2647 69d21e3328f05af9fdd260d7a8418f44 ""
+  "sections/06-conclusion.tex" 1775312604.72427 2086 1fd39bcca8220ca0896af0302bb51628 ""
   "sections/07-references.tex" 1775309723.46799 8920 bdb10f24eb32f1bf1c149859063f45ae ""
   (generated)
   "samplepaper.aux"
