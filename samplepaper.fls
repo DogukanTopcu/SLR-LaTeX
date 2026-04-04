@@ -274,6 +274,7 @@ INPUT ./sections/01-introduction.tex
 INPUT sections/01-introduction.tex
 INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
 INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm
 OUTPUT samplepaper.pdf
 INPUT /usr/local/texlive/2026basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT ./sections/02-related-works.tex
@@ -281,7 +282,6 @@ INPUT ./sections/02-related-works.tex
 INPUT ./sections/02-related-works.tex
 INPUT ./sections/02-related-works.tex
 INPUT sections/02-related-works.tex
-INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm
 INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecti1000.tfm
 INPUT ./sections/03-research-methodology.tex
 INPUT ./sections/03-research-methodology.tex
