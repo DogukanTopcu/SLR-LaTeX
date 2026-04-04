@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.16)  3 APR 2026 04:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.16)  3 APR 2026 04:31
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**samplepaper.tex
-(./samplepaper.tex
+**"/Users/dogukantopcu/Desktop/Final Project/Springer_Lecture_Notes_in_Computer_Science/samplepaper.tex"
+(/Users/dogukantopcu/Desktop/Final Project/Springer_Lecture_Notes_in_Computer_Science/samplepaper.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (./llncs.cls
@@ -25,8 +26,7 @@ File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
-)
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/tools/multicol.sty
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \c@tracingmulticols=\count283
 \mult@box=\box53
@@ -96,8 +96,7 @@ Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \colbreak@box=\box98
 \mc@col@check@num=\count292
 \g__mc_curr_col_int=\count293
-)
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/oberdiek/aliascnt.sty
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/oberdiek/aliascnt.sty
 Package: aliascnt 2018/09/07 v1.5 Alias counters (HO)
 )
 \c@chapter=\count294
@@ -151,35 +150,27 @@ LaTeX Info: Redefining \vec on input line 394.
 \c@solution=\count312
 \c@remark=\count313
 \headlineindent=\dimen170
-)
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/base/fontenc.sty
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-)
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/graphicx.sty
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/keyval.sty
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
-)
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/graphics.sty
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/trig.sty
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-)
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
-
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen171
 \Gin@req@width=\dimen172
-)
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/booktabs/booktabs.sty
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen173
 \lightrulewidth=\dimen174
@@ -198,11 +189,9 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count316
 \@lastruleclass=\count317
 \@thisrulewidth=\dimen185
-)
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/tools/tabularx.sty
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
-
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/tools/array.sty
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/tools/array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen186
 \ar@mcellbox=\box101
@@ -219,11 +208,9 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \TX@delta=\dimen192
 \TX@cols=\count318
 \TX@ftn=\toks23
-)
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks24
 \symAMSa=\mathgroup4
@@ -231,14 +218,11 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/geometry/geometry.sty
+)) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(/usr/local/texlive/2026basic/texmf-dist/tex/generic/iftex/ifvtex.sty
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
-(/usr/local/texlive/2026basic/texmf-dist/tex/generic/iftex/iftex.sty
+ (/usr/local/texlive/2026basic/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
 \Gm@cnth=\count319
@@ -253,11 +237,9 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen199
 \Gm@layoutvoffset=\dimen256
 \Gm@dimlist=\toks25
-)
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/rotating.sty
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2025/01/14 v2.16e rotated objects in LaTeX
-
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/base/ifthen.sty
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
 \c@r@tfl@t=\count322
@@ -265,14 +247,10 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 \rotFPbot=\skip56
 \rot@float@box=\box103
 \rot@mess@toks=\toks26
-)
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
-
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/pdflscape/pdflscape-nometada
-ta.sty
-Package: pdflscape-nometadata 2025-06-23 v0.14 Display of landscape pages in PD
-F (HO)
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2025-06-23 v0.14 Display of landscape pages in PDF (HO)
  (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
@@ -295,9 +273,7 @@ Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \c@LT@tables=\count326
 \c@LT@chunks=\count327
 \LT@p@ftn=\toks27
-)
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/l3backend/l3backend-pdftex.d
-ef
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count328
 ) (./samplepaper.aux)
@@ -317,8 +293,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
-
-(/usr/local/texlive/2026basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2026basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count329
 \scratchdimen=\dimen258
@@ -331,16 +306,11 @@ LaTeX Font Info:    ... okay on input line 16.
 \MPnumerator=\count333
 \makeMPintoPDFobject=\count334
 \everyMPtoPDFconversion=\toks29
-)
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.s
-ty
+) (/usr/local/texlive/2026basic/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -377,25 +347,18 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
-
 (/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
-
-
-(/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsb.fd
+ (/usr/local/texlive/2026basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-(./sections/00-abstract.tex) (./sections/01-introduction.tex [1
+) (./sections/00-abstract.tex) (./sections/01-introduction.tex [1
 
-{/usr/local/texlive/2026basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
-(./sections/02-related-works.tex
+{/usr/local/texlive/2026basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./sections/02-related-works.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2]
-[3]) (./sections/03-research-methodology.tex [4] [5])
-(./sections/04-findings.tex [6] [7]
+ [2] [3]) (./sections/03-research-methodology.tex [4] [5]) (./sections/04-findings.tex [6] [7]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
@@ -795,15 +758,12 @@ Overfull \hbox (1.82022pt too wide) in paragraph at lines 135--135
 ] [9] [10] [11] [12] [13] [14] [15
 
 
-] [16] [17] [18] [19])
-(./sections/05-threats-to-validity.tex) (./sections/06-conclusion.tex
+] [16] [17] [18] [19]) (./sections/05-threats-to-validity.tex) (./sections/06-conclusion.tex
 Underfull \vbox (badness 1715) has occurred while \output is active []
 
- [20])
-(./sections/07-references.tex [21] [22]
+ [20]) (./sections/07-references.tex [21] [22]
 Underfull \hbox (badness 1122) in paragraph at lines 145--146
-[]\T1/cmr/m/n/9 Gao, Y., et al.: Dis-till-ing Math-e-mat-i-cal Rea-son-ing Ca-p
-a-bil-i-ties into Small Lan-guage Mod-els.
+[]\T1/cmr/m/n/9 Gao, Y., et al.: Dis-till-ing Math-e-mat-i-cal Rea-son-ing Ca-pa-bil-i-ties into Small Lan-guage Mod-els.
  []
 
 ) [23] (./samplepaper.aux)
@@ -813,34 +773,14 @@ L3 programming layer <2026-01-19>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3781 strings out of 469006
- 57142 string characters out of 5454813
+ 3782 strings out of 469006
+ 57397 string characters out of 5454813
  671980 words of memory out of 5000000
  32408 multiletter control sequences out of 15000+600000
  641570 words of font info for 73 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 64i,11n,65p,1464b,351s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jkn
-appen/ec/ecrm0700.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-v
-ar/fonts/pk/ljfour/jknappen/ec/ecbx0700.600pk> </Users/dogukantopcu/Library/tex
-live/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </Users/do
-gukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx
-1000.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/l
-jfour/jknappen/ec/ecbx1200.600pk> </Users/dogukantopcu/Library/texlive/2026basi
-c/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk> </Users/dogukantopcu/Li
-brary/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> <
-/Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappe
-n/ec/ectt0900.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/f
-onts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </Users/dogukantopcu/Library/texlive
-/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </Users/doguka
-ntopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440
-.600pk></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr7.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy7.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy9.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/publi
-c/amsfonts/symbols/msam7.pfb>
+ 64i,11n,65p,1551b,351s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0700.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
 Output written on samplepaper.pdf (23 pages, 250505 bytes).
 PDF statistics:
  637 PDF objects out of 1000 (max. 8388607)
