@@ -1,50 +1,258 @@
 \section{Research Methodology}
-\subsection{Review Protocol}
-The study follows a PRISMA 2020-guided review design~\cite{page2021prisma}. The workflow used on the review website separates the process into identification, screening, and inclusion, with explicit reference to a Web of Science-centered search strategy. In the identification phase, query construction combines the key concepts of ``small language models'', ``large language models'', ``hybrid architectures'', ``multi-agent systems'', ``orchestration'', and ``collaboration'' using Boolean operators. In the screening phase, records are deduplicated, reviewed at title and abstract level, and then assessed at full text. In the inclusion phase, the selected studies are coded into a structured extraction sheet and then used to answer the research questions.
+\label{sec:methodology}
 
-The website also makes an important methodological choice explicit: the review is not organized as a generic survey of all SLM work, but as a filtered corpus intended to support a comparison between monolithic, hybrid, and agentic designs. This matters because it shapes both what is included and how the findings are interpreted. Studies are not only selected because they use small models; they are selected because they help answer questions about comparative performance, orchestration, and efficiency.
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[node distance=0.8cm, scale=0.85, transform shape]
+% ── Colours ──────────────────────────────────────────────────────────────────
+\definecolor{boxfill}{RGB}{235,244,255}   % light blue fill
+\definecolor{boxline}{RGB}{100,160,220}   % blue border
+\definecolor{docfill}{RGB}{245,248,252}   % document badge fill
+\definecolor{docline}{RGB}{180,200,220}   % document badge border
+\definecolor{arrowcol}{RGB}{80,80,80}     % arrow colour
 
-\subsection{Inclusion and Exclusion Criteria}
-The inclusion criteria extracted from the website can be summarized as follows. A study is included if it examines SLMs alone or SLM + LLM architectures, fits the project's small-model definition, focuses on at least one relevant technical question such as performance or orchestration, falls inside the contemporary review window, and provides empirical evaluation. These criteria are narrow enough to keep the corpus technically coherent while broad enough to admit retrieval-centered, multi-agent, and fusion-based systems.
+% ── Styles ───────────────────────────────────────────────────────────────────
+\tikzset{
+  % Standard rounded-rectangle step box
+  stepbox/.style={
+    rectangle,
+    rounded corners=6pt,
+    draw=boxline,
+    fill=boxfill,
+    line width=0.8pt,
+    text width=4.5cm,
+    align=center,
+    inner ysep=6pt,
+    inner xsep=8pt,
+    font=\footnotesize
+  },
+  % Narrower box for the three parallel steps (3, 4, 5)
+  narrowbox/.style={
+    rectangle,
+    rounded corners=6pt,
+    draw=boxline,
+    fill=boxfill,
+    line width=0.8pt,
+    text width=2.5cm,
+    align=center,
+    inner ysep=6pt,
+    inner xsep=6pt,
+    font=\footnotesize
+  },
+  % Small publication-count badge on the right
+  docbadge/.style={
+    rectangle,
+    rounded corners=4pt,
+    draw=docline,
+    fill=docfill,
+    line width=0.6pt,
+    text width=1.8cm,
+    align=center,
+    inner ysep=4pt,
+    font=\tiny\color{gray!70!black}
+  },
+  % Solid downward arrow
+  solidarrow/.style={
+    ->,
+    >=Stealth,
+    line width=0.8pt,
+    color=arrowcol
+  },
+  % Dashed downward arrow (after main search)
+  dashedarrow/.style={
+    ->,
+    >=Stealth,
+    line width=0.8pt,
+    color=arrowcol,
+    dashed
+  },
+  % Thin dashed leader to badge
+  leader/.style={
+    -,
+    line width=0.5pt,
+    color=docline,
+    dashed
+  }
+}
 
-The exclusion criteria remove five types of work: purely large-model comparisons with no SLM component, closed-box studies with insufficient transparency, non-technical ethical or regulatory discussions with no technical validation, studies outside the review time window, and purely theoretical work without experiments. Together, these choices bias the corpus toward deployable systems and measured outcomes, which is appropriate for the present research questions.
+% ── Start terminal ────────────────────────────────────────────────────────────
+\node (start) [circle, draw=arrowcol, line width=0.8pt,
+               inner sep=3pt] {};
 
-\subsection{Corpus Profile}
-The current website snapshot contains 54 reviewed papers. The corpus is strongly concentrated in 2025, with 38 studies from that year, 11 from 2024, 2 from 2026, and a very small remainder in 2023 or metadata-anomalous records.
+% ── Step 1 ────────────────────────────────────────────────────────────────────
+\node (s1) [stepbox, below=0.45cm of start]
+  {\textbf{Step 1.} Define the research objective\\and research questions};
 
-Architecturally, the corpus is not dominated by one single paradigm. Using the website's own filtering logic, 18 papers can be grouped as hybrid, 14 as single-model systems, 12 as multi-agent systems, 6 as ensembles, and 4 as RAG-centered systems. This matters because it shows that the field is not converging on a single ``best'' way to combine small and large models. Instead, the literature currently explores multiple control granularities, ranging from token-level speculative verification to query-level routing, sub-task decomposition, and representation fusion.
+% ── Step 2 ────────────────────────────────────────────────────────────────────
+\node (s2) [stepbox, below=of s1]
+  {\textbf{Step 2.} Conduct pilot searches};
 
-The corpus also reveals a strong reporting asymmetry. Accuracy or task-quality measures are reported in 51 of the 54 studies. In contrast, latency is reported in only 17, cost in only 5, and energy in only 4. This imbalance is central to interpreting the literature. Many papers claim efficiency benefits, but only a small subset actually report the variables needed to compare those claims rigorously across studies. Table~\ref{tab:corpus-overview} summarizes the corpus profile used in the review.
+% ── Steps 3, 4, 5 (parallel row) ─────────────────────────────────────────────
+\node (s4) [narrowbox, below=1.4cm of s2]
+  {\textbf{Step 4.} Identify the data sources};
 
-\begin{table}[t]
-\caption{Corpus overview derived from the 54-paper website snapshot.}
-\label{tab:corpus-overview}
-\centering
-\scriptsize
-\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.3cm}X@{}}
-\toprule
-\textbf{Aspect} & \textbf{Observation} \\
-\midrule
-Corpus size & 54 reviewed papers. \\
-Publication trend & 2025 dominates the corpus (38 papers), followed by 2024 (11 papers). A very small remainder falls in 2023, 2026, or metadata-anomalous records. \\
-Architecture split & Hybrid: 18, Single-model: 14, Multi-agent: 12, Ensemble: 6, RAG-centered: 4. \\
-Most frequent SLM families & Llama, Qwen, BERT-family models, Phi, Mistral, T5, and Gemma appear most often in the extracted studies. \\
-Most frequent LLM families & GPT-4/GPT-4o, Llama, Qwen, GPT-3.5, Claude, and Gemini dominate the LLM side of the corpus. \\
-Reporting coverage & Accuracy/task quality: 51 papers; latency: 17; cost: 5; energy: 4. \\
-Recurring domains & Telecom QA, healthcare and radiology, mathematical reasoning, code and software tasks, dialogue systems, education, scientific prediction, and multimodal industrial monitoring. \\
-\bottomrule
-\end{tabularx}
+\node (s3) [narrowbox, left=0.5cm of s4]
+  {\textbf{Step 3.} Define the search string};
+
+\node (s5) [narrowbox, right=0.5cm of s4]
+  {\textbf{Step 5.} Define the inclusion and exclusion criteria};
+
+% ── Step 6 ────────────────────────────────────────────────────────────────────
+\node (s6) [stepbox, below=1.4cm of s4]
+  {\textbf{Step 6.} Perform the main search};
+
+% ── Step 7 ────────────────────────────────────────────────────────────────────
+\node (s7) [stepbox, below=of s6]
+  {\textbf{Step 7.} Read publications by title,\\keywords and abstract};
+
+% ── Step 8 ────────────────────────────────────────────────────────────────────
+\node (s8) [stepbox, below=of s7]
+  {\textbf{Step 8.} Read full texts and analyze references};
+
+% ── Step 9 ────────────────────────────────────────────────────────────────────
+\node (s9) [stepbox, below=of s8]
+  {\textbf{Step 9.} Extract and synthesize data};
+
+% ── End terminal ──────────────────────────────────────────────────────────────
+\node (end) [circle, draw=arrowcol, line width=0.8pt,
+             inner sep=3pt, below=0.45cm of s9] {};
+
+% ── Publication badges ────────────────────────────────────────────────────────
+\node (d1) [docbadge, right=1.2cm of s6] {281 pubs};
+\node (d2) [docbadge, right=1.2cm of s7] {252 pubs};
+\node (d3) [docbadge, right=1.2cm of s8] {57 pubs};
+\node (d4) [docbadge, right=1.2cm of s9] {22 pubs};
+
+% ── Arrows: start → s1 → s2 ──────────────────────────────────────────────────
+\draw[solidarrow] (start) -- (s1);
+\draw[solidarrow] (s1)    -- (s2);
+
+% ── Branch: s2 → s3, s4, s5 ──────────────────────────────────────────────────
+% Drop from s2 to a junction point, then fan out
+\coordinate (junc_down) at ($(s2.south)+(0,-0.55)$);
+
+\draw[solidarrow, -]  (s2.south) -- (junc_down);
+
+% Left branch to s3
+\draw[solidarrow]
+  (junc_down) -| (s3.north);
+
+% Centre branch to s4
+\draw[solidarrow]
+  (junc_down) -- (s4.north);
+
+% Right branch to s5
+\draw[solidarrow]
+  (junc_down) -| (s5.north);
+
+% ── Merge: s3, s4, s5 → s6 ───────────────────────────────────────────────────
+\coordinate (junc_up) at ($(s6.north)+(0,+0.55)$);
+
+\draw[solidarrow, -] (s3.south) |- (junc_up);
+\draw[solidarrow, -] (s4.south) -- (junc_up);
+\draw[solidarrow, -] (s5.south) |- (junc_up);
+\draw[solidarrow]    (junc_up)  -- (s6.north);
+
+% ── Arrows: s6 → s7 → s8 → s9 → end (dashed) ────────────────────────────────
+\draw[dashedarrow] (s6) -- (s7);
+\draw[dashedarrow] (s7) -- (s8);
+\draw[dashedarrow] (s8) -- (s9);
+\draw[solidarrow]  (s9.south) -- (end);
+
+% ── Leader lines to badges ────────────────────────────────────────────────────
+\draw[leader] (s6.east) -- (d1.west);
+\draw[leader] (s7.east) -- (d2.west);
+\draw[leader] (s8.east) -- (d3.west);
+\draw[leader] (s9.east) -- (d4.west);
+
+\end{tikzpicture}
+  \caption{Systematic literature review process}
+  \label{fig:slr-process}
+\end{figure}
+
+\subsection{Information Sources and Search Strategy}
+\label{sec:search_strategy}
+
+To capture a comprehensive and high-quality corpus of contemporary AI architectures, the literature search was conducted utilizing the Web of Science (WoS) Core Collection. Utilizing WoS as the primary search engine allowed for the retrieval of indexed peer-reviewed journal articles, conference proceedings, and highly cited preprints within a single dataset. The search timeframe was restricted to publications between 2023 and 2026 to reflect the rapid, recent emergence of small and agentic language models.
+
+The search strategy was designed to capture the intersection of model size, architectural design, and system evaluation. The following Boolean query was applied to the title, abstract, and keyword fields:
+
+\begin{quote}
+( "Large Language Model*" OR "LLM" OR "Generative AI" OR "Foundation Model*" ) AND 
+( "Small Language Model*" OR "SLM" OR "Compact Model*" OR "Lightweight Model*" OR "TinyLlama" OR "Phi-3" OR "Mistral" OR "Qwen" ) AND 
+( "Multi-agent" OR "Hybrid" OR "Orchestration" OR "Routing" OR "Ensemble" OR "Agentic" ) AND 
+( "Performance" OR "Accuracy" OR "Efficiency" OR "Latency" OR "Cost" OR "Benchmark" )
+\end{quote}
+
+\subsection{Eligibility Criteria}
+\label{sec:eligibility_criteria}
+
+To systematically isolate systems-level engineering research from the broader generative AI literature, retrieved records were evaluated against strict eligibility criteria. A comprehensive breakdown of the inclusion and exclusion parameters applied during the screening phases is presented in Table \ref{tab:eligibility_criteria}.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Inclusion and Exclusion Criteria for Study Selection}
+    \label{tab:eligibility_criteria}
+    \renewcommand{\arraystretch}{1.2} % Slight overall stretch
+    % The @{} removes the invisible side margins so it aligns perfectly with the page text
+    % The >{\raggedright\arraybackslash}X forces the text to align left instead of justifying
+    \begin{tabularx}{\linewidth}{@{} p{2.8cm} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X @{}}
+        \toprule
+        \textbf{Criteria} & \textbf{Inclusion (Include if...)} & \textbf{Exclusion (Exclude if...)} \\
+        \midrule
+        
+        \textbf{Architecture Scope} & 
+        Studies evaluating SLMs alone or SLM and LLM collaborative architectures (e.g., Hybrid or Multi-agent). & 
+        Studies strictly comparing massive monolithic LLMs (e.g., GPT-4 vs. Gemini) without an SLM component. \\
+        \addlinespace % Adds a subtle gap between rows
+        
+        \textbf{Model Size} & 
+        Architectures involving ``small'' models that strictly adhere to a parameter count of $\le$ 7 Billion. & 
+        ``Closed-box'' or API-bound models where parameter count or architectural details are undisclosed (violates reproducibility). \\
+        \addlinespace
+        
+        \textbf{Topic Focus} & 
+        Focuses on quantitative system-level metrics such as performance, inference latency, memory, cost, or orchestration efficiency. & 
+        Focuses solely on ethical, sociological impacts, or legal regulations without technical benchmarks. \\
+        \addlinespace
+        
+        \textbf{Data Quality} & 
+        Contains empirical results and experimental validation (e.g., standard benchmarks or custom datasets). & 
+        Purely theoretical papers or non-empirical narrative surveys. \\
+        \addlinespace
+        
+        \textbf{Timeframe} & 
+        Published between 2023 and 2026 (capturing the recent emergence of SLM/Agentic architectures). & 
+        Published before 2023. \\
+        
+        \bottomrule
+    \end{tabularx}
 \end{table}
 
-\subsection{Data Extraction and Synthesis Strategy}
-For each study, the website records the SLM and LLM models used, architecture type, orchestration method, agent count, task type, dataset, evaluation metrics, baselines, accuracy, latency, cost, energy, key findings, and limitations. These fields are sufficient for a structured narrative synthesis because they capture both the functional design of the system and the evidence used to justify it. Table~\ref{tab:rq-matrix} maps those extraction fields to the four research questions.
+\subsection{Study Selection Process}
+\label{sec:study_selection}
 
-\begin{table}[t]
+The study selection process adhered to the PRISMA 2020 guidelines \cite{page2021prisma}. The initial literature search yielded 116 records. Because the export was generated from a single, centralized database engine (Web of Science), zero duplicate records required manual removal. The progression of the screening process is illustrated in Figure \ref{fig:slr-process}.
+
+The screening was conducted in two distinct phases to ensure methodological rigor. During the initial Title and Abstract screening, 22 records were excluded for lacking general relevance to the architectural scope. These exclusions primarily consisted of non-empirical narrative surveys, hardware scheduling studies lacking architectural orchestration, and studies operating in entirely separate domains (e.g., computer vision or 3D hand gesture recognition). 
+
+The remaining 94 records advanced to a rigorous Full-Text review. During this phase, an additional 40 studies were excluded after deeply evaluating their methodologies against the technical constraints. Exclusions at this stage occurred when the evaluated ``small'' models exceeded the strict $\le$ 7B parameter threshold, the evaluations relied on closed-box APIs that hindered reproducibility, or the methodologies failed to report quantitative system-level performance metrics. 
+
+To mitigate selection bias during both screening phases, a team consensus mechanism was utilized. Inclusion and exclusion decisions were made via majority vote among the reviewing authors. In the event of a tie, the conflict was resolved through collaborative discussion and escalation to the academic advisors. Following this two-stage screening process, a final corpus of 54 primary studies was established for data extraction and synthesis.
+
+\subsection{Data Extraction and Synthesis Strategy}
+\label{sec:data_extraction}
+
+To systematically address the research questions, a standardized data extraction protocol was applied to the final corpus of 54 primary studies. For each study, data was extracted into a structured matrix to capture both the functional design of the systems and the empirical evidence used to justify them. 
+
+The extracted fields included the specific SLM and LLM models utilized, the overarching architecture type (e.g., Hybrid, Multi-Agent, RAG, Ensemble), orchestration mechanisms, evaluation metrics, baseline models, and quantitative performance indicators (accuracy, latency, cost, and energy). To ensure analytical rigor, each extracted variable was explicitly mapped to one or more of the core Research Questions (RQs). This mapping is detailed in Table \ref{tab:rq-matrix}.
+
+\begin{table}[htbp]
 \caption{RQ $\times$ data extraction matrix used in the review. A check mark indicates that the field directly supports the corresponding research question.}
 \label{tab:rq-matrix}
 \centering
 \scriptsize
-\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}Xcccc@{}}
+\begin{tabularx}{\linewidth}{@{}>{{\raggedright\arraybackslash}}Xcccc@{}}
 \toprule
 \textbf{Extraction Field} & \textbf{RQ1} & \textbf{RQ2} & \textbf{RQ3} & \textbf{RQ4} \\
 \midrule
@@ -68,25 +276,4 @@ Limitations &  & $\checkmark$ & $\checkmark$ &  \\
 \end{tabularx}
 \end{table}
 
-The present manuscript uses that matrix in two steps. First, it performs corpus-level synthesis based on counts, categories, and recurring patterns across all 54 studies. Second, it supplements the compressed extraction fields with PDF-level inspection of representative papers where deeper context was needed. This second step was necessary for a conference-ready text because ``key findings'' alone are often too short to explain whether a method works because of routing, retrieval, task decomposition, multimodal fusion, or evaluation design. Table~\ref{tab:representative-studies} lists the representative primary studies used to deepen the review narrative.
-
-\begin{table}[t]
-\caption{Representative primary studies used to deepen the review narrative.}
-\label{tab:representative-studies}
-\centering
-\scriptsize
-\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.9cm}>{\raggedright\arraybackslash}p{2.5cm}X@{}}
-\toprule
-\textbf{Study} & \textbf{Task / Setting} & \textbf{Representative Result} \\
-\midrule
-Hybrid SLM and LLM for Edge-Cloud Collaborative Inference~\cite{hao2024hybrid} & GSM8K, HumanEval, NaturalQuestions & Achieves LLM-comparable quality on GSM8K while using 25.8\% of full-cloud LLM cost; only about 3\% of tokens require LLM verification. \\
-Uncertainty-Aware Hybrid Inference~\cite{oh2025uncertainty} & On-device speculative inference & Preserves up to 97.54\% of LLM accuracy, reduces uplink transmissions and LLM computations by 45.93\%, and improves token throughput by 2.54$\times$. \\
-OrchestraLLM~\cite{lee2024orchestrallm} & Dialogue state tracking & Outperforms both SLM and LLM baselines while reducing computational cost by more than 50\%. \\
-TeleOracle~\cite{alabbasi2024teleoracle} & Telecom question answering & Improves Phi-2 to 81.20\% accuracy, roughly 30\% better than the base model, while remaining highly faithful to retrieved telecom context. \\
-Division-of-Thoughts~\cite{shao2025dot} & On-device agents and reasoning & Reduces average reasoning time by 66.12\% and API cost by 83.57\% while maintaining competitive task accuracy. \\
-EnerSafe-Cap~\cite{cao2025enersafe} & Industrial video captioning & Improves over SwinBERT by 19.49 SBERT points and over Qwen2-VL-2B by 8.27 SBERT points on VATEX. \\
-Mixed Distillation~\cite{mixeddistill2024} & Mathematical reasoning & Distilled 7B models outperform GPT-3.5-Turbo on SVAMP after combining CoT and PoT supervision signals. \\
-FIPO~\cite{amarasinghe2025fipo} & Automated optimisation problem formulation & Raises Qwen-2.5 performance from 3\% to 54\% on LPWP via feedback-guided prompt optimisation. \\
-\bottomrule
-\end{tabularx}
-\end{table}
+Following data extraction, a narrative synthesis approach was utilized. Because the included studies operate across diverse domains (e.g., telecommunications, healthcare, software engineering) and report varying metrics, a purely statistical meta-analysis was not feasible. Instead, studies were grouped by their architectural taxonomy, allowing for a comparative analysis of how different orchestration methods and domain constraints impact the performance and efficiency trade-offs between large and small models.
