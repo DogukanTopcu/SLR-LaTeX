@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1775539740.48768 "samplepaper.tex" "samplepaper.pdf" "samplepaper" 1775539741.63467 0
+["pdflatex"] 1775540780.33906 "samplepaper.tex" "samplepaper.pdf" "samplepaper" 1775540781.43507 0
   "/etc/texmf/web2c/texmf.cnf" 1774307257.44755 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0700.600pk" 1775143885.06794 17356 343fd964342bcdd87e9cd3eed384d78b ""
   "/home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk" 1775143886.74796 22480 dd0398d6832bf10081ffe5002e92a6a3 ""
@@ -7,6 +7,7 @@
   "/home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk" 1775143886.142 31928 25585d7b8c86af98f917cce9444c6cfb ""
   "/home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk" 1775143888.13997 40112 043364b44821b88ec1189a9269e703fb ""
   "/home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0500.600pk" 1775146949.8185 12496 69582d456dc51f288cb08f9977cf020d ""
+  "/home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk" 1775540083.92603 14860 947abfeacac33f79388aea507670845c ""
   "/home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk" 1775143884.71493 16976 ba91e12f8fb58310c6978d844c336488 ""
   "/home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk" 1775143887.43897 21332 7ce1dc384b390ee55162c08f931db8c4 ""
   "/home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk" 1775143887.78597 23784 9c39919b9e9ea7f45f2320550386c662 ""
@@ -20,6 +21,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm" 1136768653 3584 13049b61b922a28b158a38aeff75ee9b ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0500.tfm" 1136768653 3584 178baad7ffca7f5d3428a83bd7cc64c3 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm" 1136768653 3584 291a5713401683441e0a8c8f4417b17b ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0700.tfm" 1136768653 3584 cf973739aac7ab6247f9150296af7954 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0900.tfm" 1136768653 3584 d3d8ac8b25ca19c0a40b86a5db1e8ccc ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1136768653 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
@@ -178,13 +180,13 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1774307290 6800798 9c7380112eb3a947e6949055ad6d8bd5 ""
   "aliascnt.sty" 1775538947.43245 498 8448538725a50d9bd56ad086d063466f ""
   "llncs.cls" 1775538947.43545 43402 5fb5a2dc40571aa40f3d199c00cbb986 ""
-  "samplepaper.aux" 1775539741.541 11288 c8327ab2ee73fba05e1524620a4e2de8 "pdflatex"
+  "samplepaper.aux" 1775540781.35444 9377 9e65bce6e069e16707c59ab66b35b656 "pdflatex"
   "samplepaper.tex" 1775538947.44645 1659 57725ab6c4d1f0a2366bd5ad403b9163 ""
   "sections/00-abstract.tex" 1775538947.44645 1603 89b466c0ebfe3bb034857f8868394083 ""
   "sections/01-introduction.tex" 1775539737.14901 7609 7b99123c162a381c94a1962baff1a051 ""
   "sections/02-related-works.tex" 1775538947.44696 2498 feab3836e88ce9a7710f9b3ec17f4ba4 ""
   "sections/03-research-methodology.tex" 1775538947.44696 15753 88afbe944c868cfc5c4c3bc131c89be2 ""
-  "sections/04-findings.tex" 1775539737.70584 39624 3487a08784f5a19b72fd4b758e46a1f5 ""
+  "sections/04-findings.tex" 1775540778.43243 23015 ea85a3d94170d412776188f24a6590ba ""
   "sections/05-threats-to-validity.tex" 1775538947.44745 2647 69d21e3328f05af9fdd260d7a8418f44 ""
   "sections/06-conclusion.tex" 1775538947.44745 2086 1fd39bcca8220ca0896af0302bb51628 ""
   "sections/07-references.tex" 1775539619.43036 13483 4c8af597afa5cd4908fbd2f7ed5d2f5c ""

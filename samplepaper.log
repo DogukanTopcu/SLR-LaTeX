@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.24)  7 APR 2026 08:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.24)  7 APR 2026 08:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -871,444 +871,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--229
 []|\T1/cmr/bx/n/9 Architecture
  []
 
-[6]) (./sections/04-findings.tex [7] [8]
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
-* v-part:(T,H,B)=(28.45274pt, 738.0645pt, 28.45274pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=557.38951pt
-* \textheight=738.0645pt
-* \oddsidemargin=-43.81725pt
-* \evensidemargin=-43.81725pt
-* \topmargin=-71.81725pt
-* \headheight=12.0pt
-* \headsep=16.0pt
-* \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=90.0pt
-* \marginparsep=11.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-
-Overfull \hbox (3.62534pt too wide) in paragraph at lines 33--33
-[]|\T1/cmr/m/n/10 Untuned|  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
-[]|\T1/cmr/m/n/10 62%
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--47
-[]|\T1/cmr/m/n/10 15%
- []
-
-
-Overfull \hbox (8.30843pt too wide) in paragraph at lines 49--49
-[]|\T1/cmr/m/n/10 BERTScore|  
- []
-
-
-Overfull \hbox (9.61366pt too wide) in paragraph at lines 51--51
-[]|\T1/cmr/m/n/10 Comparison|  
- []
-
-
-Overfull \hbox (7.44753pt too wide) in paragraph at lines 53--53
-[]|\T1/cmr/m/n/10 CodeBLEU|  
- []
-
-
-Overfull \hbox (3.86507pt too wide) in paragraph at lines 57--57
-[]|\T1/cmr/m/n/10 Perplexity, 
- []
-
-
-Overfull \hbox (1.40366pt too wide) in paragraph at lines 57--57
-\T1/cmr/m/n/10 AdamW|  
- []
-
-
-Overfull \hbox (10.457pt too wide) in paragraph at lines 57--57
-[]|\T1/cmr/m/n/10 Perplexity 
- []
-
-
-Overfull \hbox (14.17831pt too wide) in paragraph at lines 59--59
-[]|\T1/cmr/m/n/10 Standalone 
- []
-
-
-Overfull \hbox (14.17831pt too wide) in paragraph at lines 59--59
-[]|\T1/cmr/m/n/10 Standalone 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--59
-[]|\T1/cmr/m/n/10 44%
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--59
-\T1/cmr/m/n/10 PRB
- []
-
-
-Overfull \hbox (6.40244pt too wide) in paragraph at lines 61--61
-[]|\T1/cmr/m/n/10 RaDialog 
- []
-
-
-Overfull \hbox (5.2916pt too wide) in paragraph at lines 61--61
-[]|\T1/cmr/m/n/10 MedViT, 
- []
-
-
-Overfull \hbox (13.69966pt too wide) in paragraph at lines 63--63
-\T1/cmr/m/n/10 Gen/Detection|  
- []
-
-
-Overfull \hbox (10.02pt too wide) in paragraph at lines 67--67
-[]|\T1/cmr/m/n/10 LeptoConnect 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--67
-[]|\T1/cmr/m/n/10 Edge
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--67
-\T1/cmr/m/n/10 ben-e-
- []
-
-
-Overfull \hbox (7.61415pt too wide) in paragraph at lines 69--69
-\T1/cmr/m/n/10 GraphRAG|  
- []
-
-
-Overfull \hbox (36.94032pt too wide) in paragraph at lines 71--71
-[]|\T1/cmr/m/n/10 Prompt/Workflow|  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--71
-[]|\T1/cmr/m/n/10 Token
- []
-
-
-Overfull \hbox (6.40244pt too wide) in paragraph at lines 79--79
-\T1/cmr/m/n/10 (Mamba)|  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
-[]|\T1/cmr/m/n/10 Token
- []
-
-
-Overfull \hbox (7.38176pt too wide) in paragraph at lines 83--83
-[]|\T1/cmr/m/n/10 Hallucination 
- []
-
-
-Overfull \hbox (0.65384pt too wide) in paragraph at lines 83--83
-[]|\T1/cmr/m/n/10 Mistral- 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
-[]|\T1/cmr/m/n/10 $23
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
-\T1/cmr/m/n/10 API
- []
-
-
-Overfull \hbox (2.99394pt too wide) in paragraph at lines 91--91
-[]|\T1/cmr/m/n/10 DistilBERT, 
- []
-
-
-Overfull \hbox (1.2648pt too wide) in paragraph at lines 91--91
-\T1/cmr/m/n/10 (BERT)|  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--91
-[]|\T1/cmr/m/n/10 Low
- []
-
-
-Overfull \hbox (10.62105pt too wide) in paragraph at lines 91--91
-\T1/cmr/m/n/10 (FLOPs)| 
- []
-
-
-Overfull \hbox (14.4838pt too wide) in paragraph at lines 93--93
-[]|\T1/cmr/m/n/10 Traditional 
- []
-
-
-Overfull \hbox (8.90182pt too wide) in paragraph at lines 93--93
-[]|\T1/cmr/m/n/10 Negligible 
- []
-
-
-Overfull \hbox (19.72993pt too wide) in paragraph at lines 93--93
-[]|\T1/cmr/m/n/10 Bandwidth
- []
-
-
-Overfull \hbox (2.92451pt too wide) in paragraph at lines 95--95
-\T1/cmr/m/n/10 Gen/Reason|  
- []
-
-
-Overfull \hbox (5.70816pt too wide) in paragraph at lines 95--95
-\T1/cmr/m/n/10 (MMLU)|  
- []
-
-
-Overfull \hbox (4.0671pt too wide) in paragraph at lines 95--95
-[]|\T1/cmr/m/n/10 Carbon
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--95
-[]|\T1/cmr/m/n/10 32-60
- []
-
-
-Overfull \hbox (4.17818pt too wide) in paragraph at lines 95--95
-\T1/cmr/m/n/10 mJ/tok| 
- []
-
-
-Overfull \hbox (27.56393pt too wide) in paragraph at lines 97--97
-[]|\T1/cmr/m/n/10 Outperformed 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
-[]|\T1/cmr/m/n/10 Lower
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
-[]|\T1/cmr/m/n/10 Lower
- []
-
-
-Overfull \hbox (4.514pt too wide) in paragraph at lines 99--99
-\T1/cmr/m/n/10 (Hits@1)|  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--101
-[]|\T1/cmr/m/n/10 1.2k
- []
-
-
-Overfull \hbox (2.99394pt too wide) in paragraph at lines 103--103
-[]|\T1/cmr/m/n/10 DistilBERT, 
- []
-
-
-Overfull \hbox (33.69112pt too wide) in paragraph at lines 103--103
-[]|\T1/cmr/m/n/10 Comparison/Ens.|  
- []
-
-
-Overfull \hbox (2.65335pt too wide) in paragraph at lines 103--103
-[]|\T1/cmr/m/n/10 Random 
- []
-
-
-Overfull \hbox (9.61366pt too wide) in paragraph at lines 105--105
-[]|\T1/cmr/m/n/10 Comparison|  
- []
-
-
-Overfull \hbox (4.32695pt too wide) in paragraph at lines 107--107
-[]|\T1/cmr/m/n/10 Heavyweight 
- []
-
-
-Overfull \hbox (21.39877pt too wide) in paragraph at lines 107--107
-[]|\T1/cmr/m/n/10 Heavyweight 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
-[]|\T1/cmr/m/n/10 High
- []
-
-
-Overfull \hbox (9.61366pt too wide) in paragraph at lines 111--111
-[]|\T1/cmr/m/n/10 Comparison|  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
-[]|\T1/cmr/m/n/10 Low
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
-\T1/cmr/m/n/10 hard-
- []
-
-
-Overfull \hbox (3.6531pt too wide) in paragraph at lines 117--117
-\T1/cmr/m/n/10 through- 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
-[]|\T1/cmr/m/n/10 45.9%
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
-\T1/cmr/m/n/10 CPU
- []
-
-
-Overfull \hbox (10.54765pt too wide) in paragraph at lines 119--119
-[]|\T1/cmr/m/n/10 Commonsense 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--119
-[]|\T1/cmr/m/n/10 >80%
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--119
-\T1/cmr/m/n/10 re-duc-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
-[]|\T1/cmr/m/n/10 AWS
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
-\T1/cmr/m/n/10 Far-
- []
-
-
-Overfull \hbox (5.70816pt too wide) in paragraph at lines 123--123
-\T1/cmr/m/n/10 (MMLU)|  
- []
-
-
-Overfull \hbox (5.70816pt too wide) in paragraph at lines 123--123
-\T1/cmr/m/n/10 (MMLU)|  
- []
-
-
-Overfull \hbox (46.93788pt too wide) in paragraph at lines 125--125
-[]|\T1/cmr/m/n/10 Central/Hybrid/Dec|  
- []
-
-
-Overfull \hbox (10.11354pt too wide) in paragraph at lines 125--125
-[]|\T1/cmr/m/n/10 Throughput|  
- []
-
-
-Overfull \hbox (18.61513pt too wide) in paragraph at lines 129--129
-[]|\T1/cmr/m/n/10 Genomics/Code|  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
-[]|\T1/cmr/m/n/10 83.5%
- []
-
-
-Overfull \hbox (9.04068pt too wide) in paragraph at lines 135--135
-\T1/cmr/m/n/10 (SVAMP)|  
- []
-
-
-Overfull \hbox (24.75906pt too wide) in paragraph at lines 135--135
-[]|\T1/cmr/m/n/10 WizardMath- 
- []
-
-
-Overfull \hbox (1.82022pt too wide) in paragraph at lines 135--135
-\T1/cmr/m/n/10 (CodeL- 
- []
-
-[9
-
-
-
-] [10] [11] [12] [13] [14] [15] [16
-
-
-] [17] [18] [19] [20])
-(./sections/05-threats-to-validity.tex) (./sections/06-conclusion.tex [21])
-(./sections/07-references.tex [22] [23] [24]) [25] (./samplepaper.aux)
+[6]) (./sections/04-findings.tex [7] [8] [9] [10] [11] [12] [13])
+(./sections/05-threats-to-validity.tex) (./sections/06-conclusion.tex [14])
+(./sections/07-references.tex [15] [16] [17]) [18] (./samplepaper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 29373 strings out of 476182
- 665822 string characters out of 5795595
- 2125975 words of memory out of 5000000
- 50992 multiletter control sequences out of 15000+600000
- 572684 words of font info for 70 fonts, out of 8000000 for 9000
+ 29371 strings out of 476182
+ 665743 string characters out of 5795595
+ 1955975 words of memory out of 5000000
+ 50989 multiletter control sequences out of 15000+600000
+ 573450 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  135i,15n,140p,1605b,3572s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.6
-00pk> </home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx070
-0.600pk> </home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm
-0500.600pk> </home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/e
-cbx1000.600pk> </home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecti1000.600pk> </home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappe
-n/ec/ecbx1200.600pk> </home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jkna
-ppen/ec/tcrm0900.600pk> </home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/j
-knappen/ec/ecbx0900.600pk> </home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfou
-r/jknappen/ec/ectt0900.600pk> </home/berkhan/.texlive2023/texmf-var/fonts/pk/lj
-four/jknappen/ec/ecrm0900.600pk> </home/berkhan/.texlive2023/texmf-var/fonts/pk
-/ljfour/jknappen/ec/ecrm1000.600pk> </home/berkhan/.texlive2023/texmf-var/fonts
-/pk/ljfour/jknappen/ec/ecbx1440.600pk></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msa
-m7.pfb>
-Output written on samplepaper.pdf (25 pages, 251298 bytes).
+ </home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.6
+00pk> </home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm070
+0.600pk> </home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx
+0700.600pk> </home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/e
+crm0500.600pk> </home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/e
+c/ecbx1000.600pk> </home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappe
+n/ec/ecti1000.600pk> </home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jkna
+ppen/ec/ecbx1200.600pk> </home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/j
+knappen/ec/tcrm0900.600pk> </home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfou
+r/jknappen/ec/ecbx0900.600pk> </home/berkhan/.texlive2023/texmf-var/fonts/pk/lj
+four/jknappen/ec/ectt0900.600pk> </home/berkhan/.texlive2023/texmf-var/fonts/pk
+/ljfour/jknappen/ec/ecrm0900.600pk> </home/berkhan/.texlive2023/texmf-var/fonts
+/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/berkhan/.texlive2023/texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecbx1440.600pk></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/
+msam7.pfb>
+Output written on samplepaper.pdf (18 pages, 235074 bytes).
 PDF statistics:
- 639 PDF objects out of 1000 (max. 8388607)
- 123 compressed objects within 2 object streams
+ 619 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
