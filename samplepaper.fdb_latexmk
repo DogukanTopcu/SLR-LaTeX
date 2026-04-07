@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1775540780.33906 "samplepaper.tex" "samplepaper.pdf" "samplepaper" 1775540781.43507 0
+["pdflatex"] 1775541460.44068 "samplepaper.tex" "samplepaper.pdf" "samplepaper" 1775541461.5677 0
   "/etc/texmf/web2c/texmf.cnf" 1774307257.44755 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0700.600pk" 1775143885.06794 17356 343fd964342bcdd87e9cd3eed384d78b ""
   "/home/berkhan/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk" 1775143886.74796 22480 dd0398d6832bf10081ffe5002e92a6a3 ""
@@ -180,13 +180,13 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1774307290 6800798 9c7380112eb3a947e6949055ad6d8bd5 ""
   "aliascnt.sty" 1775538947.43245 498 8448538725a50d9bd56ad086d063466f ""
   "llncs.cls" 1775538947.43545 43402 5fb5a2dc40571aa40f3d199c00cbb986 ""
-  "samplepaper.aux" 1775540781.35444 9377 9e65bce6e069e16707c59ab66b35b656 "pdflatex"
+  "samplepaper.aux" 1775541461.48205 11403 d6a63a8ace188cb584ac90834b229a31 "pdflatex"
   "samplepaper.tex" 1775538947.44645 1659 57725ab6c4d1f0a2366bd5ad403b9163 ""
   "sections/00-abstract.tex" 1775538947.44645 1603 89b466c0ebfe3bb034857f8868394083 ""
   "sections/01-introduction.tex" 1775539737.14901 7609 7b99123c162a381c94a1962baff1a051 ""
   "sections/02-related-works.tex" 1775538947.44696 2498 feab3836e88ce9a7710f9b3ec17f4ba4 ""
   "sections/03-research-methodology.tex" 1775538947.44696 15753 88afbe944c868cfc5c4c3bc131c89be2 ""
-  "sections/04-findings.tex" 1775540778.43243 23015 ea85a3d94170d412776188f24a6590ba ""
+  "sections/04-findings.tex" 1775541458.05903 25446 d0e859c68651746c67dcee532e79829b ""
   "sections/05-threats-to-validity.tex" 1775538947.44745 2647 69d21e3328f05af9fdd260d7a8418f44 ""
   "sections/06-conclusion.tex" 1775538947.44745 2086 1fd39bcca8220ca0896af0302bb51628 ""
   "sections/07-references.tex" 1775539619.43036 13483 4c8af597afa5cd4908fbd2f7ed5d2f5c ""

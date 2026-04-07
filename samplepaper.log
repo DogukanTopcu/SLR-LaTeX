@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.24)  7 APR 2026 08:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.24)  7 APR 2026 08:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -871,9 +871,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--229
 []|\T1/cmr/bx/n/9 Architecture
  []
 
-[6]) (./sections/04-findings.tex [7] [8] [9] [10] [11] [12] [13])
-(./sections/05-threats-to-validity.tex) (./sections/06-conclusion.tex [14])
-(./sections/07-references.tex [15] [16] [17]) [18] (./samplepaper.aux)
+[6]) (./sections/04-findings.tex [7] [8] [9] [10] [11] [12]
+
+LaTeX Warning: Citation ` prompt2024' on page 13 undefined on input line 98.
+
+[13]) (./sections/05-threats-to-validity.tex) (./sections/06-conclusion.tex
+[14]) (./sections/07-references.tex [15] [16] [17]) [18] (./samplepaper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -906,9 +909,9 @@ lic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/
 msam7.pfb>
-Output written on samplepaper.pdf (18 pages, 235074 bytes).
+Output written on samplepaper.pdf (18 pages, 236083 bytes).
 PDF statistics:
- 619 PDF objects out of 1000 (max. 8388607)
+ 620 PDF objects out of 1000 (max. 8388607)
  111 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
