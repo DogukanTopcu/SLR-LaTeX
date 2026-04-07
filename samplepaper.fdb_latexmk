@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1775563126.4177 "/Users/bakiceltik/SLR-LaTeX/samplepaper.tex" "samplepaper.pdf" "samplepaper" 1775563127.89745 0
+["pdflatex"] 1775583345.85482 "/Users/bakiceltik/SLR-LaTeX/samplepaper.tex" "samplepaper.pdf" "samplepaper" 1775583347.69665 0
   "/Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0700.600pk" 1774186925.96105 17356 99ecc8816cb0960004159524818cfce7 ""
   "/Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk" 1774186927.09795 22480 63255b967a23e9432b88f931bd50ad7c ""
   "/Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk" 1774186926.44889 25396 45cab27c0a1edc3c70b0653cda3d9248 ""
@@ -179,16 +179,16 @@
   "/usr/local/texlive/2026basic/texmf.cnf" 1772405582 628 bbc09d6d38872d53c11bb48dc9b14e88 ""
   "aliascnt.sty" 1775310885.19295 498 8448538725a50d9bd56ad086d063466f ""
   "llncs.cls" 1775310742.84914 43402 5fb5a2dc40571aa40f3d199c00cbb986 ""
-  "samplepaper.aux" 1775563127.79449 10191 5da204557abf776b19d818aa32d877bb "pdflatex"
+  "samplepaper.aux" 1775583347.60033 10179 05ccacb56f449bb82be995b532b7962b "pdflatex"
   "samplepaper.tex" 1775563126.21122 1677 bbdea71ca64cc97670564486b8592693 ""
   "sections/00-abstract.tex" 1774180372.53204 1603 89b466c0ebfe3bb034857f8868394083 ""
   "sections/01-introduction.tex" 1775563119.07905 6468 7f6e57af4e0d9f2e2fa50d223352163c ""
-  "sections/02-related-works.tex" 1775325883.33653 2498 feab3836e88ce9a7710f9b3ec17f4ba4 ""
+  "sections/02-related-works.tex" 1775583343.33838 2503 230b36c48b364b939e091070301f87f4 ""
   "sections/03-research-methodology.tex" 1775559784.22456 15753 88afbe944c868cfc5c4c3bc131c89be2 ""
-  "sections/04-findings.tex" 1775559784.225 26037 b5987bf221c396e494f0b478c2c4c6cc ""
+  "sections/04-findings.tex" 1775582397.26756 26048 318db60ffca5647eed5a6340250078ef ""
   "sections/05-threats-to-validity.tex" 1775312604.72398 2647 69d21e3328f05af9fdd260d7a8418f44 ""
   "sections/06-conclusion.tex" 1775312604.72427 2086 1fd39bcca8220ca0896af0302bb51628 ""
-  "sections/07-references.tex" 1775559784.22632 13483 4c8af597afa5cd4908fbd2f7ed5d2f5c ""
+  "sections/07-references.tex" 1775582309.33266 13245 713b67ff59b6e174ecc7f2c5d7acea09 ""
   (generated)
   "samplepaper.aux"
   "samplepaper.log"
