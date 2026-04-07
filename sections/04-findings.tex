@@ -8,16 +8,20 @@ Before detailing the specific findings related to the research questions, this s
     \item \textbf{Year:} Indicates the year the study was formally published or released as a preprint.
     \item \textbf{SLM(s):} Lists the specific small language model(s) evaluated, fine-tuned, or deployed within the proposed system.
     \item \textbf{LLM(s):} Specifies the large language model(s) utilized either as a performance baseline, a teacher for distillation, or a cloud-based fallback.
-    \item \textbf{Architecture (Arch.):} Describes the structural orchestration of the system, such as hybrid edge-cloud, multi-agent ensemble, or retrieval-augmented generation.
-    \item \textbf{Task:} Details the specific downstream application, domain, or benchmark evaluated in the study.
+    \item \textbf{Architecture (Arch.):} Describes the overarching structural design of the system, such as hybrid edge-cloud, multi-agent ensemble, or retrieval-augmented generation.
+    \item \textbf{Orchestration Method:} Specifies the exact mechanism used to coordinate models and tasks, such as token-level routing, prompt-guided fusion, or majority voting.
+    \item \textbf{Agent Count:} Indicates the number of distinct agents, roles, or expert models operating within the proposed system.
+    \item \textbf{Task Type:} Details the specific downstream application, domain, or computational problem evaluated in the study.
+    \item \textbf{Dataset:} Identifies the specific benchmarks, open-source datasets, or proprietary clinical/industrial data used to train and evaluate the system.
     \item \textbf{Metrics:} Outlines the primary evaluation criteria used to assess model performance, efficiency, and resource consumption.
-    \item \textbf{LLM Base:} Reports the baseline performance score of the standalone large language model.
-    \item \textbf{SLM Base:} Reports the baseline performance score of the standalone small language model.
-    \item \textbf{Accuracy (Acc.):} Presents the final performance or accuracy metric achieved by the proposed hybrid or SLM-centered architecture.
-    \item \textbf{Latency (Lat.):} Captures the inference speed, time-to-first-token, or overall time delay reported by the authors.
-    \item \textbf{Cost:} Highlights any reported financial savings regarding API usage or computational reductions relative to full LLM inference.
-    \item \textbf{Energy (Eng.):} Details power consumption, Joules-per-token, or carbon footprint implications, if measured by the authors.
+    \item \textbf{LLM Baseline:} Reports the baseline performance score of the standalone large language model.
+    \item \textbf{SLM Baseline:} Reports the baseline performance score of the standalone small language model.
+    \item \textbf{Accuracy:} Presents the final performance or accuracy metric achieved by the proposed hybrid or SLM-centered architecture.
+    \item \textbf{Latency (ms):} Captures the inference speed, time-to-first-token, or overall time delay reported by the authors.
+    \item \textbf{Cost (\$):} Highlights any reported financial savings regarding API usage or computational reductions relative to full LLM inference.
+    \item \textbf{Energy:} Details power consumption, Joules-per-token, or carbon footprint implications, if measured by the authors.
     \item \textbf{Key Findings:} Summarizes the core takeaway and primary contribution of the study regarding SLM-LLM orchestration.
+    \item \textbf{Limitations:} Highlights the constraints, failure modes, data dependencies, or hardware bottlenecks identified by the authors.
 \end{itemize}
 
 Because the full comparative analysis table is located in the online appendix, the mapping of Study IDs to their respective bibliographic citations is provided below for quick reference:
