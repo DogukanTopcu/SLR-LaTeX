@@ -4,7 +4,7 @@ Large language models (LLMs) excel at reasoning, coding, and multimodal tasks~\c
 
 As a result of these limitations, small language models (SLMs) are emerging as a strong alternative. 
 Their ability to run on local machines provides a significant advantage in terms of data security and deployment autonomy, while also offering substantially lower operational costs than cloud-scale LLM setups~\cite{tigani2025cpu,aydin2025integrated}. 
-Moreover, recent studies show that SLMs can be adapted to specific domains via fine-tuning or distillation, enabling competitive performance in specialized tasks~\cite{xie2025fusing,distillingmath2024,rethinkllm2025}. 
+Moreover, recent studies show that SLMs can be adapted to specific domains via fine-tuning or distillation, enabling competitive performance in specialized tasks~\cite{xie2025fusing,zhu2024distilling,rethinkllm2025}. 
 In practical systems, SLMs are also attractive because they integrate well with explicit control modules (e.g., rule-based filters, routing/verification thresholds, or planners), improving controllability and reliability beyond prompt-only solutions~\cite{aydin2025integrated,qwqrouting2025,ji2025raprag}. 
 However, SLMs still struggle to match the broad expertise and robust reasoning of massive frontier models, especially on tasks requiring deep contextual understanding and extensive world knowledge~\cite{egi2025,dorfner2024comparing}. 
 Therefore, framing the problem as a simple ``SLM or LLM?'' competition is no longer sufficient; instead, current research investigates when a single SLM is adequate, when an LLM is necessary, and when hybrid or agent-based architectures are preferable~\cite{hao2024hybrid,shao2025dot,multiagent2025}.
@@ -79,7 +79,7 @@ for tree={
     [{{RQ4: Domain suitability~\cite{xie2025fusing,aydin2025integrated,rethinkllm2025}}}
       [{{Fine-tuned SLMs / domain fusion~\cite{xie2025fusing}}}]
       [{{Privacy-sensitive local domains~\cite{aydin2025integrated}}}]
-      [{{Where SLMs fall short (reasoning gap)~\cite{distillingmath2024}}}]
+      [{{Where SLMs fall short (reasoning gap)~\cite{zhu2024distilling}}}]
     ]
   ]
   [{{Contributions}}
