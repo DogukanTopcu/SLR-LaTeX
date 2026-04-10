@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.4)  8 APR 2026 21:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.4)  10 APR 2026 22:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -725,15 +725,12 @@ Overfull \hbox (13.86475pt too wide) in paragraph at lines 15--16
 []\T1/cmr/bx/n/10 Dataset: \T1/cmr/m/n/10 Iden-ti-fies the spe-cific bench-marks, open-source datasets, or pro-pri-etary clin-i-cal/industrial
  []
 
-[8] [9] [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11] [12]
-Overfull \hbox (4.47261pt too wide) in paragraph at lines 108--109
+[8] [9] [10] [11] [12]
+Overfull \hbox (4.47261pt too wide) in paragraph at lines 95--96
 \T1/cmr/m/n/10 oriented stud-ies, in-clud-ing code cor-rec-tion, type and call-graph anal-y-sis (S42), of-fline robotic decision-
  []
 
-[13]) (./sections/05-threats-to-validity.tex) (./sections/06-conclusion.tex [14]) (./sections/07-references.tex [15] [16] [17]) [18] (./samplepaper.aux)
+) (./sections/05-threats-to-validity.tex [13]) (./sections/06-conclusion.tex [14]) (./sections/07-references.tex [15] [16] [17]) [18] (./samplepaper.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
@@ -746,11 +743,11 @@ Here is how much of TeX's memory you used:
  58431 multiletter control sequences out of 15000+600000
  642336 words of font info for 74 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 135i,14n,140p,1633b,3452s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 135i,14n,140p,1988b,3452s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0700.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0500.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on samplepaper.pdf (18 pages, 229954 bytes).
+Output written on samplepaper.pdf (18 pages, 228540 bytes).
 PDF statistics:
- 602 PDF objects out of 1000 (max. 8388607)
+ 601 PDF objects out of 1000 (max. 8388607)
  107 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)

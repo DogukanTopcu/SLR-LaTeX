@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1775672861.13532 "/Users/bakiceltik/SLR-LaTeX/samplepaper.tex" "samplepaper.pdf" "samplepaper" 1775672861.9437 0
+["pdflatex"] 1775850998.21872 "/Users/bakiceltik/SLR-LaTeX/samplepaper.tex" "samplepaper.pdf" "samplepaper" 1775850999.03105 0
   "/Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0700.600pk" 1774186925.96105 17356 99ecc8816cb0960004159524818cfce7 ""
   "/Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk" 1774186927.09795 22480 63255b967a23e9432b88f931bd50ad7c ""
   "/Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk" 1774186926.44889 25396 45cab27c0a1edc3c70b0653cda3d9248 ""
@@ -12,7 +12,7 @@
   "/Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk" 1774186926.19581 31872 a3af52a027507d3bc256b3114a9c7555 ""
   "/Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk" 1774186927.33138 17492 491974b62fd75d089d488f08112278d8 ""
   "/Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk" 1774186926.8656 10448 27a48b34cbf2deecca3d7dedab6cb9b4 ""
-  "/Users/bakiceltik/SLR-LaTeX/samplepaper.tex" 1775593382.07165 1689 1f8d680803dabc123a0b75e3d4d965a1 ""
+  "/Users/bakiceltik/SLR-LaTeX/samplepaper.tex" 1775846562.74718 1689 1f8d680803dabc123a0b75e3d4d965a1 ""
   "/usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecbx0700.tfm" 1136768653 3584 ca0c423beaacd28d53ddce5a826cd558 ""
   "/usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecbx0900.tfm" 1136768653 3584 1a7de6c99457381c64abc1a7c545505f ""
   "/usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1136768653 3584 2d666ecf6d466d8b007246bc2f94d9da ""
@@ -184,16 +184,16 @@
   "/usr/local/texlive/2026basic/texmf.cnf" 1772405582 628 bbc09d6d38872d53c11bb48dc9b14e88 ""
   "aliascnt.sty" 1775310885.19295 498 8448538725a50d9bd56ad086d063466f ""
   "llncs.cls" 1775310742.84914 43402 5fb5a2dc40571aa40f3d199c00cbb986 ""
-  "samplepaper.aux" 1775672861.89493 8879 44775b434f18fc17a6aed2220bddffc7 "pdflatex"
-  "samplepaper.tex" 1775593382.07165 1689 1f8d680803dabc123a0b75e3d4d965a1 ""
+  "samplepaper.aux" 1775850998.98267 9091 e67514f9ae71b483684603feced19739 "pdflatex"
+  "samplepaper.tex" 1775846562.74718 1689 1f8d680803dabc123a0b75e3d4d965a1 ""
   "sections/00-abstract.tex" 1774180372.53204 1603 89b466c0ebfe3bb034857f8868394083 ""
   "sections/01-introduction.tex" 1775563119.07905 6468 7f6e57af4e0d9f2e2fa50d223352163c ""
   "sections/02-related-works.tex" 1775672859.80492 2153 15bdfac78db3af3d41006ab0d251dd4d ""
   "sections/03-research-methodology.tex" 1775559784.22456 15753 88afbe944c868cfc5c4c3bc131c89be2 ""
-  "sections/04-findings.tex" 1775654748.61195 24438 1eaa381b5c46a3eeb45f172132aeff15 ""
+  "sections/04-findings.tex" 1775850997.20598 23153 cb30d526adfbabb8dca89b827672fcee ""
   "sections/05-threats-to-validity.tex" 1775312604.72398 2647 69d21e3328f05af9fdd260d7a8418f44 ""
   "sections/06-conclusion.tex" 1775312604.72427 2086 1fd39bcca8220ca0896af0302bb51628 ""
-  "sections/07-references.tex" 1775593129.34095 13244 1875c54bcb1ff180030aab300e337adf ""
+  "sections/07-references.tex" 1775850127.65057 13244 1875c54bcb1ff180030aab300e337adf ""
   (generated)
   "samplepaper.aux"
   "samplepaper.log"
