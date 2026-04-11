@@ -18,78 +18,24 @@ Motivated by these trends, this review analyzes when a single SLM is sufficient,
 The main contributions of this review are as follows: (1) It provides a synthesized overview of 54 studies covering cloud-based monolithic LLMs, hybrid SLM--LLM architectures, the performance of fine-tuned SLMs versus large models, and multi-agent workflows. (2) It reframes the literature around four distinct practical research questions: Performance, Efficiency, Architecture, and Domain Suitability. (3) It creates an analytical review matrix that reveals the commonalities and differences among the studies, mapping which specific research question each study addresses.
 \begin{figure}[htbp]
 \centering
-\resizebox{\columnwidth}{!}{%
-\begin{forest}
-for tree={
-  grow'=east,
-  parent anchor=east,
-  child anchor=west,
-  anchor=west,
-  align=left,
-  edge={draw=red!65, line width=0.7pt},
-  calign=center,
-  edge path={
-    \noexpand\path[\forestoption{edge}]
-    (!u.parent anchor) -- ++(12pt,0) |- (.child anchor)\forestoption{edge label};
-  },
-  l sep=16pt,
-  s sep=14pt,
-  font=\small,
-  rounded corners,
-  draw=red!60,
-  line width=0.6pt,
-  fill=red!3,
-  inner xsep=7pt,
-  inner ysep=4pt,
-}
-[{{SLR: Hybrid \& SLM Systems}}
-  [{{Motivation (Intro)}}
-    [{{LLM constraints: cost, latency, privacy}}]
-    [{{SLM opportunities: local, adaptable, controllable}}]
-    [{{System view: hybrid / routing / agents}}]
-  ]
-  [{{Corpus \& Method}}
-    [{{PRISMA + Selection}}]
-    [{{Data extraction (54 studies)}}]
-    [{{Taxonomy / Labels (this review)}}]
-  ]
-  [{{Models / Architectural Families}}
-    [{{Single SLM (local/on-device)}}]
-    [{{Hybrid SLM+LLM (edge--cloud)}}]
-    [{{Multi-agent systems}}]
-    [{{RAG-centric pipelines}}]
-    [{{Control / routing modules}}]
-  ]
-  [{{Research Questions (RQs)}}
-    [{{RQ1: Performance}}
-      [{{Hybrid SLM+LLM (draft--verify)}}]
-      [{{Multi-agent collaboration}}]
-      [{{Self-reflective / judge-in-the-loop}}]
-    ]
-    [{{RQ2: Efficiency}}
-      [{{Latency / VRAM / cost proxies}}]
-      [{{Energy / energy-per-token}}]
-      [{{Edge feasibility}}]
-    ]
-    [{{RQ3: Architecture}}
-      [{{RAG + rerank / long-context support}}]
-      [{{Planner / adaptive retrieval}}]
-      [{{Expert routing / orchestration}}]
-    ]
-    [{{RQ4: Domain suitability}}
-      [{{Fine-tuned SLMs / domain fusion}}]
-      [{{Privacy-sensitive local domains}}]
-      [{{Where SLMs fall short (reasoning gap)}}]
-    ]
-  ]
-  [{{Contributions}}
-    [{{(1) 54-study synthesis}}]
-    [{{(2) RQ framing}}]
-    [{{(3) Review matrix}}]
-  ]
-]
-\end{forest}
-}
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.28\linewidth} >{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Section} & \textbf{Key Elements} \\
+\midrule
+\textbf{Review focus} & SLR: Hybrid \& SLM Systems \\
+\textbf{Motivation (Intro)} & LLM constraints: cost, latency, privacy; SLM opportunities: local, adaptable, controllable; system view: hybrid, routing, and agent-based designs \\
+\textbf{Corpus \& Method} & PRISMA + selection; data extraction (54 studies); taxonomy and labels defined in this review \\
+\textbf{Models / Architectural Families} & Single SLM (local/on-device); Hybrid SLM+LLM (edge--cloud); Multi-agent systems; RAG-centric pipelines; Control and routing modules \\
+\textbf{RQ1: Performance} & Hybrid SLM+LLM (draft--verify); Multi-agent collaboration; Self-reflective or judge-in-the-loop pipelines \\
+\textbf{RQ2: Efficiency} & Latency, VRAM, and cost proxies; Energy or energy-per-token; Edge feasibility \\
+\textbf{RQ3: Architecture} & RAG + rerank or long-context support; Planner or adaptive retrieval; Expert routing or orchestration \\
+\textbf{RQ4: Domain suitability} & Fine-tuned SLMs or domain fusion; Privacy-sensitive local domains; Where SLMs fall short (reasoning gap) \\
+\textbf{Contributions} & (1) 54-study synthesis; (2) RQ framing; (3) Review matrix \\
+\bottomrule
+\end{tabularx}
 \caption{Overview of the review structure and taxonomy used in this SLR (synthesized from the reviewed corpus).}
 \label{fig:slr-overview}
 \end{figure}
