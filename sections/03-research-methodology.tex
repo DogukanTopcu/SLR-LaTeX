@@ -1,185 +1,38 @@
 \section{Research Methodology}
 \label{sec:methodology}
 
+\subsection{Research Questions}
+\label{sec:research_questions}
+
+To systematically evaluate the technical and operational trade-offs between monolithic, hybrid, and multi-agent architectures, the review protocol is structured around the following four core research questions (RQs):
+
+\begin{itemize}
+    \item \textbf{RQ1 (Performance):} How does the performance (accuracy/efficacy) of Multi-agent SLMs or Hybrid Architectures (LLM + SLM) compare to single Monolithic LLMs in specific reasoning and classification tasks?
+    
+    \item \textbf{RQ2 (Efficiency):} What is the impact of Hybrid and Multi-agent architectures on computational efficiency, specifically regarding inference cost, latency, and energy consumption, compared to Monolithic models?
+    
+    \item \textbf{RQ3 (Orchestration):} What orchestration and routing mechanisms are employed to manage the division of labor between large and small models in hybrid systems?
+    
+    \item \textbf{RQ4 (Domain Suitability):} In which specific domains (e.g., Healthcare, Coding, Mathematics) do SLMs achieve performance comparable to LLMs, and where do they fail (e.g., long-context reasoning)?
+\end{itemize}
+
 \begin{figure}[htbp]
-  \centering
-  \begin{tikzpicture}[node distance=0.8cm, scale=0.85, transform shape]
-% ── Colours ──────────────────────────────────────────────────────────────────
-\definecolor{boxfill}{RGB}{235,244,255}   % light blue fill
-\definecolor{boxline}{RGB}{100,160,220}   % blue border
-\definecolor{docfill}{RGB}{245,248,252}   % document badge fill
-\definecolor{docline}{RGB}{180,200,220}   % document badge border
-\definecolor{arrowcol}{RGB}{80,80,80}     % arrow colour
-
-% ── Styles ───────────────────────────────────────────────────────────────────
-\tikzset{
-  % Standard rounded-rectangle step box
-  stepbox/.style={
-    rectangle,
-    rounded corners=6pt,
-    draw=boxline,
-    fill=boxfill,
-    line width=0.8pt,
-    text width=4.5cm,
-    align=center,
-    inner ysep=6pt,
-    inner xsep=8pt,
-    font=\footnotesize
-  },
-  % Narrower box for the three parallel steps (3, 4, 5)
-  narrowbox/.style={
-    rectangle,
-    rounded corners=6pt,
-    draw=boxline,
-    fill=boxfill,
-    line width=0.8pt,
-    text width=2.5cm,
-    align=center,
-    inner ysep=6pt,
-    inner xsep=6pt,
-    font=\footnotesize
-  },
-  % Small publication-count badge on the right
-  docbadge/.style={
-    rectangle,
-    rounded corners=4pt,
-    draw=docline,
-    fill=docfill,
-    line width=0.6pt,
-    text width=1.8cm,
-    align=center,
-    inner ysep=4pt,
-    font=\tiny\color{gray!70!black}
-  },
-  % Solid downward arrow
-  solidarrow/.style={
-    ->,
-    >=Stealth,
-    line width=0.8pt,
-    color=arrowcol
-  },
-  % Dashed downward arrow (after main search)
-  dashedarrow/.style={
-    ->,
-    >=Stealth,
-    line width=0.8pt,
-    color=arrowcol,
-    dashed
-  },
-  % Thin dashed leader to badge
-  leader/.style={
-    -,
-    line width=0.5pt,
-    color=docline,
-    dashed
-  }
-}
-
-% ── Start terminal ────────────────────────────────────────────────────────────
-\node (start) [circle, draw=arrowcol, line width=0.8pt,
-               inner sep=3pt] {};
-
-% ── Step 1 ────────────────────────────────────────────────────────────────────
-\node (s1) [stepbox, below=0.45cm of start]
-  {\textbf{Step 1.} Define the research objective\\and research questions};
-
-% ── Step 2 ────────────────────────────────────────────────────────────────────
-\node (s2) [stepbox, below=of s1]
-  {\textbf{Step 2.} Conduct pilot searches};
-
-% ── Steps 3, 4, 5 (parallel row) ─────────────────────────────────────────────
-\node (s4) [narrowbox, below=1.4cm of s2]
-  {\textbf{Step 4.} Identify the data sources};
-
-\node (s3) [narrowbox, left=0.5cm of s4]
-  {\textbf{Step 3.} Define the search string};
-
-\node (s5) [narrowbox, right=0.5cm of s4]
-  {\textbf{Step 5.} Define the inclusion and exclusion criteria};
-
-% ── Step 6 ────────────────────────────────────────────────────────────────────
-\node (s6) [stepbox, below=1.4cm of s4]
-  {\textbf{Step 6.} Perform the main search};
-
-% ── Step 7 ────────────────────────────────────────────────────────────────────
-\node (s7) [stepbox, below=of s6]
-  {\textbf{Step 7.} Read publications by title,\\keywords and abstract};
-
-% ── Step 8 ────────────────────────────────────────────────────────────────────
-\node (s8) [stepbox, below=of s7]
-  {\textbf{Step 8.} Read full texts and analyze references};
-
-% ── Step 9 ────────────────────────────────────────────────────────────────────
-\node (s9) [stepbox, below=of s8]
-  {\textbf{Step 9.} Extract and synthesize data};
-
-% ── End terminal ──────────────────────────────────────────────────────────────
-\node (end) [circle, draw=arrowcol, line width=0.8pt,
-             inner sep=3pt, below=0.45cm of s9] {};
-
-% ── Publication badges ────────────────────────────────────────────────────────
-\node (d1) [docbadge, right=1.2cm of s6] {281 pubs};
-\node (d2) [docbadge, right=1.2cm of s7] {252 pubs};
-\node (d3) [docbadge, right=1.2cm of s8] {57 pubs};
-\node (d4) [docbadge, right=1.2cm of s9] {22 pubs};
-
-% ── Arrows: start → s1 → s2 ──────────────────────────────────────────────────
-\draw[solidarrow] (start) -- (s1);
-\draw[solidarrow] (s1)    -- (s2);
-
-% ── Branch: s2 → s3, s4, s5 ──────────────────────────────────────────────────
-% Drop from s2 to a junction point, then fan out
-\coordinate (junc_down) at ($(s2.south)+(0,-0.55)$);
-
-\draw[solidarrow, -]  (s2.south) -- (junc_down);
-
-% Left branch to s3
-\draw[solidarrow]
-  (junc_down) -| (s3.north);
-
-% Centre branch to s4
-\draw[solidarrow]
-  (junc_down) -- (s4.north);
-
-% Right branch to s5
-\draw[solidarrow]
-  (junc_down) -| (s5.north);
-
-% ── Merge: s3, s4, s5 → s6 ───────────────────────────────────────────────────
-\coordinate (junc_up) at ($(s6.north)+(0,+0.55)$);
-
-\draw[solidarrow, -] (s3.south) |- (junc_up);
-\draw[solidarrow, -] (s4.south) -- (junc_up);
-\draw[solidarrow, -] (s5.south) |- (junc_up);
-\draw[solidarrow]    (junc_up)  -- (s6.north);
-
-% ── Arrows: s6 → s7 → s8 → s9 → end (dashed) ────────────────────────────────
-\draw[dashedarrow] (s6) -- (s7);
-\draw[dashedarrow] (s7) -- (s8);
-\draw[dashedarrow] (s8) -- (s9);
-\draw[solidarrow]  (s9.south) -- (end);
-
-% ── Leader lines to badges ────────────────────────────────────────────────────
-\draw[leader] (s6.east) -- (d1.west);
-\draw[leader] (s7.east) -- (d2.west);
-\draw[leader] (s8.east) -- (d3.west);
-\draw[leader] (s9.east) -- (d4.west);
-
-\end{tikzpicture}
-  \caption{Systematic literature review process}
-  \label{fig:slr-process}
+    \centering
+    \includegraphics[width=0.9\textwidth]{prisma_flowchart.png}
+    \caption{PRISMA 2020 flow diagram for the systematic literature review.}
+    \label{fig:prisma_flowchart}
 \end{figure}
 
 \subsection{Information Sources and Search Strategy}
 \label{sec:search_strategy}
 
-To capture a comprehensive and high-quality corpus of contemporary AI architectures, the literature search was conducted utilizing the Web of Science (WoS) Core Collection. Utilizing WoS as the primary search engine allowed for the retrieval of indexed peer-reviewed journal articles, conference proceedings, and highly cited preprints within a single dataset. The search timeframe was restricted to publications between 2023 and 2026 to reflect the rapid, recent emergence of small and agentic language models.
+To capture a comprehensive and high-quality corpus of contemporary language model architectures, the literature search was conducted utilizing the Web of Science (WoS) Core Collection. Utilizing WoS as the primary search engine allowed for the retrieval of indexed peer-reviewed journal articles, conference proceedings, and highly cited preprints within a single dataset.
 
-The search strategy was designed to capture the intersection of model size, architectural design, and system evaluation. The following Boolean query was applied to the title, abstract, and keyword fields:
+The search strategy was systematically developed by extracting the core concepts from the defined research questions and refining the terminology through initial pilot searches. This iterative process helped identify common synonyms and alternate phrasing used in the literature (e.g., ``Compact Model'' for SLMs, or ``Agentic'' for multi-agent systems). To guarantee that every retrieved study examined the intersection of model size, architectural design, and system evaluation, the final query was structured into four mandatory components. The following Boolean query was applied to the title, abstract, and keyword fields:
 
 \begin{quote}
 ( "Large Language Model*" OR "LLM" OR "Generative AI" OR "Foundation Model*" ) AND 
-( "Small Language Model*" OR "SLM" OR "Compact Model*" OR "Lightweight Model*" OR "TinyLlama" OR "Phi-3" OR "Mistral" OR "Qwen" ) AND 
+( "Small Language Model*" OR "SLM" OR "Compact Model*" OR "Lightweight Model*" ) AND 
 ( "Multi-agent" OR "Hybrid" OR "Orchestration" OR "Routing" OR "Ensemble" OR "Agentic" ) AND 
 ( "Performance" OR "Accuracy" OR "Efficiency" OR "Latency" OR "Cost" OR "Benchmark" )
 \end{quote}
@@ -219,11 +72,6 @@ To systematically isolate systems-level engineering research from the broader ge
         \textbf{Data Quality} & 
         Contains empirical results and experimental validation (e.g., standard benchmarks or custom datasets). & 
         Purely theoretical papers or non-empirical narrative surveys. \\
-        \addlinespace
-        
-        \textbf{Timeframe} & 
-        Published between 2023 and 2026 (capturing the recent emergence of SLM/Agentic architectures). & 
-        Published before 2023. \\
         
         \bottomrule
     \end{tabularx}
@@ -232,13 +80,15 @@ To systematically isolate systems-level engineering research from the broader ge
 \subsection{Study Selection Process}
 \label{sec:study_selection}
 
-The study selection process adhered to the PRISMA 2020 guidelines \cite{page2021prisma}. The initial literature search yielded 116 records. Because the export was generated from a single, centralized database engine (Web of Science), zero duplicate records required manual removal. The progression of the screening process is illustrated in Figure \ref{fig:slr-process}.
+The study selection process strictly adhered to the PRISMA 2020 guidelines \cite{page2021prisma}. The progression of the complete screening funnel, detailing records identified, screened, sought, and assessed, is illustrated in Figure \ref{fig:prisma_flowchart}.
 
-The screening was conducted in two distinct phases to ensure methodological rigor. During the initial Title and Abstract screening, 22 records were excluded for lacking general relevance to the architectural scope. These exclusions primarily consisted of non-empirical narrative surveys, hardware scheduling studies lacking architectural orchestration, and studies operating in entirely separate domains (e.g., computer vision or 3D hand gesture recognition). 
+The initial literature search conducted via the Web of Science Core Collection yielded 116 records. As the dataset was generated from a single database, zero duplicate records required removal before the screening commenced. 
 
-The remaining 94 records advanced to a rigorous Full-Text review. During this phase, an additional 40 studies were excluded after deeply evaluating their methodologies against the technical constraints. Exclusions at this stage occurred when the evaluated ``small'' models exceeded the strict $\le$ 7B parameter threshold, the evaluations relied on closed-box APIs that hindered reproducibility, or the methodologies failed to report quantitative system-level performance metrics. 
+The selection process was executed in two systematic phases. During the initial Identification and Screening phase, the title, abstract, and keywords of all 116 records were manually reviewed. At this stage, 32 records were excluded for failing to meet primary eligibility criteria, such as being non-technical surveys or operating in unrelated domains (e.g., computer vision pipeline optimization). Following this phase, 84 reports were identified for full-text retrieval. Of these, 4 reports were not successfully retrieved due to strict paywall constraints or being published in unindexed workshop proceedings, leaving 80 reports advancement for depth evaluation.
 
-To mitigate selection bias during both screening phases, a team consensus mechanism was utilized. Inclusion and exclusion decisions were made via majority vote among the reviewing authors. In the event of a tie, the conflict was resolved through collaborative discussion and escalation to the academic advisors. Following this two-stage screening process, a final corpus of 54 primary studies was established for data extraction and synthesis.
+During the final Assessment phase, the 80 retrieved reports underwent a thorough full-text methodology review. This phase resulted in the exclusion of 26 additional records against specific technical constraints. The primary reasons for exclusion during full-text review were: (1) Model size or architecture mismatch (e.g., evaluated models exceeded the strict $\le$ 7B parameter limit or lacked definitive SLM+LLM collaborative interaction) (n=18); (2) Topic or scope out of range (n=5); and (3) Lack of original empirical data or being a narrative survey not previously caught (n=3). 
+
+To ensure objectivity throughout the selection process, a team consensus mechanism was utilized. Inclusion and exclusion decisions at both stages were made via majority vote of the authors, with any conflicting tie resolved through collaborative discussion and escalation to the academic advisors. Following this rigorous selection pipeline, a final corpus of 54 primary studies was established for data extraction and synthesis.
 
 \subsection{Data Extraction and Synthesis Strategy}
 \label{sec:data_extraction}
