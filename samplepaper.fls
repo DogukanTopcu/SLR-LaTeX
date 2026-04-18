@@ -263,8 +263,12 @@ INPUT ./sections/03-research-methodology.tex
 INPUT ./sections/03-research-methodology.tex
 INPUT ./sections/03-research-methodology.tex
 INPUT sections/03-research-methodology.tex
-INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecrm0500.tfm
 INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm
+INPUT ./prisma_flowchart.png
+INPUT ./prisma_flowchart.png
+INPUT ./prisma_flowchart.png
+INPUT ./prisma_flowchart.png
+INPUT ./prisma_flowchart.png
 INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecrm0700.tfm
 INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecbx0700.tfm
 INPUT ./sections/04-findings.tex
@@ -292,7 +296,6 @@ INPUT samplepaper.aux
 INPUT /Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk
 INPUT /Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk
 INPUT /Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0700.600pk
-INPUT /Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0500.600pk
 INPUT /Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk
 INPUT /Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk
 INPUT /Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk
