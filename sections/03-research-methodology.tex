@@ -95,35 +95,45 @@ To ensure objectivity throughout the selection process, a team consensus mechani
 
 To systematically address the research questions, a standardized data extraction protocol was applied to the final corpus of 54 primary studies. For each study, data was extracted into a structured matrix to capture both the functional design of the systems and the empirical evidence used to justify them. 
 
-The extracted fields included the specific SLM and LLM models utilized, the overarching architecture type (e.g., Hybrid, Multi-Agent, Retrieval-Augmented Generation (RAG), Ensemble), orchestration mechanisms, evaluation metrics, baseline models, and quantitative performance indicators (accuracy, latency, cost, and energy). To ensure analytical rigor, each extracted variable was explicitly mapped to one or more of the core Research Questions (RQs). This mapping is detailed in Table \ref{tab:rq-matrix}.
+The extracted fields included the specific SLM and LLM models utilized; the overarching architecture type (e.g., Hybrid, Multi-Agent, RAG, Ensemble); orchestration mechanisms; evaluation metrics; baseline models; and quantitative performance indicators (accuracy, latency, cost, and energy). To ensure analytical rigor, each extracted variable was explicitly mapped to one or more of the core Research Questions (RQs). This mapping, together with concise field definitions, is detailed in Table \ref{tab:rq-matrix}.
 
-\begin{table}[H]
-\caption{RQ $\times$ data extraction matrix used in the review. A check mark indicates that the field directly supports the corresponding research question.}
-\label{tab:rq-matrix}
+{\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{table}[htbp]
 \centering
-\scriptsize
-\begin{tabularx}{\linewidth}{@{}>{{\raggedright\arraybackslash}}Xcccc@{}}
+\caption{RQ $\times$ data extraction matrix and field definitions used in the review. A check mark indicates that the field directly supports the corresponding research question.}
+\label{tab:rq-matrix}
+\begin{tabular}{@{}p{0.19\linewidth}p{0.56\linewidth}>{\centering\arraybackslash}p{0.045\linewidth}>{\centering\arraybackslash}p{0.045\linewidth}>{\centering\arraybackslash}p{0.045\linewidth}>{\centering\arraybackslash}p{0.045\linewidth}@{}}
 \toprule
-\textbf{Extraction Field} & \textbf{RQ1} & \textbf{RQ2} & \textbf{RQ3} & \textbf{RQ4} \\
+\textbf{Extraction Field} & \textbf{Description} & \textbf{RQ1} & \textbf{RQ2} & \textbf{RQ3} & \textbf{RQ4} \\
 \midrule
-Models Used (SLM) & $\checkmark$ &  &  & $\checkmark$ \\
-Models Used (LLM) & $\checkmark$ &  &  & $\checkmark$ \\
-Architecture & $\checkmark$ &  &  & $\checkmark$ \\
-Orchestration Method &  &  & $\checkmark$ & $\checkmark$ \\
-Agent Count &  & $\checkmark$ &  & $\checkmark$ \\
-Task Type & $\checkmark$ &  & $\checkmark$ &  \\
-Dataset & $\checkmark$ &  & $\checkmark$ &  \\
-Metrics & $\checkmark$ &  & $\checkmark$ & $\checkmark$ \\
-LLM Baseline & $\checkmark$ &  & $\checkmark$ & $\checkmark$ \\
-SLM Baseline & $\checkmark$ &  & $\checkmark$ & $\checkmark$ \\
-Accuracy & $\checkmark$ &  & $\checkmark$ &  \\
-Latency (ms) &  & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
-Cost (\$) &  & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
-Energy &  & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
-Key Findings & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
-Limitations &  & $\checkmark$ & $\checkmark$ &  \\
+SLM(s) & Specific small language model(s) evaluated, fine-tuned, or deployed. & $\checkmark$ &  &  & $\checkmark$ \\
+LLM(s) & Large language model(s) used as a baseline, teacher, or fallback. & $\checkmark$ &  &  & $\checkmark$ \\
+Architecture & Overall system design (e.g., hybrid, multi-agent, RAG, ensemble). & $\checkmark$ &  &  & $\checkmark$ \\
+Orchestration Method & Coordination mechanism such as routing, decomposition, fusion, or voting. &  &  & $\checkmark$ & $\checkmark$ \\
+Agent Count & Number of distinct agents, experts, or role-specific components. &  & $\checkmark$ &  & $\checkmark$ \\
+Task Type & Downstream application, domain, or problem setting evaluated. & $\checkmark$ &  & $\checkmark$ &  \\
+Dataset & Benchmark, open-source corpus, or proprietary data used in evaluation. & $\checkmark$ &  & $\checkmark$ &  \\
+Metrics & Evaluation criteria used to assess performance and efficiency. & $\checkmark$ &  & $\checkmark$ & $\checkmark$ \\
+LLM Baseline & Standalone performance score of the comparison large model. & $\checkmark$ &  & $\checkmark$ & $\checkmark$ \\
+SLM Baseline & Standalone performance score of the comparison small model. & $\checkmark$ &  & $\checkmark$ & $\checkmark$ \\
+Accuracy & Final performance score achieved by the proposed architecture. & $\checkmark$ &  & $\checkmark$ &  \\
+Latency (ms) & Reported inference delay, throughput, or time-to-response. &  & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+Cost (\$) & Reported API cost or computational savings versus full LLM use. &  & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+Energy & Power use, joules-per-token, or carbon-related efficiency metric. &  & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+Key Findings & Main study takeaway on SLM--LLM collaboration or orchestration. & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+Limitations & Reported constraints, failure modes, or deployment bottlenecks. &  & $\checkmark$ & $\checkmark$ &  \\
 \bottomrule
-\end{tabularx}
+\end{tabular}
 \end{table}
+}
+
+Because the full comparative analysis table is provided in Appendix~\ref{app:online_appendix}, the mapping of Study IDs to their respective bibliographic citations is provided below for quick reference:
+
+\textbf{Primary Studies Mapping:}
+S1: \cite{tigani2025cpu}, S2: \cite{hao2024hybrid}, S3: \cite{xie2025fusing}, S4: \cite{alabbasi2024teleoracle}, S5: \cite{cao2025enersafe}, S6: \cite{lee2024orchestrallm}, S7: \cite{han2025commentagent}, S8: \cite{aydin2025integrated}, S9: \cite{demir2025dpatransllm}, S10: \cite{ji2025raprag}, S11: \cite{pacheco2025flight}, S12: \cite{dorfner2024comparing}, S13: \cite{zhu2024ofslms}, S14: \cite{jeong2023testtime}, S15: \cite{relora2025}, S16: \cite{chatzistefanidis2025survey}, S17: \cite{han2025chest}, S18: \cite{pietrzak2025evaluation}, S19: \cite{diagnosis2025}, S20: \cite{resiliomate2025}, S21: \cite{arabic2025}, S22: \cite{prompt2024}, S23: \cite{feedback2025}, S24: \cite{tcm2025}, S25: \cite{psa2026}, S26: \cite{vte2024}, S27: \cite{multiagent2025}, S28: \cite{compos2024}, S29: \cite{networkrl2025}, S30: \cite{alabbasi2024teleoracle}, S31: \cite{academicrag2024}, S32: \cite{rethinkllm2025}, S33: \cite{fedhlm2025}, S34: \cite{energytoken2025}, S35: \cite{arasum2025}, S36: \cite{hlmea2025}, S37: \cite{debateagents2025}, S38: \cite{phishing2024}, S39: \cite{transport2025}, S40: \cite{textnex2025}, S41: \cite{olfactory2025}, S42: \cite{staticanalysis2025}, S43: \cite{zhu2024distilling}, S44: \cite{colbertrag2024}, S45: \cite{oh2025uncertainty}, S46: \cite{citer2025}, S47: \cite{sentensemble2026}, S48: \cite{qwqrouting2025}, S49: \cite{egi2025}, S50: \cite{itemdiff2025}, S51: \cite{bioagents2025}, S52: \cite{amarasinghe2025fipo}, S53: \cite{shao2025dot}, S54: \cite{mixeddistill2024}.
+
+The comprehensive data extraction spreadsheet is also provided in Appendix~\ref{app:online_appendix}.
 
 Following data extraction, a narrative synthesis approach was utilized. Because the included studies operate across diverse domains (e.g., telecommunications, healthcare, software engineering) and report varying metrics, a purely statistical meta-analysis was not feasible. Instead, studies were grouped by their architectural taxonomy, allowing for a comparative analysis of how different orchestration methods and domain constraints impact the performance and efficiency trade-offs between large and small models.

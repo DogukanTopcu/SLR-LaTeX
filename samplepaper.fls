@@ -270,7 +270,6 @@ INPUT ./prisma_flowchart.pdf
 INPUT ./prisma_flowchart.pdf
 INPUT ./prisma_flowchart.pdf
 INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecrm0700.tfm
-INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecbx0700.tfm
 INPUT ./sections/04-findings.tex
 INPUT ./sections/04-findings.tex
 INPUT ./sections/04-findings.tex
@@ -292,10 +291,13 @@ INPUT ./sections/07-references.tex
 INPUT ./sections/07-references.tex
 INPUT ./sections/07-references.tex
 INPUT sections/07-references.tex
+INPUT ./sections/08-appendix.tex
+INPUT ./sections/08-appendix.tex
+INPUT ./sections/08-appendix.tex
+INPUT ./sections/08-appendix.tex
+INPUT sections/08-appendix.tex
 INPUT samplepaper.aux
 INPUT /Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk
-INPUT /Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk
-INPUT /Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0700.600pk
 INPUT /Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk
 INPUT /Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk
 INPUT /Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk
@@ -308,4 +310,4 @@ INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
-INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
