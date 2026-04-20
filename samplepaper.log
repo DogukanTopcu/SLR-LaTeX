@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.16)  20 APR 2026 21:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.16)  20 APR 2026 22:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -634,13 +634,13 @@ L3 programming layer <2026-01-19>
 Here is how much of TeX's memory you used:
  15840 strings out of 469006
  320459 string characters out of 5454813
- 720915 words of memory out of 5000000
+ 719915 words of memory out of 5000000
  44202 multiletter control sequences out of 15000+600000
  641570 words of font info for 73 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  84i,11n,94p,1957b,347s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0700.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on samplepaper.pdf (18 pages, 237019 bytes).
+Output written on samplepaper.pdf (18 pages, 237058 bytes).
 PDF statistics:
  604 PDF objects out of 1000 (max. 8388607)
  109 compressed objects within 2 object streams
