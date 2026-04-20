@@ -1,6 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1776717315.98149 "/Users/dogukantopcu/Desktop/Final Project/Springer_Lecture_Notes_in_Computer_Science/samplepaper.tex" "samplepaper.pdf" "samplepaper" 1776717316.42347 0
-  "/Users/dogukantopcu/Desktop/Final Project/Springer_Lecture_Notes_in_Computer_Science/samplepaper.tex" 1776717184.3639 1648 915ae72005a57be99d472a4804a5b8e9 ""
+["pdflatex"] 1776718004.31015 "samplepaper.tex" "samplepaper.pdf" "samplepaper" 1776718004.84706 0
   "/Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk" 1773618089.59812 22480 f5e47267f43de0f3ef95c00c243375a8 ""
   "/Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk" 1773618088.63497 25396 59c03c5c56ffa29fb5065c20407b3a98 ""
   "/Users/dogukantopcu/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk" 1773618088.99308 31928 ee84ebf2f3a0b6e3f1b54a084a4d11da ""
@@ -157,13 +156,13 @@
   "aliascnt.sty" 1775312828.70804 498 8448538725a50d9bd56ad086d063466f ""
   "llncs.cls" 1773600002 43402 5fb5a2dc40571aa40f3d199c00cbb986 ""
   "prisma_flowchart.pdf" 1776669978.68747 13515 889b81b4f094a385d21dff2026d5f39d ""
-  "samplepaper.aux" 1776717316.3543 8836 d0dff8779dd206422dcdc888c54de603 "pdflatex"
+  "samplepaper.aux" 1776718004.76429 8836 d0dff8779dd206422dcdc888c54de603 "pdflatex"
   "samplepaper.tex" 1776717184.3639 1648 915ae72005a57be99d472a4804a5b8e9 ""
   "sections/00-abstract.tex" 1776669978.69264 1539 98a51b228af0c35ebfb424483cccb94b ""
   "sections/01-introduction.tex" 1776709752.82398 4396 cf7a8c54a9f7055ecdc80bc4d60b4e59 ""
   "sections/02-related-works.tex" 1776669978.6935 2133 402d0f2d4132316fedfc1693c87087db ""
   "sections/03-research-methodology.tex" 1776717244.48423 13397 f4e31fff435cd69fd1a7dcf45237fbd9 ""
-  "sections/04-findings.tex" 1776717315.25523 18749 18d0938ab08a121a74cc4a1f53fcba51 ""
+  "sections/04-findings.tex" 1776717998.26978 18670 e3e1110d7dad1ed4316f00efa5e58505 ""
   "sections/05-threats-to-validity.tex" 1775918383.50435 3246 0fc8e86a247cd2cc3cade0b738efaccd ""
   "sections/06-conclusion.tex" 1776715861.58726 2422 ada97db99074c226d6696ee356e3c943 ""
   "sections/07-references.tex" 1776669978.69506 13481 7cda45879141369fffd23f0aa04a9872 ""

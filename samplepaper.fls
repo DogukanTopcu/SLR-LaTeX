@@ -2,7 +2,7 @@ PWD /Users/dogukantopcu/Desktop/Final Project/Springer_Lecture_Notes_in_Computer
 INPUT /usr/local/texlive/2026basic/texmf.cnf
 INPUT /usr/local/texlive/2026basic/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2026basic/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/dogukantopcu/Desktop/Final Project/Springer_Lecture_Notes_in_Computer_Science/samplepaper.tex
+INPUT samplepaper.tex
 OUTPUT samplepaper.log
 INPUT ./llncs.cls
 INPUT llncs.cls
