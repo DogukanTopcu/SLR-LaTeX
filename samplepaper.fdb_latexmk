@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1776505361.49313 "/Users/bakiceltik/SLR-LaTeX/samplepaper.tex" "samplepaper.pdf" "samplepaper" 1776505361.82598 0
+["pdflatex"] 1776707566.10287 "/Users/bakiceltik/SLR-LaTeX/samplepaper.tex" "samplepaper.pdf" "samplepaper" 1776707566.3966 0
   "/Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0700.600pk" 1774186925.96105 17356 99ecc8816cb0960004159524818cfce7 ""
   "/Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk" 1774186927.09795 22480 63255b967a23e9432b88f931bd50ad7c ""
   "/Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk" 1774186926.44889 25396 45cab27c0a1edc3c70b0653cda3d9248 ""
@@ -159,17 +159,17 @@
   "/usr/local/texlive/2026basic/texmf.cnf" 1772405582 628 bbc09d6d38872d53c11bb48dc9b14e88 ""
   "aliascnt.sty" 1775310885.19295 498 8448538725a50d9bd56ad086d063466f ""
   "llncs.cls" 1775310742.84914 43402 5fb5a2dc40571aa40f3d199c00cbb986 ""
-  "prisma_flowchart.png" 1776505106.14756 53516 ec2f50375f0745586a351fbbc5cb397b ""
-  "samplepaper.aux" 1776505361.78068 8924 c8646903236cc73fbc853a8e38efcbb0 "pdflatex"
+  "prisma_flowchart.pdf" 1776672164.33402 13515 889b81b4f094a385d21dff2026d5f39d ""
+  "samplepaper.aux" 1776707566.3508 8847 4dd7d1f937d8a7986369a3c915848f27 "pdflatex"
   "samplepaper.tex" 1776505261.34457 1609 257a2839879abb1c9444e7eb3374170c ""
   "sections/00-abstract.tex" 1776505322.10407 1539 98a51b228af0c35ebfb424483cccb94b ""
-  "sections/01-introduction.tex" 1776505341.02843 6004 d02bb80ec596db8116828d736c857f66 ""
+  "sections/01-introduction.tex" 1776707565.55996 4396 cf7a8c54a9f7055ecdc80bc4d60b4e59 ""
   "sections/02-related-works.tex" 1776505361.30397 2133 402d0f2d4132316fedfc1693c87087db ""
-  "sections/03-research-methodology.tex" 1776505106.14988 10185 5a7dc76734f680a78556f044e8d439c6 ""
-  "sections/04-findings.tex" 1776505106.15003 25451 6fb42b76b2004e06f88baabb323a1cb3 ""
+  "sections/03-research-methodology.tex" 1776672164.33585 10153 698728cdd9b08434e94cd59856b0b8be ""
+  "sections/04-findings.tex" 1776672164.33603 25379 b1eda8db64586cc79a2fa6ef05b452f1 ""
   "sections/05-threats-to-validity.tex" 1775932021.02642 3246 0fc8e86a247cd2cc3cade0b738efaccd ""
   "sections/06-conclusion.tex" 1775932021.02659 2200 8390ad176aae4eb1fc7d17b547a09b3b ""
-  "sections/07-references.tex" 1775850127.65057 13244 1875c54bcb1ff180030aab300e337adf ""
+  "sections/07-references.tex" 1776672164.33644 13481 7cda45879141369fffd23f0aa04a9872 ""
   (generated)
   "samplepaper.aux"
   "samplepaper.log"
