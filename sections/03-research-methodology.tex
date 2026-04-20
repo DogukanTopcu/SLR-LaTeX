@@ -18,8 +18,8 @@ To systematically evaluate the technical and operational trade-offs between mono
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.9\textwidth]{prisma_flowchart.png}
-    \caption{PRISMA 2020 flow diagram for the systematic literature review.}
+    \includegraphics[width=0.9\textwidth]{prisma_flowchart.pdf}
+    \caption{PRISMA 2020 flow diagram for the systematic literature review. Generated using the PRISMA2020 Shiny App \cite{haddaway2022prisma2020}.}
     \label{fig:prisma_flowchart}
 \end{figure}
 
@@ -84,7 +84,7 @@ The study selection process strictly adhered to the PRISMA 2020 guidelines \cite
 
 The initial literature search conducted via the Web of Science Core Collection yielded 116 records. As the dataset was generated from a single database, zero duplicate records required removal before the screening commenced. 
 
-The selection process was executed in two systematic phases. During the initial Identification and Screening phase, the title, abstract, and keywords of all 116 records were manually reviewed. At this stage, 32 records were excluded for failing to meet primary eligibility criteria, such as being non-technical surveys or operating in unrelated domains (e.g., computer vision pipeline optimization). Following this phase, 84 reports were identified for full-text retrieval. Of these, 4 reports were not successfully retrieved due to strict paywall constraints or being published in unindexed workshop proceedings, leaving 80 reports advancement for depth evaluation.
+The selection process was executed in two systematic phases. During the initial Identification and Screening phase, the title, abstract, and keywords of all 116 records were manually reviewed. At this stage, 36 records were excluded for failing to meet primary eligibility criteria, such as being non-technical narrative surveys, extended abstracts lacking full empirical validation, or operating in unrelated domains (e.g., computer vision pipeline optimization). Following this phase, 80 reports were identified and successfully retrieved for in-depth evaluation.
 
 During the final Assessment phase, the 80 retrieved reports underwent a thorough full-text methodology review. This phase resulted in the exclusion of 26 additional records against specific technical constraints. The primary reasons for exclusion during full-text review were: (1) Model size or architecture mismatch (e.g., evaluated models exceeded the strict $\le$ 7B parameter limit or lacked definitive SLM+LLM collaborative interaction) (n=18); (2) Topic or scope out of range (n=5); and (3) Lack of original empirical data or being a narrative survey not previously caught (n=3). 
 
@@ -97,7 +97,7 @@ To systematically address the research questions, a standardized data extraction
 
 The extracted fields included the specific SLM and LLM models utilized, the overarching architecture type (e.g., Hybrid, Multi-Agent, RAG, Ensemble), orchestration mechanisms, evaluation metrics, baseline models, and quantitative performance indicators (accuracy, latency, cost, and energy). To ensure analytical rigor, each extracted variable was explicitly mapped to one or more of the core Research Questions (RQs). This mapping is detailed in Table \ref{tab:rq-matrix}.
 
-\begin{table}[htbp]
+\begin{table}[H]
 \caption{RQ $\times$ data extraction matrix used in the review. A check mark indicates that the field directly supports the corresponding research question.}
 \label{tab:rq-matrix}
 \centering
