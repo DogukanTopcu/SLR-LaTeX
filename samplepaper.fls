@@ -2,7 +2,7 @@ PWD /Users/bakiceltik/SLR-LaTeX
 INPUT /usr/local/texlive/2026basic/texmf.cnf
 INPUT /usr/local/texlive/2026basic/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2026basic/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT samplepaper.tex
+INPUT /Users/bakiceltik/SLR-LaTeX/samplepaper.tex
 OUTPUT samplepaper.log
 INPUT ./llncs.cls
 INPUT llncs.cls
@@ -291,6 +291,11 @@ INPUT ./sections/07-references.tex
 INPUT ./sections/07-references.tex
 INPUT ./sections/07-references.tex
 INPUT sections/07-references.tex
+INPUT ./sections/08-appendix.tex
+INPUT ./sections/08-appendix.tex
+INPUT ./sections/08-appendix.tex
+INPUT ./sections/08-appendix.tex
+INPUT sections/08-appendix.tex
 INPUT samplepaper.aux
 INPUT /Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk
 INPUT /Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk
