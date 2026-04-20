@@ -2,7 +2,7 @@ PWD /Users/bakiceltik/SLR-LaTeX
 INPUT /usr/local/texlive/2026basic/texmf.cnf
 INPUT /usr/local/texlive/2026basic/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2026basic/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/bakiceltik/SLR-LaTeX/samplepaper.tex
+INPUT samplepaper.tex
 OUTPUT samplepaper.log
 INPUT ./llncs.cls
 INPUT llncs.cls
@@ -270,7 +270,6 @@ INPUT ./prisma_flowchart.pdf
 INPUT ./prisma_flowchart.pdf
 INPUT ./prisma_flowchart.pdf
 INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecrm0700.tfm
-INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/tfm/jknappen/ec/ecbx0700.tfm
 INPUT ./sections/04-findings.tex
 INPUT ./sections/04-findings.tex
 INPUT ./sections/04-findings.tex
@@ -294,8 +293,6 @@ INPUT ./sections/07-references.tex
 INPUT sections/07-references.tex
 INPUT samplepaper.aux
 INPUT /Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk
-INPUT /Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk
-INPUT /Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0700.600pk
 INPUT /Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk
 INPUT /Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk
 INPUT /Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk
@@ -308,4 +305,4 @@ INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
-INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb
+INPUT /usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
