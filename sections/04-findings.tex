@@ -58,38 +58,29 @@ The second implication is methodological. Because accuracy dominates reporting, 
 The third implication is application-oriented. The most successful SLM-centered deployments are not generic substitutes for LLMs. They are domain-adapted systems in which the small model is grounded, specialized, or protected by escalation logic. This is why telecom, structured reasoning, radiology labeling, optimisation formulation, and industrial monitoring are so prominent in the positive findings of the corpus.
 
 \subsection{Implications for Practitioners}
-For software engineers, system architects, and technical leads, the findings of this systematic review shift the discourse from theoretical model capabilities to practical system design. Because production environments are governed by strict non-functional requirements---such as latency budgets, API costs, and data privacy mandates---deploying a massive standalone LLM is rarely the optimal engineering choice. To bridge the gap between academic findings and industrial application, we synthesize the empirical evidence into an architectural decision matrix (Table \ref{tab:practitioner_matrix}). 
+For software engineers and system architects, this review highlights practical design trade-offs. Production environments with strict non-functional requirements rarely benefit from standalone LLMs. We synthesize key design patterns in Table \ref{tab:practitioner_matrix}. 
 
 \begin{table*}[htbp]
 \centering
 \caption{Architectural Decision Matrix for Practitioners}
 \label{tab:practitioner_matrix}
-\renewcommand{\arraystretch}{1.4} % Adds breathing room between rows
+\renewcommand{\arraystretch}{1.1} % Compact row height
 \begin{tabularx}{\textwidth}{@{} 
   >{\raggedright\arraybackslash}p{3.5cm} 
   >{\raggedright\arraybackslash}X 
   >{\raggedright\arraybackslash}X 
   >{\raggedright\arraybackslash}X @{}}
 \toprule
-\textbf{Operational Constraint} & \textbf{Recommended Architecture} & \textbf{Target Applications} & \textbf{Key Engineering Considerations} \\ \midrule
+\textbf{Operational Constraint} & \textbf{Recommended Architecture} & \textbf{Target Applications} & \textbf{Key Considerations} \\ \midrule
 
-\textbf{Strict Data Privacy \& Air-Gapped Networks} & Local SLM + RAG \newline (Unimodal) & Healthcare, Telecom, Aerospace, Defense \newline (e.g., S4, S11, S17, S21) & Zero API cost and total data sovereignty. High reliance on retriever quality. Bottleneck shifts to local memory and hardware capacity. \\ 
+\textbf{Strict Data Privacy} & Local SLM + RAG & Healthcare, Telecom, Defense (S4, S11, S17, S21) & Zero API cost. Depends on retriever quality. \\ 
 
-\textbf{High Throughput \& Low Inference Budget} & Hybrid (Edge-Cloud) with Uncertainty Routing & IoT Data Processing, Network Traffic, Routing \newline (e.g., S29, S33, S45, S46) & Drastically reduces API costs. Introduces network synchronization latency. Requires robust threshold tuning to decide when to escalate tokens to the cloud. \\ 
+\textbf{High Throughput} & Hybrid Edge-Cloud & IoT, Network Traffic (S29, S33, S45, S46) & Reduces API costs. Requires threshold tuning. \\ 
 
-\textbf{Complex Logical Reasoning \& Verification} & Multi-Agent System \newline (SLM Ensembles) & Automated Assessment, Code Generation, Math \newline (e.g., S20, S27, S37, S51) & High determinism and accuracy. Significant inference latency penalty due to multiple generation/debate passes. Requires rigid task decomposition. \\ 
+\textbf{Logical Reasoning} & Multi-Agent SLM & Code, Math (S20, S27, S37, S51) & High accuracy. Significant latency overhead. \\ 
 
-\textbf{Sensor \& Physical Data Integration} & Heterogeneous Fusion \newline (SLM + Specialized Models) & Cyber-Physical Systems, Medical Imaging, Robotics \newline (e.g., S3, S5, S17, S41) & Requires late-fusion orchestration. Overall system latency is dictated by the slowest specialized model (e.g., CNN or GCN) in the pipeline. \\ \bottomrule
+\textbf{Multimodal Data} & Heterogeneous Fusion & Medical Imaging, Robotics (S3, S5, S17, S41) & Late-fusion orchestration. Bottleneck at slowest model. \\ \bottomrule
 \end{tabularx}
 \end{table*}
 
-Beyond model selection, the corpus highlights three foundational principles for engineering applied language systems:
-
-\paragraph{Design for Routing, Not Just Generation.} 
-The most critical component in modern LLM/SLM systems is the orchestration layer, not the generator itself. Practitioners should invest engineering effort into building robust semantic routers, uncertainty estimators, and task decomposers. As demonstrated across the hybrid architectures in this review, routing only 3\% (S2) to 7\% (S46) of the most difficult tokens or queries to a massive cloud model can yield performance statistically identical to fully cloud-based solutions, but at a fraction of the cost.
-
-\paragraph{Acknowledge the Latency-Cost Trade-off.} 
-Efficiency is not a monolith. While multi-agent systems and agentic workflows drastically reduce reliance on expensive LLM APIs (optimizing cost), they inherently multiply inference cycles (sacrificing latency, as seen in S22 and S37). System architects must define explicit Service Level Agreements (SLAs). If real-time responsiveness is required---such as telecom routing (S4) or active cockpit support (S11)---token-level hybrid skipping (S45) or highly optimized standalone SLMs are mandatory. If the task is asynchronous---such as offline code generation (S13) or batch medical report analysis (S12)---multi-agent SLM debates or self-reflective loops (S17, S37) provide the best return on investment.
-
-\paragraph{Treat RAG as a Control Mechanism, Not Just a Search Tool.} 
-In the context of Small Language Models, Retrieval-Augmented Generation is not merely a way to inject real-time knowledge; it is a critical security and bounding mechanism. Because SLMs lack the parameter capacity to store vast amounts of world knowledge, their success is almost entirely bottlenecked by the quality of the external retriever (S44). Practitioners must utilize RAG as a rigid coordination layer that constrains the SLM's action space and grounds its outputs in verifiable facts (S4, S10, S31), transforming a general-purpose model into a reliable, domain-specific worker.
+Beyond model selection, three core principles emerge: (1) \textbf{Design for routing}---orchestration, not model size, drives performance. Routing only 3--7\% of difficult tokens yields comparable results at lower cost (S2, S46). (2) \textbf{Balance latency-cost trade-offs}---real-time tasks favor token skipping (S45); batch tasks favor multi-agent loops (S12, S37). (3) \textbf{Treat RAG as control}---RAG constrains SLM action space and grounds outputs in verifiable facts (S4, S10, S31, S44).

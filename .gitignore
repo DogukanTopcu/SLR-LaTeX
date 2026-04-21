@@ -1,0 +1,29 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+
+# Generated PDFs from local compilation
+samplepaper.pdf
+
+# Local inspection/debug files
+check-*.txt
+samplepaper-firstpage-current.txt
+samplepaper.txt
+
+# OS files
+.DS_Store

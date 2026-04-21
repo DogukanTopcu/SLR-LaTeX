@@ -18,20 +18,27 @@
 \usepackage[nocompress]{cite}
 \usetikzlibrary{shapes.geometric, arrows.meta, positioning, calc}
 
+% Allow large floats to share pages with nearby text more aggressively.
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{5}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.9}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.9}
+\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\floatsep}{8pt plus 2pt minus 2pt}
+\setlength{\intextsep}{8pt plus 2pt minus 2pt}
+
 \begin{document}
 
 \title{A Systematic Literature Review of Large Language Models and Small Language Models in Hybrid, Multi-Agent, and Monolithic Architectures}
 
-\author{Doğukan Topçu\inst{1} \and Abdulbaki Çeltik\inst{1} \and Berkhan Kargılı\inst{1} \and Meriç Kelemeden\inst{1} \and Onur Demirörs\inst{2} \and Hüseyin Ünlü\inst{2}}
+\author{Doğukan Topçu \and Abdulbaki Çeltik \and Berkhan Kargılı \and Meriç Kelemeden \and Onur Demirörs \and Hüseyin Ünlü}
 
 \institute{Izmir Institute of Technology, Izmir, Turkey \\
-\email{dogukantopcu@std.iyte.edu.tr} \\
-\email{abdulbakiceltik@std.iyte.edu.tr} \\
-\email{berkhankargili@std.iyte.edu.tr} \\
-\email{merickelemeden@std.iyte.edu.tr}
-\and
-\email{onurdemirors@iyte.edu.tr} \\
-\email{huseyinunlu@iyte.edu.tr}}
+\email{\{dogukantopcu,abdulbakiceltik,berkhankargili,merickelemeden\}@std.iyte.edu.tr} \\
+\email{\{onurdemirors,huseyinunlu\}@iyte.edu.tr}}
 
 \maketitle
 
