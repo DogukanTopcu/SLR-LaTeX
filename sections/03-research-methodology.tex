@@ -84,13 +84,13 @@ To systematically isolate systems-level engineering research from the broader ge
 
 The study selection process strictly adhered to the PRISMA 2020 guidelines \cite{page2021prisma}. The progression of the complete screening funnel, detailing records identified, screened, sought, and assessed, is illustrated in Figure \ref{fig:prisma_flowchart}.
 
-The initial literature search conducted via the Web of Science Core Collection yielded 116 records. As the dataset was generated from a single database, zero duplicate records required removal before the screening commenced. 
+The initial Web of Science Core Collection search yielded 116 records, with no duplicates requiring removal before screening.
 
-The selection process was executed in two systematic phases. During the initial Identification and Screening phase, the title, abstract, and keywords of all 116 records were manually reviewed. At this stage, 36 records were excluded for failing to meet primary eligibility criteria, such as being non-technical narrative surveys, extended abstracts lacking full empirical validation, or operating in unrelated domains (e.g., computer vision pipeline optimization). Following this phase, 80 reports remained eligible and were carried forward to the in-depth full-text evaluation.
+Selection proceeded in two phases. During Identification and Screening, the title, abstract, and keywords of all 116 records were reviewed manually. This excluded 36 records that failed the primary eligibility criteria, including non-technical narrative surveys, extended abstracts without full empirical validation, and studies in unrelated domains. The remaining 80 reports advanced to full-text evaluation.
 
-During the final Assessment phase, the 80 retrieved reports underwent a thorough full-text methodology review. This phase resulted in the exclusion of 26 additional records against specific technical constraints. The primary reasons for exclusion during full-text review were: (1) Model size or architecture mismatch (e.g., evaluated models exceeded the strict $\le$ 7B parameter limit for the small-model component, lacked definitive SLM+LLM collaborative interaction, or were SLM-only systems) (n=18); (2) Topic or scope out of range (n=5); and (3) Lack of original empirical data or being a narrative survey not previously caught (n=3). 
+During the final Assessment phase, the 80 reports underwent full-text review, leading to the exclusion of 26 additional records. The main reasons were model size or architecture mismatch (n=18), topic or scope mismatch (n=5), and lack of original empirical data or a remaining narrative-survey character (n=3).
 
-To ensure objectivity throughout the selection process, a team consensus mechanism was utilized. Inclusion and exclusion decisions at both stages were made via majority vote of the authors, with any conflicting tie resolved through collaborative discussion and escalation to the academic advisors. Following this rigorous selection pipeline, a final corpus of 54 primary studies was established for data extraction and synthesis.
+To improve objectivity, inclusion and exclusion decisions at both stages were made by majority vote, with ties resolved through collaborative discussion and escalation to the academic advisors. This process produced a final corpus of 54 primary studies.
 
 \subsection{Data Extraction and Synthesis Strategy}
 \label{sec:data_extraction}
@@ -131,11 +131,13 @@ Limitations & Reported constraints, failure modes, or deployment bottlenecks. & 
 \end{table}
 }
 
-Because the full comparative analysis table is provided in Appendix~\ref{app:online_appendix}, the mapping of Study IDs to their respective bibliographic citations is provided below for quick reference:
+Because the full comparative analysis table is provided as online supplementary material, the Study ID to citation mapping is given below for quick reference:
 
+{\scriptsize
 \textbf{Primary Studies Mapping:}
 S1: \cite{tigani2025cpu}, S2: \cite{hao2024hybrid}, S3: \cite{xie2025fusing}, S4: \cite{alabbasi2024teleoracle}, S5: \cite{cao2025enersafe}, S6: \cite{lee2024orchestrallm}, S7: \cite{han2025commentagent}, S8: \cite{aydin2025integrated}, S9: \cite{demir2025dpatransllm}, S10: \cite{ji2025raprag}, S11: \cite{pacheco2025flight}, S12: \cite{dorfner2024comparing}, S13: \cite{zhu2024ofslms}, S14: \cite{jeong2023testtime}, S15: \cite{relora2025}, S16: \cite{chatzistefanidis2025symbiotic}, S17: \cite{han2025chest}, S18: \cite{pietrzak2025evaluation}, S19: \cite{diagnosis2025}, S20: \cite{resiliomate2025}, S21: \cite{arabic2025}, S22: \cite{prompt2024}, S23: \cite{feedback2025}, S24: \cite{tcm2025}, S25: \cite{psa2026}, S26: \cite{vte2024}, S27: \cite{multiagent2025}, S28: \cite{compos2024}, S29: \cite{networkrl2025}, S30: \cite{alabbasi2025teleqna}, S31: \cite{academicrag2024}, S32: \cite{rethinkllm2025}, S33: \cite{fedhlm2025}, S34: \cite{energytoken2025}, S35: \cite{arasum2025}, S36: \cite{hlmea2025}, S37: \cite{debateagents2025}, S38: \cite{phishing2024}, S39: \cite{transport2025}, S40: \cite{textnex2025}, S41: \cite{olfactory2025}, S42: \cite{staticanalysis2025}, S43: \cite{zhu2024distilling}, S44: \cite{colbertrag2024}, S45: \cite{oh2025uncertainty}, S46: \cite{citer2025}, S47: \cite{sentensemble2026}, S48: \cite{qwqrouting2025}, S49: \cite{egi2025}, S50: \cite{itemdiff2025}, S51: \cite{bioagents2025}, S52: \cite{amarasinghe2025fipo}, S53: \cite{shao2025dot}, S54: \cite{mixeddistill2024}.
+}
 
-The comprehensive data extraction spreadsheet is also provided in Appendix~\ref{app:online_appendix}.
+The full comparative analysis table and the comprehensive data extraction spreadsheet are available at \url{https://bit.ly/SLM-LLM-Data-2026}.
 
 Following data extraction, a narrative synthesis approach was utilized. Because the included studies operate across diverse domains (e.g., telecommunications, healthcare, software engineering) and report varying metrics, a purely statistical meta-analysis was not feasible. Instead, studies were grouped by their architectural taxonomy, allowing for a comparative analysis of how different orchestration methods and domain constraints impact the performance and efficiency trade-offs between large and small models.
