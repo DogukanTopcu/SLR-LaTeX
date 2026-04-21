@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.4)  21 APR 2026 15:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.4)  21 APR 2026 15:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -594,20 +594,18 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./sections/00-abstract.tex) (./sections/01-introduction.tex [1
 
-{/usr/local/texlive/2026basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) [2] (./sections/02-related-works.tex) (./sections/03-research-methodology.tex
-<prisma_flowchart.pdf, id=21, 600.2425pt x 614.295pt>
+{/usr/local/texlive/2026basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./sections/02-related-works.tex) (./sections/03-research-methodology.tex [2]
+<prisma_flowchart.pdf, id=22, 600.2425pt x 614.295pt>
 File: prisma_flowchart.pdf Graphic file (type pdf)
 <use prisma_flowchart.pdf>
 Package pdftex.def Info: prisma_flowchart.pdf  used on input line 21.
 (pdftex.def)             Requested size: 387.00153pt x 396.07195pt.
- [3
 
-] [4 <./prisma_flowchart.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 77--77
 []|\T1/cmr/bx/n/9 Architecture
  []
 
-[5]
+[3] [4 <./prisma_flowchart.pdf>]
 Overfull \hbox (1.65515pt too wide) in paragraph at lines 109--109
  []|\T1/cmr/bx/n/9 RQ1| 
  []
@@ -642,7 +640,13 @@ Underfull \hbox (badness 1072) in paragraph at lines 120--120
 []|\T1/cmr/m/n/9 Standalone per-for-mance score of the com-par-i-son small
  []
 
-) (./sections/04-findings.tex [6] [7] [8] [9] [10] [11] [12] [13]) (./sections/05-threats-to-validity.tex [14]) (./sections/06-conclusion.tex) (./sections/07-references.tex [15] [16]
+[5]
+Underfull \vbox (badness 1527) has occurred while \output is active []
+
+ [6]) (./sections/04-findings.tex [7] [8] [9] [10] [11] [12]) (./sections/05-threats-to-validity.tex [13]) (./sections/06-conclusion.tex) (./sections/07-references.tex
+Underfull \vbox (badness 1859) has occurred while \output is active []
+
+ [14] [15]
 Underfull \hbox (badness 5417) in paragraph at lines 72--73
 []\T1/cmr/m/n/9 Haddaway, N. R., et al.: PRISMA2020: An R pack-age and Shiny app for pro-duc-ing
  []
@@ -652,7 +656,7 @@ Underfull \hbox (badness 5288) in paragraph at lines 72--73
 \T1/cmr/m/n/9 PRISMA 2020-compliant flow di-a-grams. Camp-bell Sys-tem-atic Re-views \T1/cmr/bx/n/9 18\T1/cmr/m/n/9 , e1230 (2022).
  []
 
-[17]) (./sections/08-appendix.tex) [18] (./samplepaper.aux)
+[16]) (./sections/08-appendix.tex [17]) [18] (./samplepaper.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
@@ -661,13 +665,13 @@ L3 programming layer <2026-03-20>
 Here is how much of TeX's memory you used:
  15850 strings out of 468830
  320615 string characters out of 5451467
- 730336 words of memory out of 5000000
+ 732336 words of memory out of 5000000
  44386 multiletter control sequences out of 15000+600000
  640789 words of font info for 72 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  84i,13n,94p,1887b,347s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </Users/bakiceltik/Library/texlive/2026basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on samplepaper.pdf (18 pages, 229535 bytes).
+Output written on samplepaper.pdf (18 pages, 227727 bytes).
 PDF statistics:
  560 PDF objects out of 1000 (max. 8388607)
  101 compressed objects within 2 object streams
