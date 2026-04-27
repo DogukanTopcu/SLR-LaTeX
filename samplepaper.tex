@@ -6,35 +6,13 @@
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage{amssymb}
-\usepackage{geometry}
-\usepackage{rotating}
-\usepackage{pdflscape} % Rotates the page in the PDF viewer
-\usepackage{longtable} % Allows tables to span multiple pages
-\usepackage{booktabs}  % For \toprule, \midrule, \bottomrule
-\usepackage{array}     % For better column control
-\usepackage{xcolor}
-\usepackage{float}
-\usepackage{tikz}
-\usepackage[nocompress]{cite}
-\usetikzlibrary{shapes.geometric, arrows.meta, positioning, calc}
-
-% Allow large floats to share pages with nearby text more aggressively.
-\setcounter{topnumber}{3}
-\setcounter{bottomnumber}{2}
-\setcounter{totalnumber}{5}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.9}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\floatpagefraction}{0.9}
-\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
-\setlength{\floatsep}{8pt plus 2pt minus 2pt}
-\setlength{\intextsep}{8pt plus 2pt minus 2pt}
+\usepackage{url}
 
 \begin{document}
 
 \title{A Systematic Literature Review of SLM--LLM Collaboration in Hybrid, Multi-Agent, and Retrieval-Centered Architectures}
 
-\author{Doğukan Topçu \and Abdulbaki Çeltik \and Berkhan Kargılı \and Meriç Kelemeden \and Onur Demirörs \and Hüseyin Ünlü}
+\author{Doğukan Topçu\thanks{Corresponding author.} \and Abdulbaki Çeltik \and Berkhan Kargılı \and Meriç Kelemeden \and Onur Demirörs \and Hüseyin Ünlü}
 
 \institute{Izmir Institute of Technology, Izmir, Turkey \\
 \email{dogukantopcu@std.iyte.edu.tr} \\
@@ -54,8 +32,13 @@
 \input{sections/04-findings}
 \input{sections/05-threats-to-validity}
 \input{sections/06-conclusion}
-\input{sections/07-references}
+\begin{credits}
+\subsubsection{\discintname}
+The authors have no competing interests to declare that are relevant to the content of this article.
+\end{credits}
+
 \appendix
 \input{sections/08-appendix}
+\input{sections/07-references}
 
 \end{document}
