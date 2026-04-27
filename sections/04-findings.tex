@@ -46,30 +46,4 @@ Strong results are associated with explicit control layers such as routers, plan
 Methodologically, because accuracy dominates reporting, many studies overstate practical efficiency. The review includes cases where orchestration clearly reduces cost or latency, but also cases where coordination merely shifts the bottleneck. A mature evaluation protocol should therefore report resource metrics as first-class outcomes. Application-wise, the strongest SLM-centered deployments are domain-adapted systems in which the small model is grounded, specialized, or protected by escalation logic. This is why telecom, structured reasoning, radiology labeling, optimisation formulation, and industrial monitoring are prominent in the positive findings.
 
 \subsection{Implications for Practitioners}
-For software engineers and system architects, the main design trade-offs are operational rather than purely model-centric. In practice, latency, cost, privacy, and hardware constraints often dominate deployment decisions. Table~\ref{tab:practitioner_matrix} summarizes the main design patterns.
-\begin{table}[htbp]
-\centering
-\caption{Architectural Decision Matrix for Practitioners}
-\label{tab:practitioner_matrix}
-\footnotesize
-\setlength{\tabcolsep}{4pt}
-\renewcommand{\arraystretch}{1.0}
-\begin{tabularx}{\textwidth}{@{} 
-  >{\raggedright\arraybackslash}p{3.5cm} 
-  >{\raggedright\arraybackslash}X 
-  >{\raggedright\arraybackslash}X 
-  >{\raggedright\arraybackslash}X @{}}
-\toprule
-\textbf{Operational Constraint} & \textbf{Recommended Architecture} & \textbf{Target Applications} & \textbf{Key Considerations} \\ \midrule
-
-\textbf{Strict Data Privacy} & Local SLM + RAG & Healthcare, Telecom, Defense (S4, S11, S17, S21) & Zero API cost. Depends on retriever quality. \\ 
-
-\textbf{High Throughput} & Hybrid Edge-Cloud & IoT, Network Traffic (S29, S33, S45, S46) & Reduces API costs. Requires threshold tuning. \\ 
-
-\textbf{Logical Reasoning} & Multi-Agent SLM & Code, Math (S20, S27, S37, S51) & High accuracy. Significant latency overhead. \\ 
-
-\textbf{Multimodal Data} & Heterogeneous Fusion & Medical Imaging, Robotics (S3, S5, S17, S41) & Late-fusion orchestration. Bottleneck at slowest model. \\ \bottomrule
-\end{tabularx}
-\end{table}
-
-Three practitioner-facing principles follow: (1) \textbf{Design for routing}: orchestration, not model size, drives performance; (2) \textbf{Balance latency-cost trade-offs}: real-time tasks favor token skipping, while batch tasks tolerate multi-agent loops; and (3) \textbf{Treat RAG as control}: retrieval constrains the SLM action space and grounds outputs in verifiable facts.
+For software engineers and system architects, the main design trade-offs are operational rather than purely model-centric. In practice, latency, cost, privacy, and hardware constraints often dominate deployment decisions. Four practical design patterns emerge from the reviewed studies. When strict data privacy is the main constraint, local SLM + RAG architectures are most suitable for healthcare, telecom, and defense settings (S4, S11, S17, S21), but their performance depends heavily on retriever quality. When high throughput is required, hybrid edge--cloud architectures are appropriate for IoT and network traffic scenarios (S29, S33, S45, S46), reducing API costs while requiring careful threshold tuning. For logical reasoning tasks such as code and mathematics, multi-agent SLM designs can improve accuracy (S20, S27, S37, S51), but they introduce significant latency overhead. For multimodal data, heterogeneous fusion is better suited to medical imaging and robotics (S3, S5, S17, S41), although the slowest model in the pipeline often becomes the bottleneck. Three practitioner-facing principles follow: (1) \textbf{Design for routing}: orchestration, not model size, drives performance; (2) \textbf{Balance latency-cost trade-offs}: real-time tasks favor token skipping, while batch tasks tolerate multi-agent loops; and (3) \textbf{Treat RAG as control}: retrieval constrains the SLM action space and grounds outputs in verifiable facts.
