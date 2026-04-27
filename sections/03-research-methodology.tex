@@ -34,31 +34,28 @@ To systematically isolate systems-level engineering research from the broader ge
     \centering
     \caption{Inclusion and Exclusion Criteria for Study Selection}
     \label{tab:eligibility_criteria}
-    \renewcommand{\arraystretch}{1.2} % Slight overall stretch
-    % The @{} removes the invisible side margins so it aligns perfectly with the page text
-    % The >{\raggedright\arraybackslash}X forces the text to align left instead of justifying
-    \begin{tabularx}{\linewidth}{@{} p{2.8cm} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X @{}}
+    \footnotesize
+    \setlength{\tabcolsep}{3pt}
+    \renewcommand{\arraystretch}{0.94}
+    \begin{tabularx}{\linewidth}{@{} p{2.05cm} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X @{}}
         \toprule
-        \textbf{Criteria} & \textbf{Inclusion (Include if...)} & \textbf{Exclusion (Exclude if...)} \\
+        \textbf{Criterion} & \textbf{Include} & \textbf{Exclude} \\
         \midrule
         
         \textbf{Architecture Scope} & 
-        Studies evaluating collaborative architectures in which an SLM interacts with an LLM through mechanisms such as routing, retrieval, verification, fallback, or role specialization (e.g., Hybrid or Multi-agent). & 
-        Studies centered on SLM-only systems or strictly comparing massive monolithic LLMs (e.g., GPT-4 vs. Gemini) without a collaborative SLM component; monolithic LLMs were considered only as baselines within otherwise eligible studies. \\
-        \addlinespace % Adds a subtle gap between rows
+        Collaborative SLM--LLM systems using routing, retrieval, verification, fallback, or role specialization. & 
+        SLM-only papers or monolithic LLM comparisons without a collaborative SLM component; monolithic LLMs were allowed only as baselines inside otherwise eligible studies. \\
         
         \textbf{Model Size and Transparency} & 
-        Architectures with an identifiable SLM component whose parameter count is reported or inferable and does not exceed 7 billion parameters. Closed-box LLMs were allowed only when used as baselines, teachers, or fallback components inside an otherwise eligible collaborative architecture. & 
-        Studies whose primary evaluated architecture depends on closed-box or API-bound models with undisclosed parameter counts or architectural details, or where no reproducible SLM component can be identified. \\
-        \addlinespace
+        Identifiable SLM component with reported or inferable size not exceeding 7B parameters; closed-box LLMs allowed only as baseline, teacher, or fallback components. & 
+        Primary architecture depends on closed-box/API-bound models with undisclosed details, or no reproducible SLM component can be identified. \\
         
         \textbf{Topic Focus} & 
-        Focuses on quantitative system-level metrics such as performance, inference latency, memory, cost, or orchestration efficiency. & 
-        Focuses solely on ethical, sociological impacts, or legal regulations without technical benchmarks. \\
-        \addlinespace
+        Reports system-level metrics such as performance, latency, memory, cost, or orchestration efficiency. & 
+        Focuses only on ethical, sociological, or legal issues without technical benchmarks. \\
         
         \textbf{Data Quality} & 
-        Contains empirical results and experimental validation (e.g., standard benchmarks or custom datasets). & 
+        Contains empirical results and experimental validation using benchmarks or custom datasets. & 
         Purely theoretical papers or non-empirical narrative surveys. \\
         
         \bottomrule
@@ -78,11 +75,11 @@ To systematically address the research questions, a standardized data extraction
 The extracted fields included the specific SLM and LLM models utilized; the overarching architecture type (e.g., Hybrid, Multi-Agent, Retrieval-Augmented Generation (RAG), Ensemble); orchestration mechanisms; evaluation metrics; baseline models; and quantitative performance indicators (accuracy, latency, cost, and energy). To ensure analytical rigor, each extracted variable was explicitly mapped to one or more of the core Research Questions (RQs). This mapping, together with concise field definitions, is detailed in Table \ref{tab:rq-matrix}.
 
 {\scriptsize
-\setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.12}
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{0.9}
 \begin{table}[!htbp]
 \centering
-\caption{RQ $\times$ data extraction matrix and field definitions used in the review. A check mark indicates that the field directly supports the corresponding research question.}
+\caption{RQ $\times$ data extraction matrix. Check marks indicate direct support.}
 \label{tab:rq-matrix}
 \begin{tabular}{@{}p{0.12\linewidth}p{0.51\linewidth}>{\centering\arraybackslash}p{0.061\linewidth}>{\centering\arraybackslash}p{0.061\linewidth}>{\centering\arraybackslash}p{0.061\linewidth}>{\centering\arraybackslash}p{0.061\linewidth}@{}}
 \toprule
