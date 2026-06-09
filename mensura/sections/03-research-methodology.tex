@@ -20,9 +20,9 @@ To systematically evaluate the technical and operational trade-offs between coll
 \subsection{Information Sources and Search Strategy}
 \label{sec:search_strategy}
 
-To capture a comprehensive and high-quality corpus of contemporary collaborative language model architectures, the literature search was centered on the Web of Science (WoS) Core Collection, with the final search performed on 8 February 2026. Scopus and the ACM Digital Library were also checked with the same core concepts as coverage validation; this check did not identify additional eligible studies that would materially alter the final corpus.
+To capture a comprehensive and high-quality corpus of contemporary collaborative language model architectures, the literature search was centered on the Web of Science (WoS) Core Collection, with the final search performed on 8 February 2026. Scopus and the Association for Computing Machinery (ACM) Digital Library were also checked with the same core concepts as coverage validation; this check did not identify additional eligible studies that would materially alter the final corpus.
 
-The search strategy was systematically developed by extracting the core concepts from the defined research questions and refining the terminology through initial pilot searches. This iterative process helped identify common synonyms and alternate phrasing used in the literature (e.g., ``Compact Model'' for SLMs, or ``Agentic'' for multi-agent systems). To guarantee that every retrieved study examined the intersection of model size, collaborative architectural design, and system evaluation, the final query was structured into four mandatory components and applied to the title, abstract, and keyword fields: \textit{(``Large Language Model*'' OR ``LLM'' OR ``Generative AI'' OR ``Foundation Model*'') AND (``Small Language Model*'' OR ``SLM'' OR ``Compact Model*'' OR ``Lightweight Model*'') AND (``Multi-agent'' OR ``Hybrid'' OR ``Orchestration'' OR ``Routing'' OR ``Ensemble'' OR ``Agentic'') AND (``Performance'' OR ``Accuracy'' OR ``Efficiency'' OR ``Latency'' OR ``Cost'' OR ``Benchmark'')}.
+The search strategy was systematically developed by extracting the core concepts from the defined research questions and refining the terminology through initial pilot searches in the artificial intelligence (AI) literature. This iterative process helped identify common synonyms and alternate phrasing used in the literature (e.g., ``Compact Model'' for SLMs, or ``Agentic'' for multi-agent systems). To guarantee that every retrieved study examined the intersection of model size, collaborative architectural design, and system evaluation, the final query was structured into four mandatory components and applied to the title, abstract, and keyword fields: \textit{(``Large Language Model*'' OR ``LLM'' OR ``Generative AI'' OR ``Foundation Model*'') AND (``Small Language Model*'' OR ``SLM'' OR ``Compact Model*'' OR ``Lightweight Model*'') AND (``Multi-agent'' OR ``Hybrid'' OR ``Orchestration'' OR ``Routing'' OR ``Ensemble'' OR ``Agentic'') AND (``Performance'' OR ``Accuracy'' OR ``Efficiency'' OR ``Latency'' OR ``Cost'' OR ``Benchmark'')}.
 
 Because the review targets collaborative SLM--LLM systems, all four components were mandatory in the search string. Monolithic LLMs were considered only as baselines reported inside the included studies, not as standalone primary studies.
 
@@ -38,7 +38,7 @@ To systematically isolate systems-level engineering research from the broader ge
     \footnotesize
     \setlength{\tabcolsep}{3pt}
     \renewcommand{\arraystretch}{0.94}
-    \begin{tabularx}{\linewidth}{@{} p{2.05cm} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X @{}}
+    \begin{tabularx}{\linewidth}{@{} >{\raggedright\arraybackslash}p{0.16\linewidth} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X @{}}
         \toprule
         \textbf{Criterion} & \textbf{Include} & \textbf{Exclude} \\
         \midrule
@@ -49,7 +49,7 @@ To systematically isolate systems-level engineering research from the broader ge
         
         \textbf{Model Size and Transparency} & 
         Identifiable SLM component with reported or inferable size not exceeding 7B parameters; closed-box LLMs allowed only as baseline, teacher, or fallback components. & 
-        Primary architecture depends on closed-box/API-bound models with undisclosed details, or no reproducible SLM component can be identified. \\
+        Primary architecture depends on closed-box application programming interface (API)-bound models with undisclosed details, or no reproducible SLM component can be identified. \\
         
         \textbf{Topic Focus} & 
         Reports system-level metrics such as performance, latency, memory, cost, or orchestration efficiency. & 
@@ -107,4 +107,67 @@ Limits & Reported constraints, failure modes, or deployment bottlenecks. &  & $\
 \end{table}
 }
 
-The full comparative analysis table and the comprehensive data extraction spreadsheet are available at \url{https://bit.ly/SLM-LLM-Data-2026}; for quick reference, the Study ID to citation mapping is as follows: \textbf{Primary Studies Mapping:} S1: \cite{olfactory2025}, S2: \cite{staticanalysis2025}, S3: \cite{egi2025}, S4: \cite{energytoken2025}, S5: \cite{qwqrouting2025}, S6: \cite{tigani2025cpu}, S7: \cite{aydin2025integrated}, S8: \cite{xie2025fusing}, S9: \cite{zhu2024distilling}, S10: \cite{rethinkllm2025}, S11: \cite{ji2025raprag}, S12: \cite{dorfner2024comparing}, S13: \cite{hao2024hybrid}, S14: \cite{shao2025dot}, S15: \cite{multiagent2025}, S16: \cite{lee2024orchestrallm}, S17: \cite{alabbasi2024teleoracle}, S18: \cite{chatzistefanidis2025symbiotic}, S19: \cite{han2025chest}, S20: \cite{cao2025enersafe}, S21: \cite{han2025commentagent}, S22: \cite{demir2025dpatransllm}, S23: \cite{pacheco2025flight}, S24: \cite{zhu2024ofslms}, S25: \cite{jeong2023testtime}, S26: \cite{relora2025}, S27: \cite{pietrzak2025evaluation}, S28: \cite{diagnosis2025}, S29: \cite{resiliomate2025}, S30: \cite{arabic2025}, S31: \cite{prompt2024}, S32: \cite{feedback2025}, S33: \cite{tcm2025}, S34: \cite{psa2026}, S35: \cite{vte2024}, S36: \cite{compos2024}, S37: \cite{networkrl2025}, S38: \cite{alabbasi2025teleqna}, S39: \cite{academicrag2024}, S40: \cite{fedhlm2025}, S41: \cite{arasum2025}, S42: \cite{hlmea2025}, S43: \cite{debateagents2025}, S44: \cite{phishing2024}, S45: \cite{transport2025}, S46: \cite{textnex2025}, S47: \cite{colbertrag2024}, S48: \cite{oh2025uncertainty}, S49: \cite{citer2025}, S50: \cite{sentensemble2026}, S51: \cite{itemdiff2025}, S52: \cite{bioagents2025}, S53: \cite{amarasinghe2025fipo}, S54: \cite{mixeddistill2024}. Following data extraction, a narrative synthesis approach was utilized. Because the included studies operate across diverse domains (e.g., telecommunications, healthcare, software engineering) and report varying metrics, a purely statistical meta-analysis was not feasible. Instead, studies were grouped by their architectural taxonomy, allowing for a comparative analysis of how different orchestration methods and domain constraints impact the performance and efficiency trade-offs between large and small models.
+The full comparative analysis table and the comprehensive data extraction spreadsheet are available at \url{https://bit.ly/SLM-LLM-Data-2026}.
+
+\begingroup
+\small
+\raggedright
+\noindent\textbf{Primary studies mapping:}
+\mbox{S1:~\cite{olfactory2025}},
+\mbox{S2:~\cite{staticanalysis2025}},
+\mbox{S3:~\cite{egi2025}},
+\mbox{S4:~\cite{energytoken2025}},
+\mbox{S5:~\cite{qwqrouting2025}},
+\mbox{S6:~\cite{tigani2025cpu}},
+\mbox{S7:~\cite{aydin2025integrated}},
+\mbox{S8:~\cite{xie2025fusing}},
+\mbox{S9:~\cite{zhu2024distilling}},
+\mbox{S10:~\cite{rethinkllm2025}},
+\mbox{S11:~\cite{ji2025raprag}},
+\mbox{S12:~\cite{dorfner2024comparing}},
+\mbox{S13:~\cite{hao2024hybrid}},
+\mbox{S14:~\cite{shao2025dot}},
+\mbox{S15:~\cite{multiagent2025}},
+\mbox{S16:~\cite{lee2024orchestrallm}},
+\mbox{S17:~\cite{alabbasi2024teleoracle}},
+\mbox{S18:~\cite{chatzistefanidis2025symbiotic}},
+\mbox{S19:~\cite{han2025chest}},
+\mbox{S20:~\cite{cao2025enersafe}},
+\mbox{S21:~\cite{han2025commentagent}},
+\mbox{S22:~\cite{demir2025dpatransllm}},
+\mbox{S23:~\cite{pacheco2025flight}},
+\mbox{S24:~\cite{zhu2024ofslms}},
+\mbox{S25:~\cite{jeong2023testtime}},
+\mbox{S26:~\cite{relora2025}},
+\mbox{S27:~\cite{pietrzak2025evaluation}},
+\mbox{S28:~\cite{diagnosis2025}},
+\mbox{S29:~\cite{resiliomate2025}},
+\mbox{S30:~\cite{arabic2025}},
+\mbox{S31:~\cite{prompt2024}},
+\mbox{S32:~\cite{feedback2025}},
+\mbox{S33:~\cite{tcm2025}},
+\mbox{S34:~\cite{psa2026}},
+\mbox{S35:~\cite{vte2024}},
+\mbox{S36:~\cite{compos2024}},
+\mbox{S37:~\cite{networkrl2025}},
+\mbox{S38:~\cite{alabbasi2025teleqna}},
+\mbox{S39:~\cite{academicrag2024}},
+\mbox{S40:~\cite{fedhlm2025}},
+\mbox{S41:~\cite{arasum2025}},
+\mbox{S42:~\cite{hlmea2025}},
+\mbox{S43:~\cite{debateagents2025}},
+\mbox{S44:~\cite{phishing2024}},
+\mbox{S45:~\cite{transport2025}},
+\mbox{S46:~\cite{textnex2025}},
+\mbox{S47:~\cite{colbertrag2024}},
+\mbox{S48:~\cite{oh2025uncertainty}},
+\mbox{S49:~\cite{citer2025}},
+\mbox{S50:~\cite{sentensemble2026}},
+\mbox{S51:~\cite{itemdiff2025}},
+\mbox{S52:~\cite{bioagents2025}},
+\mbox{S53:~\cite{amarasinghe2025fipo}}, and
+\mbox{S54:~\cite{mixeddistill2024}}.
+\par
+\endgroup
+
+Following data extraction, a narrative synthesis approach was utilized. Because the included studies operate across diverse domains (e.g., telecommunications, healthcare, software engineering) and report varying metrics, a purely statistical meta-analysis was not feasible. Instead, studies were grouped by their architectural taxonomy, allowing for a comparative analysis of how different orchestration methods and domain constraints impact the performance and efficiency trade-offs between large and small models.
