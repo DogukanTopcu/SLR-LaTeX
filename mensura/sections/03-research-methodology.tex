@@ -1,0 +1,110 @@
+\section{Research Methodology}
+\label{sec:methodology}
+This section outlines the review protocol, which follows the systematic literature review guidelines of Kitchenham and Charters~\cite{kitchenham2007guidelines}. It covers the research questions, search strategy, eligibility criteria, study selection, and data extraction and synthesis process. PRISMA 2020 is used as a reporting aid for documenting the study-selection flow rather than as the review methodology itself.
+
+\subsection{Research Questions}
+\label{sec:research_questions}
+
+To systematically evaluate the technical and operational trade-offs between collaborative SLM--LLM systems and monolithic LLM baselines, the review protocol is structured around the following four core research questions (RQs):
+
+\begin{itemize}
+    \item \textbf{RQ1 (Performance):} How does the performance (accuracy/efficacy) of multi-agent SLMs or hybrid architectures (LLM + SLM) compare with that of monolithic LLM baselines in specific reasoning and classification tasks?
+    
+    \item \textbf{RQ2 (Efficiency):} What is the impact of hybrid and multi-agent architectures on computational efficiency, specifically regarding inference cost, latency, and energy consumption, compared to monolithic LLM baselines or full-LLM inference?
+    
+    \item \textbf{RQ3 (Orchestration):} What orchestration and routing mechanisms are employed to manage the division of labor between large and small models in collaborative systems?
+    
+    \item \textbf{RQ4 (Domain Suitability):} In which specific domains (e.g., healthcare, coding, telecommunications, and edge or multimodal settings) do collaborative SLM-centered architectures achieve performance comparable to monolithic LLM baselines, and where do they fail?
+\end{itemize}
+
+\subsection{Information Sources and Search Strategy}
+\label{sec:search_strategy}
+
+To capture a comprehensive and high-quality corpus of contemporary collaborative language model architectures, the literature search was centered on the Web of Science (WoS) Core Collection, with the final search performed on 8 February 2026. Scopus and the ACM Digital Library were also checked with the same core concepts as coverage validation; this check did not identify additional eligible studies that would materially alter the final corpus.
+
+The search strategy was systematically developed by extracting the core concepts from the defined research questions and refining the terminology through initial pilot searches. This iterative process helped identify common synonyms and alternate phrasing used in the literature (e.g., ``Compact Model'' for SLMs, or ``Agentic'' for multi-agent systems). To guarantee that every retrieved study examined the intersection of model size, collaborative architectural design, and system evaluation, the final query was structured into four mandatory components and applied to the title, abstract, and keyword fields: \textit{(``Large Language Model*'' OR ``LLM'' OR ``Generative AI'' OR ``Foundation Model*'') AND (``Small Language Model*'' OR ``SLM'' OR ``Compact Model*'' OR ``Lightweight Model*'') AND (``Multi-agent'' OR ``Hybrid'' OR ``Orchestration'' OR ``Routing'' OR ``Ensemble'' OR ``Agentic'') AND (``Performance'' OR ``Accuracy'' OR ``Efficiency'' OR ``Latency'' OR ``Cost'' OR ``Benchmark'')}.
+
+Because the review targets collaborative SLM--LLM systems, all four components were mandatory in the search string. Monolithic LLMs were considered only as baselines reported inside the included studies, not as standalone primary studies.
+
+\subsection{Eligibility Criteria}
+\label{sec:eligibility_criteria}
+
+To systematically isolate systems-level engineering research from the broader generative AI literature, retrieved records were evaluated against strict eligibility criteria. A comprehensive breakdown of the inclusion and exclusion parameters applied during the screening phases is presented in Table \ref{tab:eligibility_criteria}.
+
+\begin{table}[!htbp]
+    \centering
+    \caption{Inclusion and Exclusion Criteria for Study Selection}
+    \label{tab:eligibility_criteria}
+    \footnotesize
+    \setlength{\tabcolsep}{3pt}
+    \renewcommand{\arraystretch}{0.94}
+    \begin{tabularx}{\linewidth}{@{} p{2.05cm} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X @{}}
+        \toprule
+        \textbf{Criterion} & \textbf{Include} & \textbf{Exclude} \\
+        \midrule
+        
+        \textbf{Architecture Scope} & 
+        Collaborative SLM--LLM systems using routing, retrieval, verification, fallback, or role specialization. & 
+        SLM-only papers or monolithic LLM comparisons without a collaborative SLM component; monolithic LLMs were allowed only as baselines inside otherwise eligible studies. \\
+        
+        \textbf{Model Size and Transparency} & 
+        Identifiable SLM component with reported or inferable size not exceeding 7B parameters; closed-box LLMs allowed only as baseline, teacher, or fallback components. & 
+        Primary architecture depends on closed-box/API-bound models with undisclosed details, or no reproducible SLM component can be identified. \\
+        
+        \textbf{Topic Focus} & 
+        Reports system-level metrics such as performance, latency, memory, cost, or orchestration efficiency. & 
+        Focuses only on ethical, sociological, or legal issues without technical benchmarks. \\
+        
+        \textbf{Data Quality} & 
+        Contains empirical results and experimental validation using benchmarks or custom datasets. & 
+        Purely theoretical papers or non-empirical narrative surveys. \\
+        
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsection{Study Selection Process}
+\label{sec:study_selection}
+
+Following the Kitchenham and Charters review protocol~\cite{kitchenham2007guidelines}, candidate studies were screened against the predefined eligibility criteria and assessed at title, abstract, and full-text stages. The selection flow is reported using PRISMA 2020 terminology~\cite{page2021prisma}. The initial search yielded 116 records. During identification and screening, the title, abstract, and keywords of all records were reviewed manually, excluding 36 records that failed the primary eligibility criteria, including non-technical narrative surveys, extended abstracts without full empirical validation, and studies in unrelated domains. The remaining 80 reports advanced to full-text assessment, where 26 additional records were excluded due to model size or architecture mismatch (n=18), topic or scope mismatch (n=5), or lack of original empirical data or a remaining narrative-survey character (n=3). To improve objectivity, inclusion and exclusion decisions at both stages were made by majority vote, with ties resolved through collaborative discussion and escalation to the academic advisors, resulting in a final corpus of 54 primary studies.
+
+\subsection{Data Extraction and Synthesis Strategy}
+\label{sec:data_extraction}
+
+To systematically address the research questions, a standardized data extraction protocol was applied to the final corpus of 54 primary studies. For each study, data was extracted into a structured matrix to capture both the functional design of the systems and the empirical evidence used to justify them. 
+
+The extracted fields included the specific SLM and LLM models utilized; the overarching architecture type (e.g., Hybrid, Multi-Agent, Retrieval-Augmented Generation (RAG), Ensemble); orchestration mechanisms; evaluation metrics; baseline models; and quantitative performance indicators (accuracy, latency, cost, and energy). To ensure analytical rigor, each extracted variable was explicitly mapped to one or more of the core Research Questions (RQs). This mapping, together with concise field definitions, is detailed in Table \ref{tab:rq-matrix}.
+
+{\scriptsize
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{0.9}
+\begin{table}[!htbp]
+\centering
+\caption{RQ $\times$ data extraction matrix. Check marks indicate direct support; Arch. = architecture, Orchestr. = orchestration, and Base. = baseline.}
+\label{tab:rq-matrix}
+\begin{tabular}{@{}p{0.12\linewidth}p{0.51\linewidth}>{\centering\arraybackslash}p{0.061\linewidth}>{\centering\arraybackslash}p{0.061\linewidth}>{\centering\arraybackslash}p{0.061\linewidth}>{\centering\arraybackslash}p{0.061\linewidth}@{}}
+\toprule
+\textbf{Field} & \textbf{Description} & \textbf{RQ1} & \textbf{RQ2} & \textbf{RQ3} & \textbf{RQ4} \\
+\midrule
+SLM(s) & Specific small language model(s) evaluated, fine-tuned, or deployed. & $\checkmark$ &  &  & $\checkmark$ \\
+LLM(s) & Large language model(s) used as a baseline, teacher, or fallback. & $\checkmark$ &  &  & $\checkmark$ \\
+Arch. Type & Overall system design (e.g., hybrid, multi-agent, RAG, ensemble). & $\checkmark$ &  &  & $\checkmark$ \\
+Orchestr. Method & Coordination mechanism such as routing, decomposition, fusion, or voting. &  &  & $\checkmark$ & $\checkmark$ \\
+Agent Count & Number of distinct agents, experts, or role-specific components. &  & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+Task Type & Downstream application, domain, or problem setting evaluated. & $\checkmark$ &  & $\checkmark$ & $\checkmark$ \\
+Dataset & Benchmark, open-source corpus, or proprietary data used in evaluation. & $\checkmark$ &  & $\checkmark$ &  \\
+Metrics & Evaluation criteria used to assess performance and efficiency. & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+LLM Base. & Standalone performance score of the comparison large model. & $\checkmark$ &  & $\checkmark$ & $\checkmark$ \\
+SLM Base. & Standalone performance score of the comparison small model. & $\checkmark$ &  & $\checkmark$ & $\checkmark$ \\
+Accuracy & Final performance score achieved by the proposed architecture. & $\checkmark$ &  & $\checkmark$ &  \\
+Latency (ms) & Reported inference delay, throughput, or time-to-response. &  & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+Cost (\$) & Reported API cost or computational savings versus full LLM use. &  & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+Energy & Power use, joules-per-token, or carbon-related efficiency metric. &  & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+Findings & Main study takeaway on SLM--LLM collaboration or orchestration. & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+Limits & Reported constraints, failure modes, or deployment bottlenecks. &  & $\checkmark$ & $\checkmark$ &  \\
+\bottomrule
+\end{tabular}
+\end{table}
+}
+
+The full comparative analysis table and the comprehensive data extraction spreadsheet are available at \url{https://bit.ly/SLM-LLM-Data-2026}; for quick reference, the Study ID to citation mapping is as follows: \textbf{Primary Studies Mapping:} S1: \cite{olfactory2025}, S2: \cite{staticanalysis2025}, S3: \cite{egi2025}, S4: \cite{energytoken2025}, S5: \cite{qwqrouting2025}, S6: \cite{tigani2025cpu}, S7: \cite{aydin2025integrated}, S8: \cite{xie2025fusing}, S9: \cite{zhu2024distilling}, S10: \cite{rethinkllm2025}, S11: \cite{ji2025raprag}, S12: \cite{dorfner2024comparing}, S13: \cite{hao2024hybrid}, S14: \cite{shao2025dot}, S15: \cite{multiagent2025}, S16: \cite{lee2024orchestrallm}, S17: \cite{alabbasi2024teleoracle}, S18: \cite{chatzistefanidis2025symbiotic}, S19: \cite{han2025chest}, S20: \cite{cao2025enersafe}, S21: \cite{han2025commentagent}, S22: \cite{demir2025dpatransllm}, S23: \cite{pacheco2025flight}, S24: \cite{zhu2024ofslms}, S25: \cite{jeong2023testtime}, S26: \cite{relora2025}, S27: \cite{pietrzak2025evaluation}, S28: \cite{diagnosis2025}, S29: \cite{resiliomate2025}, S30: \cite{arabic2025}, S31: \cite{prompt2024}, S32: \cite{feedback2025}, S33: \cite{tcm2025}, S34: \cite{psa2026}, S35: \cite{vte2024}, S36: \cite{compos2024}, S37: \cite{networkrl2025}, S38: \cite{alabbasi2025teleqna}, S39: \cite{academicrag2024}, S40: \cite{fedhlm2025}, S41: \cite{arasum2025}, S42: \cite{hlmea2025}, S43: \cite{debateagents2025}, S44: \cite{phishing2024}, S45: \cite{transport2025}, S46: \cite{textnex2025}, S47: \cite{colbertrag2024}, S48: \cite{oh2025uncertainty}, S49: \cite{citer2025}, S50: \cite{sentensemble2026}, S51: \cite{itemdiff2025}, S52: \cite{bioagents2025}, S53: \cite{amarasinghe2025fipo}, S54: \cite{mixeddistill2024}. Following data extraction, a narrative synthesis approach was utilized. Because the included studies operate across diverse domains (e.g., telecommunications, healthcare, software engineering) and report varying metrics, a purely statistical meta-analysis was not feasible. Instead, studies were grouped by their architectural taxonomy, allowing for a comparative analysis of how different orchestration methods and domain constraints impact the performance and efficiency trade-offs between large and small models.

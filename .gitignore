@@ -1,5 +1,6 @@
 # LaTeX build artifacts
 *.aux
+*.abs
 *.bbl
 *.bcf
 *.blg
@@ -16,14 +17,16 @@
 *.synctex.gz
 *.toc
 *.xdv
+*.xmpdata
 
 # Generated PDFs from local compilation
-samplepaper.pdf
+original/samplepaper.pdf
+mensura/main.pdf
 
 # Local inspection/debug files
 check-*.txt
-samplepaper-firstpage-current.txt
-samplepaper.txt
+original/samplepaper-firstpage-current.txt
+original/samplepaper.txt
 
 # OS files
 .DS_Store
