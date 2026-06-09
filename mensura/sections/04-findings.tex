@@ -124,6 +124,16 @@ Figure~\ref{fig:domain-distribution} visualizes the distribution of applied doma
 The review shows that both hybrid and multi-agent architectures can outperform standalone small-model baselines, but their advantages emerge through different forms of coordination rather than parameter scaling alone. Hybrid systems achieve their strongest gains when computation is selectively distributed between local small models and stronger remote models. Token-level edge--cloud collaboration improves small-model performance without requiring full-query escalation: draft-verification, low-confidence routing, and uncertainty-aware skipping allow small models to approach LLM-level quality while invoking the larger model selectively (S13, S48, S49). At the sub-task level, structured task decomposition and cloud--edge allocation also maintain reasoning accuracy comparable to the best baselines (S14). In domain-specific settings, hybrid orchestration can outperform larger general-purpose models: a fine-tuned Phi-2 (2.7B) combined with retrieval, reranking, hybrid search, and long-context support achieves 84.20\% accuracy, exceeding GPT-4o mini (82.05\%) and GPT-4o (80.80\%) on telecommunications question answering (QA) (S17).
 
 Multi-agent systems, by contrast, show their comparative strength when performance depends on role specialization, critique, verification, and distributed reasoning. A three-agent Phi-3-based architecture performs on par with human experts in conceptual genomics tasks, although its gains weaken on more complex code-generation workflows, indicating that multi-agent benefits remain task-sensitive (S52). In reasoning-intensive question answering, a Proponent--Opponent--Arbitrator structure built on compact models such as Qwen2.5 0.5B and DeepSeek-R1 1.5B surpasses both single-agent reasoning and vanilla LLM baselines (S43). Likewise, assistant--checker collaboration supported by memory and feedback loops enables small-model multi-agent systems to approach or exceed larger baselines across database, knowledge-graph, and code-correction tasks (S29). Overall, the findings indicate that hybrid systems are most effective when the main challenge is balancing accuracy with latency and cost through adaptive routing, whereas multi-agent systems are most effective when the task benefits from explicit decomposition of reasoning roles and iterative verification. Thus, the comparative performance advantage of both architecture families is driven primarily by orchestration strategy, not by model size alone.
+
+\begin{samepage}
+\noindent\textbf{Key takeaways}
+\begin{itemize}
+    \item Hybrid systems are strongest when selective escalation can balance model quality against latency and cost.
+    \item Multi-agent systems benefit tasks that require role specialization, critique, and iterative verification, but their gains remain task-sensitive.
+    \item Orchestration strategy explains comparative performance more consistently than model size alone.
+\end{itemize}
+\end{samepage}
+
 \subsection{RQ2: Efficiency, Cost, Latency, and Energy Trade-offs}
 
 Efficiency motivates many hybrid and multi-agent systems, but the impact on cost, latency, and energy depends heavily on orchestration. Hybridization is not a universal efficiency solution; it often shifts bottlenecks rather than eliminating them.
@@ -133,6 +143,15 @@ Regarding inference cost and token consumption, architectures employing selectiv
 Conversely, the impact on latency is highly polarized. In optimal scenarios, relying on lightweight models accelerates throughput: a fine-tuned SLM in a hybrid classification pipeline (S10) operates at 7.41 ms on a graphics processing unit (GPU), and uncertainty-aware skipping in an edge--cloud setup provides 2.54$\times$ faster token throughput (S48). However, orchestration mechanisms frequently introduce new bottlenecks. Planners and retrievers add temporal overhead, as shown by the adaptive retrieval planner in S11 (1.42 seconds versus 0.95 seconds for naive retrieval) and by cross-encoder reranking in S17. Multi-agent collaboration also multiplies inference cycles: S43 reports a 1.8$\times$ inference-time overhead for adversarial debate, while complex agentic workflows can push average response latency to 107 seconds (S31). Processing time is further affected by hardware and modality constraints, including constrained local hardware, dual-path video sampling, CPU-only ensembles, and key-value cache recomputation at the edge (S20, S23, S50, S5).
 
 Energy consumption remains the least documented metric in the reviewed studies, and most reported efficiency gains are resource proxies rather than direct energy measurements. The clearest energy-centered evidence comes from S4, which argues for energy-per-token as a more informative metric and shows that forcing a small model to execute complex reasoning workflows, such as Chain-of-Thought, can substantially increase its per-query energy use. In some settings, a larger model prompted more directly is therefore more energy-efficient than a smaller model that generates a long reasoning trace. By contrast, S29 reports a 26.4\% reduction in computational redundancy through dual-scale memory, which may indicate lower resource demand but does not by itself constitute a direct energy benchmark. Taken together, the review suggests that energy efficiency depends on orchestration and generation length as much as on model size, and that stronger claims require standardized, hardware-specific measurement protocols.
+
+\begin{samepage}
+\noindent\textbf{Key takeaways}
+\begin{itemize}
+    \item Selective routing and task decomposition can substantially reduce API use, token transmission, and computational demand.
+    \item Latency gains are conditional: routing can accelerate inference, while retrieval, planning, and multi-agent loops can introduce significant overhead.
+    \item Energy claims remain weak without direct, hardware-specific measurements that account for generation length and orchestration cost.
+\end{itemize}
+\end{samepage}
 
 \subsection{RQ3: Orchestration and Routing Mechanisms}
 The studies contain a broad set of orchestration mechanisms, but they can be organized into a small number of recurring families. Across the included studies, performance differences are explained less by absolute model size than by how effectively the system retrieves evidence, routes uncertainty, and divides labor across components.
@@ -147,6 +166,15 @@ Task decomposition is increasingly important in the recent literature. S14 uses 
 
 Orchestration frequently extends beyond unimodal text processing to integrate diverse data modalities and specialized neural architectures. Several frameworks are designed to fuse language models with non-text representations and structured data. For example, S20 combines coarse-grained and fine-grained visual semantics through prompt-guided video sampling, while S8 fuses language-model embeddings with graph-convolutional features for molecular-property prediction. This heterogeneous routing is particularly prevalent in applied domains such as medicine; S19 orchestrates convolutional networks (ConvNeXt) for anatomical localization alongside a self-reflective LLM agent, and S34 employs a late-fusion approach to combine structured gradient boosting models based on electronic health record (EHR) tabular data with unstructured clinical text analysis. In these settings, orchestration operates as a structured fusion mechanism, ensuring that visual, spatial, or mathematical data is processed by the optimal specialized architecture before language generation occurs.
 
+\begin{samepage}
+\noindent\textbf{Key takeaways}
+\begin{itemize}
+    \item Token- and query-level routing provide different levels of control over when a larger model is invoked.
+    \item Retrieval acts as a control mechanism by grounding responses and constraining the smaller model's action space.
+    \item Task decomposition and heterogeneous fusion enable specialist components to collaborate, but add coordination and synchronization costs.
+\end{itemize}
+\end{samepage}
+
 \subsection{RQ4: Domain Suitability and Application-Specific Constraints}
 The choice between hybrid and multi-agent systems is rarely domain-agnostic. Privacy mandates, latency budgets, and verification demands largely determine the orchestration method. Across the 54 primary studies, distinct architectural preferences emerge across four core applied domains.
 
@@ -157,6 +185,15 @@ Tasks requiring rigid syntax, iterative refinement, and logical debugging benefi
 Telecommunications architectures prioritize latency budgets, bandwidth allocation, and domain-specific vernacular, making hybrid edge--cloud systems and retrieval-grounded SLMs the dominant pattern. Telecom QA benefits from fine-tuning, retrieval, reranking, and long-context support because these mechanisms ground smaller generators in technical standards and network terminology (S17, S47). Beyond QA, latency optimization and bandwidth reduction drive hybridization through lightweight prediction, uncertainty-aware skipping, and sub-task decomposition (S37, S48, S14).
 
 In edge, cyber-physical, and multimodal settings, orchestration is governed by hardware limits and input modality. Mission-critical aerospace and geospatial workflows rely on local or distributed agents to process operational data under deployment constraints (S23, S45). Industrial video monitoring and cross-modal sensing benefit from heterogeneous pipelines in which local models handle coarse or sensor-side processing while larger multimodal models are invoked only for complex cases (S20, S1). Overall, these domains show that collaborative SLM--LLM systems are strongest when the workflow can be partitioned according to privacy, latency, modality, or verification needs.
+
+\begin{samepage}
+\noindent\textbf{Key takeaways}
+\begin{itemize}
+    \item Healthcare and other privacy-sensitive domains favor local, retrieval-grounded models with verifiable evidence.
+    \item Software, reasoning, and telecommunications tasks benefit from structured feedback, specialist agents, or latency-aware edge--cloud routing.
+    \item Domain constraints determine architectural suitability; no single hybrid or multi-agent design is consistently best across applications.
+\end{itemize}
+\end{samepage}
 
 \subsection{Cross-RQ Synthesis}
 Viewed together, the four research questions suggest a consistent systems principle: hybrid language-model design works best when the large model is treated as a selectively invoked capability rather than the default engine for every token, query, or subtask.
