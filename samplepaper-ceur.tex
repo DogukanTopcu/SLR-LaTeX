@@ -1,0 +1,96 @@
+% CEUR-WS format — uses ceurart document class
+% ceurart.cls must be available in your TeX path.
+% Download from: https://github.com/yamadharma/ceurart
+% or use Overleaf (ceurart is pre-installed there).
+
+\documentclass{ceurart}
+
+% lmodern provides scalable (Type 1) fonts; required for microtype expansion
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{amssymb}
+% graphicx, hyperref, geometry, natbib are loaded by ceurart
+
+\begin{document}
+
+%%
+%% Conference metadata (required by ceurart — update with actual symposium name)
+%%
+\conference{CEUR Workshop Proceedings}
+
+%%
+%% Title
+%%
+\title{LLM, SLM, or Hybrid Utilization: Decision Factors Across
+  Performance, Efficiency, and Domain~---~A Systematic Literature
+  Review}
+
+%%
+%% Authors and Affiliations
+%%
+\author[1]{Do\u{g}ukan Top\c{c}u}[%
+  email=dogukantopcu@std.iyte.edu.tr
+]
+\author[1]{Abdulbaki \c{C}eltik}[%
+  email=abdulbakiceltik@std.iyte.edu.tr
+]
+\author[1]{Berkhan Karg{\i}l{\i}}[%
+  email=berkhankargili@std.iyte.edu.tr
+]
+\author[1]{Meri\c{c} Kelemeden}[%
+  email=merickelemeden@std.iyte.edu.tr
+]
+\author[1]{H\"{u}seyin \"{U}nl\"{u}}[%
+  email=huseyinunlu@iyte.edu.tr
+]
+\author[1]{Onur Demir\"{o}rs}[%
+  email=onurdemirors@iyte.edu.tr
+]
+
+\address[1]{Izmir Institute of Technology, Izmir, Turkey}
+
+%%
+%% Abstract and Keywords (before \maketitle in ceurart)
+%%
+\input{sections/00-abstract-ceur}
+
+\maketitle
+
+%%
+%% Body sections
+%%
+\input{sections/01-introduction}
+\input{sections/02-related-works}
+\input{sections/03-research-methodology}
+\input{sections/04-findings}
+\input{sections/05-threats-to-validity}
+\input{sections/06-conclusion}
+
+%%
+%% Acknowledgments / Declaration
+%%
+\begin{acknowledgments}
+The authors have no competing interests to declare that are relevant
+to the content of this article.
+
+\medskip
+\noindent\textit{Declaration on Generative AI.}
+The authors have not employed any generative AI tools in the
+preparation of this work.
+\end{acknowledgments}
+
+%%
+%% Appendix
+%%
+\appendix
+\input{sections/08-appendix}
+
+%%
+%% References
+%%
+\input{sections/07-references}
+
+\end{document}

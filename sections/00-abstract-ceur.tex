@@ -1,0 +1,37 @@
+% CEUR-WS abstract and keywords block.
+% \maketitle must appear AFTER this block in samplepaper-ceur.tex.
+
+\begin{abstract}
+Large language models (LLMs) deliver strong reasoning and generation
+performance, but their cost, latency, energy demand, and hardware
+requirements remain high. Small language models (SLMs) are better
+suited to edge and privacy-sensitive deployment, yet their
+capabilities vary across domains. This paper presents a systematic
+literature review of 54 studies on collaborative SLM--LLM systems
+spanning hybrid, multi-agent, retrieval-centered, and ensemble
+architectures, with monolithic LLMs treated as baselines rather than
+as a primary architecture class. Guided by four research questions on
+performance, efficiency, orchestration, and domain suitability, we
+apply a PRISMA 2020-based review design with a three-pass qualitative
+coding scheme that synthesizes models, architectures, datasets,
+metrics, latency, cost, energy, and reported limitations. Corpus
+analysis shows that 70\% of studies date to 2025 and hybrid
+architectures are the most prevalent design; a contribution-type
+mapping confirms that solution proposals dominate while energy and
+cost remain markedly underreported relative to accuracy. The
+literature shows a clear shift toward hybrid and multi-agent designs,
+but outcome coding reveals that strong results are reliably associated
+with explicit control layers (routers, retrievers, planners) rather
+than with model scale. Overall, SLMs are most competitive when paired
+with routing, retrieval, planning, or fusion mechanisms in narrow,
+structured, or domain-specific settings.
+\end{abstract}
+
+\begin{keywords}
+systematic literature review \sep
+large language models \sep
+small language models \sep
+hybrid architectures \sep
+multi-agent systems \sep
+edge-cloud inference
+\end{keywords}

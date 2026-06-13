@@ -1,0 +1,23 @@
+% Minimal stub for doclicense.sty
+% Provides Creative Commons license commands used by ceurart.cls.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{doclicense}[2021/01/15 v2.1.0 License in document (stub)]
+\DeclareOption{type}{}
+\DeclareOption{modifier}{}
+\DeclareOption{version}{}
+\DeclareOption{imageposition}{}
+\DeclareOption*{}
+\ProcessOptions\relax
+
+\newcommand{\doclicenseThis}{}
+\newcommand{\doclicenseImage}[1][]{}
+\newcommand{\doclicenseText}{%
+  \copyright~\the\year~Copyright for this paper by its authors.
+  Use permitted under Creative Commons License Attribution 4.0
+  International (CC BY 4.0).}
+\newcommand{\doclicenseName}{CC BY 4.0}
+\newcommand{\doclicenseLongName}{Creative Commons Attribution 4.0 International}
+\newcommand{\doclicenseIcon}{}
+\newcommand{\doclicenseURL}{https://creativecommons.org/licenses/by/4.0/}
+\newlength{\ccLogoWidth}
+\setlength{\ccLogoWidth}{1cm}

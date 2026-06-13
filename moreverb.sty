@@ -1,0 +1,27 @@
+% moreverb.sty — stub providing verbatimwrite using standard verbatim internals
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{moreverb}[2008/06/03 v2.3 Verbatim extras (stub)]
+\RequirePackage{verbatim}
+
+% Write register for verbatimwrite
+\newwrite\verbatim@out
+
+% verbatimwrite environment: writes content verbatim to a file
+% Uses \verbatim@start, \verbatim@line, \verbatim@processline from verbatim.sty
+\newenvironment{verbatimwrite}[1]{%
+  \@bsphack
+  \immediate\openout\verbatim@out #1\relax
+  \let\do\@makeother\dospecials
+  \catcode`\^^M\active
+  \def\verbatim@processline{%
+    \immediate\write\verbatim@out{\the\verbatim@line}}%
+  \verbatim@start
+}{%
+  \immediate\closeout\verbatim@out
+  \@esphack
+}
+
+\newenvironment{boxedverbatim}{\verbatim}{\endverbatim}
+\newenvironment{listingcont}{}{}
+\newcommand{\verbatimtabinput}[2][8]{\verbatiminput{#2}}
+\newcommand{\listing}[2][8]{\verbatiminput{#2}}

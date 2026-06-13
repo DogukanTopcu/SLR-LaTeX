@@ -1,0 +1,24 @@
+% Minimal stub for csquotes.sty
+% Provides smart quotation commands used by ceurart.cls.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{csquotes}[2020/04/01 v5.2.7 Context-sensitive quotations (stub)]
+\DeclareOption{autostyle}{}
+\DeclareOption{autopunct}{}
+\DeclareOption{strict}{}
+\DeclareOption*{}
+\ProcessOptions\relax
+
+%% Internal hooks that microtype expects from csquotes
+\newcommand{\@disablequotes}{}
+\newcommand{\@enablequotes}{}
+\newcommand{\csq@bdquote}{}
+\newcommand{\csq@edquote}{}
+
+\newcommand{\enquote}[1]{``#1''}
+\newcommand{\MakeAutoQuote}[2]{}
+\newcommand{\MakeOuterQuote}[1]{}
+\newcommand{\MakeInnerQuote}[1]{}
+\newcommand{\blockquote}[2][]{#2}
+\newcommand{\textquote}[2][]{``#2''}
+\newcommand{\foreignquote}[2]{\enquote{#2}}
+\newcommand{\hyphenquote}[2]{\enquote{#2}}
