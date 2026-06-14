@@ -1,7 +1,7 @@
-\Title{LLM, SLM, or Hybrid Utilization: Decision Factors Across Performance, Efficiency, and Domain~---~A Systematic Literature Review}
-\Author{Do\u {g}ukan Top\c {c}u\sep Abdulbaki \c {C}eltik\sep Berkhan Karg{\i }l{\i }\sep Meri\c {c} Kelemeden\sep H\"{u}seyin \"{U}nl\"{u}\sep Onur Demir\"{o}rs}
+\Title{LLM, SLM, or Hybrid Utilization: Decision Factors Across Performance, Efficiency, and Domain -- A Systematic Literature Review}
+\Author{Doğukan Topçu\sep Abdulbaki Çeltik\sep Berkhan Kargılı\sep Meriç Kelemeden\sep Hüseyin Ünlü\sep Onur Demirörs}
 \Keywords{systematic literature review \sep large language models \sep small language models \sep hybrid architectures \sep multi-agent systems \sep edge-cloud inference}
-\Subject{Layout by CEURART v0.6.2}
+\Subject{Layout by CEURART v0.5.3}
 \Copyright{\copyright\ 2026\ Copyright for this paper by its authors. Use permitted under Creative Commons License Attribution 4.0 International (CC BY 4.0).}
 \CopyrightURL{https://creativecommons.org/licenses/by/4.0}
 \Journaltitle{CEUR Workshop Proceedings}

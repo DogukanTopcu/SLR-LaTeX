@@ -13,6 +13,59 @@ This paper presented a systematic literature review of 54 studies on collaborati
 
 Across all four questions, a consistent principle emerges: the presence of an explicit control layer---router, planner, retriever, or fusion module---is the most reliable differentiator between high- and low-performing collaborative designs (39 of 54 included studies). Strong results are reliably associated with these control layers rather than with model scale alone.
 
+\textbf{Design guidelines.} The following guidelines represent the most reliable actionable conclusions of this review, each supported by convergent evidence from at least four independent primary studies reporting consistent positive outcomes under comparable operational constraints.
+
+\begin{enumerate}
+    \item \textbf{G1 --- Prioritise explicit control layers.} When choosing between monolithic and collaborative designs, deploy a routing, retrieval, or planning component as the primary architectural decision; 39 of 54 studies attribute performance gains to the presence of such a layer rather than to model scale alone.
+    \item \textbf{G2 --- Match mechanism to deployment constraint.} Use token-level routing when API cost or latency is the binding constraint; use RAG when hallucination reduction or data privacy is primary; use role-specialised multi-agent decomposition when reasoning depth across subtasks is required. Figure~\ref{fig:decision-flowchart} provides a practitioner-facing decision procedure.
+    \item \textbf{G3 --- Report latency and cost alongside accuracy.} Accuracy-only evaluation is insufficient to establish deployment suitability; efficiency trade-offs are equally decision-relevant and currently underreported across the corpus.
+    \item \textbf{G4 --- Prefer narrow, structured domains for initial hybrid deployment.} Collaborative SLM--LLM systems show their most consistent gains in healthcare, telecom, edge/IoT, and code tasks with well-defined subtask boundaries; performance in broad, open-ended generation tasks is less reliable and should be validated against a monolithic baseline before adoption.
+\end{enumerate}
+
+\begin{figure}[!htbp]
+\centering
+\begin{tikzpicture}[
+  font=\scriptsize,
+  dec/.style={rectangle, draw=black, thick, rounded corners=2pt,
+              text width=5.6cm, align=center, inner sep=5pt, fill=black!6},
+  res/.style={rectangle, draw=black!80, thick,
+              text width=3.6cm, align=center, inner sep=4pt, fill=black!13},
+  arr/.style={-{stealth}, thick},
+  node distance=0.5cm
+]
+  \node[rectangle, draw=black, thick, fill=black!20, text width=5.6cm,
+        align=center, inner sep=5pt] (start)
+        {\textbf{Define primary deployment constraint}};
+
+  \node[dec, below=of start] (d1) {Data privacy or hallucination risk?};
+  \node[res, right=2.0cm of d1] (r1) {\textbf{RAG architecture}\\[2pt]S4, S10, S21,\\S30, S31, S44};
+
+  \node[dec, below=of d1] (d2) {Hard latency budget ($\leq$150\,ms)?};
+  \node[res, right=2.0cm of d2] (r2) {\textbf{Hybrid token routing}\\[2pt]S2, S13, S27,\\S32, S33, S45};
+
+  \node[dec, below=of d2] (d3) {Multi-step reasoning or complex task?};
+  \node[res, right=2.0cm of d3] (r3) {\textbf{Multi-agent decomp.}\\[2pt]S1, S6, S7,\\S15, S16, S43};
+
+  \node[dec, below=of d3] (d4) {Non-text or multi-modal input?};
+  \node[res, right=2.0cm of d4] (r4) {\textbf{Ensemble / fusion}\\[2pt]S3, S5, S8,\\S22--S26};
+
+  \node[res, below=of d4, fill=black!4, text width=5.6cm] (r5)
+        {Monolithic LLM baseline may be sufficient};
+
+  \draw[arr] (start) -- (d1);
+  \draw[arr] (d1)      -- node[left, xshift=-2pt, font=\tiny]{No}  (d2);
+  \draw[arr] (d1.east) -- node[above, font=\tiny]{Yes} (r1.west);
+  \draw[arr] (d2)      -- node[left, xshift=-2pt, font=\tiny]{No}  (d3);
+  \draw[arr] (d2.east) -- node[above, font=\tiny]{Yes} (r2.west);
+  \draw[arr] (d3)      -- node[left, xshift=-2pt, font=\tiny]{No}  (d4);
+  \draw[arr] (d3.east) -- node[above, font=\tiny]{Yes} (r3.west);
+  \draw[arr] (d4)      -- node[left, xshift=-2pt, font=\tiny]{No}  (r5);
+  \draw[arr] (d4.east) -- node[above, font=\tiny]{Yes} (r4.west);
+\end{tikzpicture}
+\caption{Architecture selection flowchart derived from corpus synthesis (Guideline~G2). Study identifiers refer to Appendix~\ref{app:study_mapping}.}
+\label{fig:decision-flowchart}
+\end{figure}
+
 The literature is stronger in architectural innovation than in evaluation discipline. Many studies report accuracy improvements, but far fewer report latency, cost, or energy in a form that supports fair comparison. The current evidence is sufficient to show that hybridization \textit{can} work, but often insufficient to show \textit{when} it is the better deployment choice under realistic resource constraints. The strongest positive results remain concentrated in narrower or more structured settings such as telecom question answering, selected healthcare tasks, optimisation, and industrial monitoring. Energy evidence is especially limited: direct measurement is rare, and proxy improvements such as reduced computational redundancy~\cite{resiliomate2025} do not establish verified energy savings. Future work should treat energy as a first-class evaluation outcome and report energy-per-token, reasoning length, hardware configuration, and escalation behavior under comparable conditions. Standardized benchmarks for collaborative SLM--LLM systems would further reduce the current reliance on paper-specific evaluation protocols.
 
 The full comparative analysis table and data extraction spreadsheet supporting this review are available at \url{https://bit.ly/SLM-LLM-Data-2026}.

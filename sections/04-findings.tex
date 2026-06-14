@@ -1,16 +1,161 @@
 \section{Findings}
 \label{sec:findings}
 
+Table~\ref{tab:rq-summary} provides a one-row-per-RQ orientation of the principal findings before the detailed analysis.
+
+{\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{table}[!htbp]
+\centering
+\caption{Executive summary of findings per research question.}
+\label{tab:rq-summary}
+\begin{tabularx}{\linewidth}{@{} p{0.07\linewidth} p{0.13\linewidth} >{\raggedright\arraybackslash}X p{0.11\linewidth} @{}}
+\toprule
+\textbf{RQ} & \textbf{Focus} & \textbf{Principal finding} & \textbf{Evidence} \\
+\midrule
+RQ1 & Performance &
+Hybrid and multi-agent architectures match or exceed LLM baselines in structured, domain-specific settings when an explicit routing or decomposition layer is present. &
+39/54 studies \\
+RQ2 & Efficiency &
+Token-level routing achieves $>$80\% cost reduction; orchestration overhead polarizes latency; energy is the least-reported metric across the corpus. &
+47/54 studies \\
+RQ3 & Orchestration &
+Five recurring mechanism families---token verification, query routing, RAG, task decomposition, and multimodal fusion---emerge; selection is constraint-driven. &
+54/54 studies \\
+RQ4 & Domain suitability &
+Healthcare, telecom, edge/IoT, and code tasks yield the strongest gains; open-ended generation tasks show the least consistent improvement. &
+54/54 studies \\
+\bottomrule
+\end{tabularx}
+\end{table}
+}
+
+The 54 included studies cluster into four recurring architectural patterns. Table~\ref{tab:concept-matrix} maps each pattern to its dominant orchestration mechanisms, the engineering constraints it addresses, and the primary studies assigned to it. This concept matrix provides the organizing structure for the research-question-based analysis that follows.
+
+\begin{table}[!htbp]
+\centering
+\caption{SLM--LLM architectural concept matrix.}
+\label{tab:concept-matrix}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabularx}{\linewidth}{
+  @{}
+  >{\raggedright\arraybackslash}p{0.16\linewidth}
+  >{\raggedright\arraybackslash}p{0.25\linewidth}
+  >{\raggedright\arraybackslash}p{0.22\linewidth}
+  >{\raggedright\arraybackslash}X
+  @{}
+}
+\toprule
+\textbf{Architectural Pattern} &
+\textbf{Orchestration Mechanism} &
+\textbf{Key Engineering Constraints} &
+\textbf{Primary Studies} \\
+\midrule
+\textbf{Hybrid Architectures} &
+Token-level routing, draft-verification, uncertainty-aware skipping, and edge--cloud distribution. &
+API cost, edge--cloud bandwidth, and latency thresholds. &
+S2, S13, S27, S32, S33, S45, S46, S48, S49, S53. \\
+
+\textbf{Multi-Agent Systems} &
+Role specialization, iterative verification, adversarial debate, and feedback loops. &
+Reasoning depth, logical accuracy, and complex task decomposition. &
+S1, S6, S7, S11, S15, S16, S20, S29, S37, S43, S51, S52, S54. \\
+
+\textbf{Retrieval-Centered (RAG)} &
+Adaptive retrieval planning, context expansion, fact-grounding, and action-space constraint. &
+Hallucination reduction, data privacy, and strict domain accuracy. &
+S4, S10, S21, S30, S31, S44. \\
+
+\textbf{Ensembles and Heterogeneous Fusion} &
+Tabular transformation, cross-modal late fusion, and prompt-guided multimodal sampling. &
+Hardware limits on CPUs and edge devices, and non-text modality processing. &
+S3, S5, S8, S9, S12, S14, S17--S19, S22--S26, S28, S34--S36, S38--S42, S47, S50. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
 \subsection{Study Characteristics and Corpus Overview}
 \label{sec:study_characteristics}
 
 Before addressing the research questions, a characterization of the 54-study corpus provides context for interpreting the synthesis.
 
-\textbf{Temporal distribution.} The corpus is concentrated in recent years: one study dates to 2023 (2\%), 13 to 2024 (24\%), 38 to 2025 (70\%), and two to early 2026 (4\%). The dominance of 2025 publications indicates an emergent and fast-moving research area in which collaborative SLM--LLM architectures are still consolidating. Publications cluster around two conference cycles (ACL/EMNLP and AAAI/WWW) and several open-access engineering journals, with a notable share appearing first as arXiv preprints later published in conference or journal proceedings.
+\textbf{Temporal distribution.} The corpus is concentrated in recent years: one study dates to 2023 (2\%), 13 to 2024 (24\%), 38 to 2025 (70\%), and two to early 2026 (4\%). The dominance of 2025 publications indicates an emergent and fast-moving research area in which collaborative SLM--LLM architectures are still consolidating. Publications cluster around two conference cycles (ACL/EMNLP and AAAI/WWW) and several open-access engineering journals, with a notable share appearing first as arXiv preprints later published in conference or journal proceedings. Figure~\ref{fig:publication-years} illustrates this sharp temporal acceleration.
+
+\begin{figure}[!htbp]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    width=0.80\linewidth,
+    height=5.2cm,
+    ymin=0,
+    ymax=44,
+    ytick={0,10,20,30,40},
+    ylabel={Number of studies},
+    symbolic x coords={2023,2024,2025,2026},
+    xtick=data,
+    xlabel={Publication year},
+    bar width=22pt,
+    nodes near coords,
+    nodes near coords align={vertical},
+    enlarge x limits=0.20,
+    axis line style={black!70},
+    tick style={black!60},
+    grid=major,
+    grid style={draw=black!12},
+    label style={font=\small},
+    tick label style={font=\small},
+]
+\addplot[fill=black!62, draw=black!80] coordinates {
+    (2023,1)
+    (2024,13)
+    (2025,38)
+    (2026,2)
+};
+\end{axis}
+\end{tikzpicture}
+\caption{Publication-year distribution of the 54 included primary studies.}
+\label{fig:publication-years}
+\end{figure}
 
 \textbf{Architecture distribution.} Hybrid architectures---comprising token-level verification, query-level routing, and task-decomposition systems---constitute the largest group (27 studies), followed by multi-agent systems (18 studies), retrieval-augmented designs (12 studies), and ensemble approaches (6 studies). Because several studies combine multiple patterns (e.g., multi-agent systems that also employ RAG), per-study architecture labels are not mutually exclusive and aggregate counts exceed 54; the full per-study coding is available in the supplementary spreadsheet. Hybrid designs grew as a proportion of the corpus between 2024 and 2025, while ensemble-only studies remained stable. Multi-agent architectures increased substantially in 2025, consistent with the broader uptake of agentic frameworks in the literature.
 
-\textbf{Domain distribution.} Healthcare and clinical applications account for the largest single domain (14 studies), spanning radiology labeling, clinical summarization, TCM classification, and biomedical agents. Software engineering and code-related tasks form the second-largest group (8 studies), covering code correction, static analysis, comment generation, and robot introspection. Telecommunications and network optimization (6 studies), edge/IoT/industrial settings (6 studies), and education/assessment tasks (4 studies) follow. The remaining 16 studies address general NLP tasks or cross-domain benchmarks. Domain distribution is uneven; healthcare and NLP are substantially better represented than education, transportation, and emerging multimodal settings.
+\textbf{Domain distribution.} Healthcare and clinical applications account for the largest single domain (14 studies), spanning radiology labeling, clinical summarization, TCM classification, and biomedical agents. Software engineering and code-related tasks form the second-largest group (8 studies), covering code correction, static analysis, comment generation, and robot introspection. Telecommunications and network optimization (6 studies), edge/IoT/industrial settings (6 studies), and education/assessment tasks (4 studies) follow. The remaining 16 studies address general NLP tasks or cross-domain benchmarks. Domain distribution is uneven; healthcare and NLP are substantially better represented than education, transportation, and emerging multimodal settings. The breakdown is visualised in Figure~\ref{fig:domain-distribution}.
+
+\begin{figure}[!htbp]
+\centering
+\begin{tikzpicture}
+\pie[
+    sum=54,
+    radius=2.35,
+    text=legend,
+    before number={},
+    after number={},
+    color={
+        black!72,
+        black!55,
+        black!40,
+        black!27,
+        black!60!blue!35,
+        black!45!blue!25,
+        black!18
+    }
+]{
+    14/{Healthcare \& medicine},
+    8/{Software engineering \& code},
+    6/{Telecommunications \& networks},
+    6/{Edge, IoT, \& industrial},
+    4/{Education \& assessment},
+    4/{Cybersecurity \& science},
+    12/{General NLP \& benchmarking}
+}
+\end{tikzpicture}
+\caption{Applied-domain distribution of the 54 included studies (\(n\) per slice shown in legend).}
+\label{fig:domain-distribution}
+\end{figure}
 
 \textbf{Metric reporting.} The second coding pass (Section~\ref{sec:synthesis_protocol}) confirmed that performance metrics (accuracy, F1, task-specific scores) are reported in nearly all 54 studies. Latency is reported in approximately one-third of the corpus, cost in fewer than one-quarter, and direct energy measurement in only a handful of studies. This uneven reporting profile reflects the field's current maturity and directly constrains what cross-study efficiency comparisons are possible; this limitation is discussed in full under RQ2 (Section~\ref{sec:rq2}).
 
@@ -25,6 +170,15 @@ Multi-agent systems, by contrast, show their comparative strength when performan
 
 \noindent\textbf{Summary (RQ1).} Hybrid and multi-agent architectures consistently outperform monolithic SLM baselines and can match or exceed LLM baselines in narrower settings. The performance advantage is driven by orchestration strategy---selective escalation, role decomposition, verification loops---rather than by model size alone. Gains are strongest in structured, domain-specific tasks and weakest in open-ended reasoning that requires broad contextual knowledge.
 
+\begin{samepage}
+\smallskip\noindent\textit{Key takeaways.}
+\begin{itemize}
+    \item Hybrid systems are strongest when selective escalation balances model quality against latency and cost.
+    \item Multi-agent systems benefit tasks that require role specialization, critique, and iterative verification, but their gains remain task-sensitive.
+    \item Orchestration strategy explains comparative performance more consistently than model size alone.
+\end{itemize}
+\end{samepage}
+
 \subsection{RQ2: Efficiency, Cost, Latency, and Energy Trade-offs}
 \label{sec:rq2}
 
@@ -37,6 +191,15 @@ Conversely, the impact on latency is highly polarized. In optimal scenarios, rel
 Energy consumption remains the least documented metric in the reviewed studies, and most reported efficiency gains are resource proxies rather than direct energy measurements. The clearest energy-centered evidence comes from S4, which argues for energy-per-token as a more informative metric and shows that forcing a small model to execute complex reasoning workflows, such as Chain-of-Thought, can substantially increase its per-query energy use. In some settings, a larger model prompted more directly is therefore more energy-efficient than a smaller model that generates a long reasoning trace. By contrast, S29 reports a 26.4\% reduction in computational redundancy through dual-scale memory, which may indicate lower resource demand but does not by itself constitute a direct energy benchmark. Taken together, the review suggests that energy efficiency depends on orchestration and generation length as much as on model size, and that stronger claims require standardized, hardware-specific measurement protocols.
 
 \noindent\textbf{Summary (RQ2).} The strongest efficiency gains---often exceeding 80\% cost reduction---come from token-level routing and selective escalation. Latency effects are polarized: local SLM inference is fast, but orchestration layers (retrievers, planners, multi-agent cycles) frequently introduce overhead that negates throughput gains. Energy is the least reported metric, and available evidence shows that generation length and reasoning depth matter as much as model size for per-query energy use.
+
+\begin{samepage}
+\smallskip\noindent\textit{Key takeaways.}
+\begin{itemize}
+    \item Selective routing and task decomposition can substantially reduce API use, token transmission, and computational demand.
+    \item Latency gains are conditional: routing can accelerate inference, while retrieval, planning, and multi-agent loops can introduce significant overhead.
+    \item Energy claims remain weak without direct, hardware-specific measurements that account for generation length and orchestration cost.
+\end{itemize}
+\end{samepage}
 
 \subsection{RQ3: Orchestration and Routing Mechanisms}
 \label{sec:rq3}
@@ -54,6 +217,15 @@ Orchestration frequently extends beyond unimodal text processing to integrate di
 
 \noindent\textbf{Summary (RQ3).} Orchestration mechanisms cluster into five recurring families: token-level verification, query-level routing, RAG, task decomposition, and multimodal fusion. Each family addresses a distinct allocation problem---confidence management, difficulty separation, context grounding, subtask specialization, and modality integration---and the choice among them is largely determined by the deployment constraints and data modalities of the target domain.
 
+\begin{samepage}
+\smallskip\noindent\textit{Key takeaways.}
+\begin{itemize}
+    \item Token- and query-level routing provide different levels of control over when a larger model is invoked.
+    \item Retrieval acts as a control mechanism by grounding responses and constraining the smaller model's action space.
+    \item Task decomposition and heterogeneous fusion enable specialist components to collaborate, but add coordination and synchronization costs.
+\end{itemize}
+\end{samepage}
+
 \subsection{RQ4: Domain Suitability and Application-Specific Constraints}
 \label{sec:rq4}
 The choice between hybrid and multi-agent systems is rarely domain-agnostic. Privacy mandates, latency budgets, and verification demands largely determine the orchestration method. Across the 54 primary studies, distinct architectural preferences emerge across four core applied domains.
@@ -69,6 +241,15 @@ In edge, cyber-physical, and multimodal settings, orchestration is governed by h
 \noindent\textbf{Where collaborative systems underperform.} Several conditions consistently produce weak or mixed results. Open-ended reasoning tasks requiring broad contextual knowledge remain the most reliable failure mode: studies involving general-domain question answering without retrieval grounding and tasks demanding multi-hop inference over unseen entities show the smallest gains and most task-dependent outcomes (S3, S12). Broad static analysis, in which type inference and cross-file dependency tracking require model-level generalization, still favours larger monolithic models even when multi-agent wrappers are added (S2, S24). In multi-agent settings, performance degrades when role decomposition is applied to tasks that do not admit natural subtask boundaries: S52 reports that gains on conceptual genomics tasks weaken substantially on complex code-generation workflows that resist modular partitioning. These failure cases share a common pattern: orchestration overhead (retrieval latency, inter-agent communication cycles, planner invocation) exceeds the benefit when the task cannot be partitioned into specialist stages with well-defined inputs and outputs.
 
 \noindent\textbf{Summary (RQ4).} Domain-specific constraints---privacy mandates in healthcare, latency budgets in telecom, hardware limits in edge deployments, and syntax rigidity in code tasks---are the primary drivers of architecture selection. Collaborative SLM--LLM systems deliver their strongest results when the workflow can be partitioned to align each component with the constraint it best addresses; they underperform when tasks require broad, undifferentiated generation that cannot be decomposed or grounded.
+
+\begin{samepage}
+\smallskip\noindent\textit{Key takeaways.}
+\begin{itemize}
+    \item Healthcare and privacy-sensitive domains favor local, retrieval-grounded models with verifiable evidence.
+    \item Software, reasoning, and telecommunications tasks benefit from structured feedback, specialist agents, or latency-aware edge--cloud routing.
+    \item Domain constraints determine architectural suitability; no single hybrid or multi-agent design is consistently best across applications.
+\end{itemize}
+\end{samepage}
 
 \subsection{Cross-RQ Synthesis}
 \label{sec:cross_rq}
