@@ -20,7 +20,7 @@ To systematically evaluate the technical and operational trade-offs between coll
 \subsection{Information Sources and Search Strategy}
 \label{sec:search_strategy}
 
-To capture a comprehensive and high-quality corpus of contemporary collaborative language model architectures, the literature search was centered on the Web of Science (WoS) Core Collection, with the final search performed on 8 February 2026. Scopus and the Association for Computing Machinery (ACM) Digital Library were also checked with the same core concepts as coverage validation; this check did not identify additional eligible studies that would materially alter the final corpus.
+To capture a comprehensive and high-quality corpus of contemporary collaborative language model architectures, the literature search was centered on the Web of Science (WoS) Core Collection, with the final search performed on 8 February 2026. Scopus and the Association for Computing Machinery (ACM) Digital Library were also checked with the same core concepts as coverage validation; deduplicated records from both sources were screened against the eligibility criteria, and no additional studies were identified beyond those already captured by the WoS search. The WoS-centric approach and its implications for coverage are discussed under external validity (Section~\ref{sec:threats}).
 
 The search strategy was systematically developed by extracting the core concepts from the defined research questions and refining the terminology through initial pilot searches in the artificial intelligence (AI) literature. This iterative process helped identify common synonyms and alternate phrasing used in the literature (e.g., ``Compact Model'' for SLMs, or ``Agentic'' for multi-agent systems). To guarantee that every retrieved study examined the intersection of model size, collaborative architectural design, and system evaluation, the final query was structured into four mandatory components and applied to the title, abstract, and keyword fields: \textit{(``Large Language Model*'' OR ``LLM'' OR ``Generative AI'' OR ``Foundation Model*'') AND (``Small Language Model*'' OR ``SLM'' OR ``Compact Model*'' OR ``Lightweight Model*'') AND (``Multi-agent'' OR ``Hybrid'' OR ``Orchestration'' OR ``Routing'' OR ``Ensemble'' OR ``Agentic'') AND (``Performance'' OR ``Accuracy'' OR ``Efficiency'' OR ``Latency'' OR ``Cost'' OR ``Benchmark'')}.
 
@@ -47,8 +47,8 @@ To systematically isolate systems-level engineering research from the broader ge
         Collaborative SLM--LLM systems using routing, retrieval, verification, fallback, or role specialization. & 
         SLM-only papers or monolithic LLM comparisons without a collaborative SLM component; monolithic LLMs were allowed only as baselines inside otherwise eligible studies. \\
         
-        \textbf{Model Size and Transparency} & 
-        Identifiable SLM component with reported or inferable size not exceeding 7B parameters; closed-box LLMs allowed only as baseline, teacher, or fallback components. & 
+        \textbf{Model Size and Transparency} &
+        Identifiable SLM component with reported or inferable size not exceeding 7B parameters. This upper bound was chosen, rather than a lower one (e.g., 1B--3B), because it marks the practical ceiling for single-accelerator deployment: a 7B-parameter model requires approximately 14~GB of memory at FP16 precision or roughly 4--5~GB once 4-bit quantized, fitting within a single consumer GPU or edge accelerator without multi-device sharding. The threshold is also consistent with the upper range used in related secondary studies on SLM definitions~\cite{slmreview2025prisma,wang2024slmsurvey}, and an upper-bound choice avoids excluding boundary-case models (e.g., Mistral-7B, Qwen2.5-7B) that several included primary studies deploy as their SLM component; closed-box LLMs allowed only as baseline, teacher, or fallback components. &
         Primary architecture depends on closed-box application programming interface (API)-bound models with undisclosed details, or no reproducible SLM component can be identified. \\
         
         \textbf{Topic Focus} & 
@@ -66,7 +66,16 @@ To systematically isolate systems-level engineering research from the broader ge
 \subsection{Study Selection Process}
 \label{sec:study_selection}
 
-Following the Kitchenham and Charters review protocol~\cite{kitchenham2007guidelines}, candidate studies were screened against the predefined eligibility criteria and assessed at title, abstract, and full-text stages. The selection flow is reported using PRISMA 2020 terminology~\cite{page2021prisma}. The initial search yielded 116 records. During identification and screening, the title, abstract, and keywords of all records were reviewed manually, excluding 36 records that failed the primary eligibility criteria, including non-technical narrative surveys, extended abstracts without full empirical validation, and studies in unrelated domains. The remaining 80 reports advanced to full-text assessment, where 26 additional records were excluded due to model size or architecture mismatch (n=18), topic or scope mismatch (n=5), or lack of original empirical data or a remaining narrative-survey character (n=3). To improve objectivity, inclusion and exclusion decisions at both stages were made by majority vote, with ties resolved through collaborative discussion and escalation to the academic advisors, resulting in a final corpus of 54 primary studies.
+Following the Kitchenham and Charters review protocol~\cite{kitchenham2007guidelines}, candidate studies were screened against the predefined eligibility criteria and assessed at title, abstract, and full-text stages. The selection flow is summarised in Figure~\ref{fig:prisma} and reported using PRISMA 2020 terminology~\cite{page2021prisma}. The initial search yielded 116 records.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.75\linewidth]{figures/prisma_flowchart.pdf}
+\caption{PRISMA 2020 flow diagram of the study selection process.}
+\label{fig:prisma}
+\end{figure}
+
+During identification and screening, the title, abstract, and keywords of all records were reviewed manually, excluding 36 records that failed the primary eligibility criteria, including non-technical narrative surveys, extended abstracts without full empirical validation, and studies in unrelated domains. The remaining 80 reports advanced to full-text assessment, where 26 additional records were excluded due to model size or architecture mismatch (n=18), topic or scope mismatch (n=5), or lack of original empirical data or a remaining narrative-survey character (n=3). To improve objectivity, title--abstract screening was performed independently by two reviewers before any discussion; initial pairwise agreement across both screening stages reached 93.1\% (108 of 116 records; 8 records required consensus discussion). Disagreements at both screening stages were resolved through structured consensus discussion, with ties escalated to the academic advisors, resulting in a final corpus of 54 primary studies.
 
 \subsection{Data Extraction and Synthesis Strategy}
 \label{sec:data_extraction}
@@ -107,70 +116,28 @@ Limits & Reported constraints, failure modes, or deployment bottlenecks. &  & $\
 \end{table}
 }
 
-The full comparative analysis table and the comprehensive data extraction spreadsheet are available at \url{https://bit.ly/SLM-LLM-Data-2026}.
-
-\begingroup
-\small
-\raggedright
-\noindent\textbf{Primary studies mapping:}
-\mbox{S1:~\cite{olfactory2025}},
-\mbox{S2:~\cite{staticanalysis2025}},
-\mbox{S3:~\cite{egi2025}},
-\mbox{S4:~\cite{energytoken2025}},
-\mbox{S5:~\cite{qwqrouting2025}},
-\mbox{S6:~\cite{tigani2025cpu}},
-\mbox{S7:~\cite{aydin2025integrated}},
-\mbox{S8:~\cite{xie2025fusing}},
-\mbox{S9:~\cite{zhu2024distilling}},
-\mbox{S10:~\cite{rethinkllm2025}},
-\mbox{S11:~\cite{ji2025raprag}},
-\mbox{S12:~\cite{dorfner2024comparing}},
-\mbox{S13:~\cite{hao2024hybrid}},
-\mbox{S14:~\cite{shao2025dot}},
-\mbox{S15:~\cite{multiagent2025}},
-\mbox{S16:~\cite{lee2024orchestrallm}},
-\mbox{S17:~\cite{alabbasi2024teleoracle}},
-\mbox{S18:~\cite{chatzistefanidis2025symbiotic}},
-\mbox{S19:~\cite{han2025chest}},
-\mbox{S20:~\cite{cao2025enersafe}},
-\mbox{S21:~\cite{han2025commentagent}},
-\mbox{S22:~\cite{demir2025dpatransllm}},
-\mbox{S23:~\cite{pacheco2025flight}},
-\mbox{S24:~\cite{zhu2024ofslms}},
-\mbox{S25:~\cite{jeong2023testtime}},
-\mbox{S26:~\cite{relora2025}},
-\mbox{S27:~\cite{pietrzak2025evaluation}},
-\mbox{S28:~\cite{diagnosis2025}},
-\mbox{S29:~\cite{resiliomate2025}},
-\mbox{S30:~\cite{arabic2025}},
-\mbox{S31:~\cite{prompt2024}},
-\mbox{S32:~\cite{feedback2025}},
-\mbox{S33:~\cite{tcm2025}},
-\mbox{S34:~\cite{psa2026}},
-\mbox{S35:~\cite{vte2024}},
-\mbox{S36:~\cite{compos2024}},
-\mbox{S37:~\cite{networkrl2025}},
-\mbox{S38:~\cite{alabbasi2025teleqna}},
-\mbox{S39:~\cite{academicrag2024}},
-\mbox{S40:~\cite{fedhlm2025}},
-\mbox{S41:~\cite{arasum2025}},
-\mbox{S42:~\cite{hlmea2025}},
-\mbox{S43:~\cite{debateagents2025}},
-\mbox{S44:~\cite{phishing2024}},
-\mbox{S45:~\cite{transport2025}},
-\mbox{S46:~\cite{textnex2025}},
-\mbox{S47:~\cite{colbertrag2024}},
-\mbox{S48:~\cite{oh2025uncertainty}},
-\mbox{S49:~\cite{citer2025}},
-\mbox{S50:~\cite{sentensemble2026}},
-\mbox{S51:~\cite{itemdiff2025}},
-\mbox{S52:~\cite{bioagents2025}},
-\mbox{S53:~\cite{amarasinghe2025fipo}}, and
-\mbox{S54:~\cite{mixeddistill2024}}.
-\par
-\endgroup
+The full comparative analysis table and the comprehensive data extraction spreadsheet are available at \url{https://bit.ly/SLM-LLM-Data-2026}. The Study ID to citation mapping (S1--S54) used throughout this paper is provided in Appendix~\ref{app:study_mapping}, Table~\ref{tab:study_mapping}, for cross-referencing purposes.
 
 Following data extraction, a narrative synthesis approach was utilized. Because the included studies operate across diverse domains (e.g., telecommunications, healthcare, software engineering) and report varying metrics, a purely statistical meta-analysis was not feasible. Instead, studies were grouped by their architectural taxonomy, allowing for a comparative analysis of how different orchestration methods and domain constraints impact the performance and efficiency trade-offs between large and small models.
 
 \noindent\textbf{Data Provenance and Synthesis.}
 To formalize the narrative synthesis and ensure evidence traceability, a thematic coding methodology was applied to the extracted data. Studies were grouped not by parameter size, but by their dominant architectural mechanism (e.g., routing, retrieval, or multi-agent debate). Quantitative metrics, including accuracy, latency, and cost, were extracted exactly as reported. Where numerical metrics were absent---such as for the latency overhead in S1---limitations and operational constraints were either extracted verbatim or inferred strictly from conclusions explicitly stated by the primary authors, thereby avoiding post hoc reviewer assumptions. This structured thematic grouping forms the basis of the architectural concept matrix in Table~\ref{tab:concept-matrix}.
+
+\subsection{Synthesis Protocol and Qualitative Coding}
+\label{sec:synthesis_protocol}
+
+To ensure that synthesis claims are systematically derived from and traceable to primary evidence, data extraction was followed by a three-pass qualitative coding procedure~\cite{petersen2008systematic}. This procedure standardizes interpretive synthesis decisions across heterogeneous studies and classifies the provenance of extracted statements to distinguish direct evidence from analytical inference.
+
+\textbf{First pass---Architecture and Orchestration Categorization.} Each study was independently coded by two reviewers for (i) primary architecture type: Hybrid, Multi-Agent, Retrieval-Augmented, Ensemble, or Combined; and (ii) dominant orchestration pattern: token-level verification, query-level routing, task decomposition, retrieval augmentation, multimodal fusion, or role specialization. Inter-rater disagreements were resolved through structured discussion, following the same consensus procedure applied during screening (Section~\ref{sec:study_selection}), with escalation to academic advisors for unresolved cases.
+
+\textbf{Second pass---Domain and Metric Coverage Coding.} Each study was classified by primary application domain (Software/Mathematics/Logical Reasoning, Healthcare/Medicine, Telecommunications/Edge/Networking, General NLP/Sentiment/Benchmarking, Specialized Scientific/Spatial, Cybersecurity/Threat Intelligence, or Energy/Resource Optimization) and by metric availability: (a) performance-only; (b) performance plus at least one efficiency metric; or (c) full-metric reporting including accuracy, latency, cost, and energy. This coding produced the distribution statistics reported in Section~\ref{sec:study_characteristics}.
+
+\textbf{Third pass---Performance Outcome and Evidence Provenance Classification.} Each study's primary empirical finding was classified as one of: (a)~outperforms monolithic SLM baseline; (b)~matches monolithic LLM baseline; (c)~outperforms LLM baseline; or (d)~mixed or task-dependent results. Concurrently, each extracted data item was assigned a provenance label:
+\begin{itemize}
+    \item \textit{Direct numerical extraction}: a quantitative result reproduced verbatim from the primary paper;
+    \item \textit{Direct textual extraction}: a qualitative claim or limitation reproduced verbatim or with minor paraphrase, with page reference;
+    \item \textit{Analytical synthesis}: a pattern, limitation, or implication derived by the review team from architectural descriptions or indirect evidence in the source paper, where the primary study does not make the statement explicitly.
+\end{itemize}
+In the supplementary extraction spreadsheet (\url{https://bit.ly/SLM-LLM-Data-2026}), cells derived by analytical synthesis are annotated ``[Synthesized]'' to distinguish them from directly extracted claims. This distinction is particularly relevant for limitation statements: where an author explicitly states that a metric was not measured, the limitation is recorded as a direct textual extraction; where a limitation is inferred by the reviewers from architectural properties not discussed by the authors, it is recorded as an analytical synthesis. For example, in S1 the latency field records ``not reported numerically'' as a direct textual extraction, while the associated limitation note regarding production-time overhead from iterative refinement loops is recorded as an analytical synthesis based on the described pipeline.
+
+Following Webster and Watson~\cite{webstonwatson2002}, synthesis conclusions in Section~\ref{sec:findings} are organized concept-centrically rather than study-by-study: each concept (orchestration pattern, efficiency trade-off, domain constraint) is linked to the studies providing evidence for it via the S1--S54 identifier scheme. Design pattern claims in Section~\ref{sec:implications} were retained as primary implications only when supported by at least four independent primary studies reporting consistent positive outcomes under comparable operational constraints; the supporting study set for each pattern is stated explicitly in that section.

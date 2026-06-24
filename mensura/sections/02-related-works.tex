@@ -1,3 +1,48 @@
 \section{Related Works}
+\label{sec:related}
 
-Prior review literature on SLMs and SLM--LLM collaboration includes four closely related works. The closest is a systematic literature review (SLR) guided by the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) 2020 statement, with a reproducible multi-database protocol. The study adopts a broad scope on SLMs and offers limited coverage of the 2025--2026 wave of hybrid and agent-based systems~\cite{slmreview2025prisma}. Three narrative surveys cover SLM definitions, training techniques, collaboration patterns, trustworthiness, and edge deployment. They do not follow a formal literature review framework~\cite{wang2024slmsurvey,chen2025collabmech,wang2025collabperf}. While existing surveys comprehensively detail SLM training techniques and model-level reasoning capabilities, they largely treat collaboration as a conceptual capability. Our study addresses this gap through a Kitchenham-guided synthesis that maps the actual architectural infrastructure---specifically, how routing mechanisms, edge--cloud bandwidth, and task decomposition directly affect operational constraints such as latency, API cost, and energy consumption.
+Prior secondary studies on small and large language model collaboration can be organized into three groups: a PRISMA-guided systematic literature review, narrative survey papers, and adjacent systematic mapping work. We discuss the contributions of each group on their own terms and then position the present review in terms of scope and methodology.
+
+\subsection{Systematic Literature Review}
+
+Corradini et al.~\cite{slmreview2025prisma} conduct a PRISMA 2020-guided systematic literature review on the state of SLMs, covering definitions, capability benchmarks, training paradigms (pre-training, instruction tuning, distillation), and early deployment characteristics across diverse architectures and domains. Their study is the only formally protocol-driven predecessor work; it provides a rigorous and reproducible characterization of the SLM landscape as a whole. However, its scope is intentionally broad with respect to the SLM category in general: it does not focus on collaborative SLM--LLM systems as a primary unit of analysis, it does not treat monolithic LLMs as controlled baselines, and it provides limited coverage of the 2025--2026 wave of hybrid and multi-agent orchestration architectures that forms the core of the present corpus. Engineering-level efficiency metrics---latency, cost, and energy---are not extracted as primary outcome variables.
+
+\subsection{Narrative Surveys}
+
+Three recent surveys address aspects of SLM--LLM collaboration from complementary perspectives~\cite{wang2024slmsurvey,chen2025collabmech,wang2025collabperf}. Wang et al.~\cite{wang2024slmsurvey} provide a comprehensive taxonomy of SLM architectures and training strategies, including fine-tuning, compression, and distillation, with attention to deployment characteristics and trustworthiness. Chen et al.~\cite{chen2025collabmech} survey collaboration mechanisms between large and small models, distinguishing distillation pipelines, routing strategies, ensemble methods, and emerging agent-based coordination patterns, and identify key design principles for leveraging complementary model strengths. Wang et al.~\cite{wang2025collabperf} focus on performance dimensions of SLM--LLM collaboration, reviewing benchmark results across reasoning, coding, and domain-adaptation tasks, and examining cost-effectiveness and cloud--edge privacy trade-offs. These surveys offer valuable breadth and conceptual synthesis that a narrower protocol-driven review cannot replicate. They differ from protocol-based reviews primarily in the traceability of corpus construction: inclusion rationale is not systematically documented through a registered screening procedure, which limits the ability to independently verify corpus completeness---a distinction of transparency rather than of quality. While these surveys comprehensively detail SLM training techniques and model-level reasoning capabilities, they largely treat collaboration as a conceptual capability rather than as an engineering trade-off to be measured.
+
+\subsection{Methodological Positioning}
+
+A range of methodological frameworks is available for secondary studies in software and systems engineering. Kitchenham and Charters~\cite{kitchenham2007guidelines} formalize systematic review guidelines with emphasis on structured evidence synthesis and quality appraisal; this protocol governs the present review's research-question definition, search-strategy design, and synthesis procedure (Section~\ref{sec:methodology}). Petersen et al.~\cite{petersen2008systematic} introduce the systematic mapping study approach, which aims to characterize a field structurally through publication frequency, research type classification, and topic coverage analysis. Informal narrative synthesis, as employed by the surveys above, serves distinct objectives and produces broader conceptual coverage. PRISMA 2020~\cite{page2021prisma} terminology is additionally adopted, alongside the governing Kitchenham and Charters protocol, to report the study-selection flow for three reasons specific to the research objectives: (i) the target architecture class---collaborative SLM--LLM systems---requires multi-criterion judgment at screening to separate from adjacent literature, making documented stage-by-stage inclusion decisions essential; (ii) the PRISMA flow diagram and eligibility matrix make corpus construction independently verifiable; and (iii) PRISMA's structured reporting conventions are well-suited to presenting operational conclusions drawn from heterogeneous empirical evidence. This combination is complementary to, not a replacement for, the narrative traditions employed by related works; each tradition serves different secondary-study objectives, and our study addresses the identified gap through a Kitchenham-guided synthesis that maps the actual architectural infrastructure---specifically, how routing mechanisms, edge--cloud bandwidth, and task decomposition directly affect operational constraints such as latency, API cost, and energy consumption.
+
+\subsection{Scope Differentiation}
+
+The present review extends beyond existing secondary work in four respects. First, \textbf{architectural scope}: the review is narrowed exclusively to collaborative SLM--LLM systems (hybrid, multi-agent, retrieval-augmented, and ensemble architectures), with monolithic LLMs treated only as controlled baselines; related surveys treat SLMs more broadly or include studies without a collaborative component. Second, \textbf{temporal coverage}: 98\% of included studies were published in 2024--2026, capturing recent hybrid edge--cloud and multi-agent orchestration developments that postdate most related surveys. Third, \textbf{engineering orientation}: latency, cost, and energy are extracted as primary outcome variables alongside accuracy, making efficiency trade-offs explicit first-class research questions; no related survey reports all four metrics systematically across a documented study corpus. Fourth, \textbf{evidence traceability}: a three-pass qualitative coding scheme (Section~\ref{sec:synthesis_protocol}) links each synthesis claim to specific primary study identifiers, and a cross-study RQ-to-evidence matrix (Table~\ref{tab:rq-matrix}) supports independent verification of conclusions following the concept-centric synthesis approach advocated by Webster and Watson~\cite{webstonwatson2002}. Table~\ref{tab:scope-diff} summarises these four differentiators at a glance.
+
+{\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{table}[!htbp]
+\centering
+\caption{Scope differentiation of this review versus prior secondary work.}
+\label{tab:scope-diff}
+\begin{tabularx}{\linewidth}{@{} >{\raggedright\arraybackslash}p{0.26\linewidth} >{\raggedright\arraybackslash}p{0.35\linewidth} >{\raggedright\arraybackslash}X @{}}
+\toprule
+\textbf{Prior work} & \textbf{Key scope limitation} & \textbf{Present review adds} \\
+\midrule
+Corradini et al.~\cite{slmreview2025prisma} &
+SLMs reviewed broadly; collaborative SLM--LLM systems not the primary unit; efficiency metrics not extracted. &
+Collaborative systems as primary unit; latency, cost, and energy as first-class outcomes. \\
+Wang et al.~\cite{wang2024slmsurvey} &
+Narrative survey; no documented inclusion screening. &
+PRISMA 2020 stage-by-stage screening; independently verifiable corpus. \\
+Chen et al.~\cite{chen2025collabmech} &
+No temporal coverage of 2025--2026 architectures; narrative only. &
+98\% corpus from 2024--2026; protocol-driven inclusion. \\
+Wang et al.~\cite{wang2025collabperf} &
+No cross-study RQ-to-evidence matrix; no provenance annotation. &
+S1--S54 evidence traceability; \textit{[Synthesized]} provenance labels; concept-centric RQ matrix. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+}
