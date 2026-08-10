@@ -168,15 +168,6 @@ Multi-agent systems, by contrast, show their comparative strength when performan
 
 \noindent\textbf{Summary (RQ1).} Hybrid and multi-agent architectures consistently outperform monolithic SLM baselines and can match or exceed LLM baselines in narrower settings. The performance advantage is driven by orchestration strategy---selective escalation, role decomposition, verification loops---rather than by model size alone. Gains are strongest in structured, domain-specific tasks and weakest in open-ended reasoning that requires broad contextual knowledge.
 
-\begin{samepage}
-\noindent\textbf{Key takeaways}
-\begin{itemize}
-    \item Hybrid systems are strongest when selective escalation can balance model quality against latency and cost.
-    \item Multi-agent systems benefit tasks that require role specialization, critique, and iterative verification, but their gains remain task-sensitive.
-    \item Orchestration strategy explains comparative performance more consistently than model size alone.
-\end{itemize}
-\end{samepage}
-
 \subsection{RQ2: Efficiency, Cost, Latency, and Energy Trade-offs}
 \label{sec:rq2}
 
@@ -190,15 +181,6 @@ Conversely, the impact on latency is highly polarized. In optimal scenarios, rel
 Energy consumption is the least documented metric in the reviewed studies: only one of the 54 included studies, S4, reports a direct, hardware-grounded energy measurement (energy-per-token), and the discussion below should be read as a single-study finding rather than a corpus-wide trend. S4 argues for energy-per-token as a more informative metric and shows that forcing a small model to execute complex reasoning workflows, such as Chain-of-Thought, can substantially increase its per-query energy use; in this one setting, a larger model prompted more directly is therefore more energy-efficient than a smaller model that generates a long reasoning trace. The remaining efficiency-adjacent results in this corpus are compute or token-count proxies, not energy measurements, and should not be conflated with the latter: S29's 26.4\% reduction in computational redundancy through dual-scale memory, for instance, may indicate lower resource demand but was not validated against any direct power or energy benchmark. Taken together, the corpus offers a single, suggestive data point that energy efficiency may depend on orchestration and generation length as much as on model size; confirming this would require standardized, hardware-specific measurement protocols applied across multiple studies.
 
 \noindent\textbf{Summary (RQ2).} The strongest efficiency gains---often exceeding 80\% cost reduction---come from token-level routing and selective escalation. Latency effects are polarized: local SLM inference is fast, but orchestration layers (retrievers, planners, multi-agent cycles) frequently introduce overhead that negates throughput gains. Energy is documented in only 1 of 54 studies, so the available evidence that generation length and reasoning depth matter as much as model size for per-query energy use should be treated as a single-study signal rather than a corpus-wide finding.
-
-\begin{samepage}
-\noindent\textbf{Key takeaways}
-\begin{itemize}
-    \item Selective routing and task decomposition can substantially reduce API use, token transmission, and computational demand.
-    \item Latency gains are conditional: routing can accelerate inference, while retrieval, planning, and multi-agent loops can introduce significant overhead.
-    \item Only 1 of 54 included studies (S4) reports a direct energy measurement; all other efficiency-adjacent figures in the corpus are compute or token-count proxies, so energy claims should be treated as preliminary rather than established.
-\end{itemize}
-\end{samepage}
 
 \subsection{RQ3: Orchestration and Routing Mechanisms}
 \label{sec:rq3}
@@ -216,15 +198,6 @@ Orchestration frequently extends beyond unimodal text processing to integrate di
 
 \noindent\textbf{Summary (RQ3).} Orchestration mechanisms cluster into five recurring families: token-level verification, query-level routing, RAG, task decomposition, and multimodal fusion. Each family addresses a distinct allocation problem---confidence management, difficulty separation, context grounding, subtask specialization, and modality integration---and the choice among them is largely determined by the deployment constraints and data modalities of the target domain.
 
-\begin{samepage}
-\noindent\textbf{Key takeaways}
-\begin{itemize}
-    \item Token- and query-level routing provide different levels of control over when a larger model is invoked.
-    \item Retrieval acts as a control mechanism by grounding responses and constraining the smaller model's action space.
-    \item Task decomposition and heterogeneous fusion enable specialist components to collaborate, but add coordination and synchronization costs.
-\end{itemize}
-\end{samepage}
-
 \subsection{RQ4: Domain Suitability and Application-Specific Constraints}
 \label{sec:rq4}
 The choice between hybrid and multi-agent systems is rarely domain-agnostic. Privacy mandates, latency budgets, and verification demands largely determine the orchestration method. Across the 54 primary studies, distinct architectural preferences emerge across four core applied domains.
@@ -240,15 +213,6 @@ In edge, cyber-physical, and multimodal settings, orchestration is governed by h
 \noindent\textbf{Where collaborative systems underperform.} Several conditions consistently produce weak or mixed results. Open-ended reasoning tasks requiring broad contextual knowledge remain the most reliable failure mode: studies involving general-domain question answering without retrieval grounding and tasks demanding multi-hop inference over unseen entities show the smallest gains and most task-dependent outcomes (S3, S12). Broad static analysis, in which type inference and cross-file dependency tracking require model-level generalization, still favours larger monolithic models even when multi-agent wrappers are added (S2, S24). In multi-agent settings, performance degrades when role decomposition is applied to tasks that do not admit natural subtask boundaries: S52 reports that gains on conceptual genomics tasks weaken substantially on complex code-generation workflows that resist modular partitioning. These failure cases share a common pattern: orchestration overhead (retrieval latency, inter-agent communication cycles, planner invocation) exceeds the benefit when the task cannot be partitioned into specialist stages with well-defined inputs and outputs.
 
 \noindent\textbf{Summary (RQ4).} Domain-specific constraints---privacy mandates in healthcare, latency budgets in telecom, hardware limits in edge deployments, and syntax rigidity in code tasks---are the primary drivers of architecture selection. Collaborative SLM--LLM systems deliver their strongest results when the workflow can be partitioned to align each component with the constraint it best addresses; they underperform when tasks require broad, undifferentiated generation that cannot be decomposed or grounded.
-
-\begin{samepage}
-\noindent\textbf{Key takeaways}
-\begin{itemize}
-    \item Healthcare and other privacy-sensitive domains favor local, retrieval-grounded models with verifiable evidence.
-    \item Software, reasoning, and telecommunications tasks benefit from structured feedback, specialist agents, or latency-aware edge--cloud routing.
-    \item Domain constraints determine architectural suitability; no single hybrid or multi-agent design is consistently best across applications.
-\end{itemize}
-\end{samepage}
 
 \subsection{Cross-RQ Synthesis}
 \label{sec:cross_rq}
