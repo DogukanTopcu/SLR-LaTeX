@@ -33,7 +33,7 @@ Healthcare, telecom, edge/IoT, and code tasks yield the strongest gains; open-en
 
 The included studies cluster into four recurring architectural patterns. Table~\ref{tab:concept-matrix} summarizes these patterns by linking their dominant orchestration mechanisms to the engineering constraints they address and the primary studies assigned to each category. This concept matrix provides the organizing structure for the research-question-based analysis that follows.
 
-Architecture-type assignment in Table~\ref{tab:concept-matrix} follows a primary-category, mutually exclusive coding scheme: each of the 54 studies is assigned to the single architectural pattern that best characterizes its \emph{dominant} orchestration mechanism, even when secondary traits of other patterns are also present (e.g., S17 is hybrid-labeled in Table~\ref{tab:concept-matrix} but is also discussed as a retrieval-heavy design in Section~\ref{sec:rq3}). Counts in the table therefore sum to exactly 54 by construction and should not be read as a multi-label tally.
+Architecture-type assignment in Table~\ref{tab:concept-matrix} follows a primary-category, mutually exclusive coding scheme: each of the 54 studies is assigned to the single architectural pattern that best characterizes its \emph{dominant} orchestration mechanism, even when secondary traits of other patterns are also present (e.g., S14 is coded as a hybrid architecture in Table~\ref{tab:concept-matrix} but is also discussed as a task-decomposition design in Section~\ref{sec:rq3}). Counts in the table therefore sum to exactly 54 by construction and should not be read as a multi-label tally.
 
 \begin{table}[!htbp]
 \centering
@@ -59,22 +59,22 @@ Architecture-type assignment in Table~\ref{tab:concept-matrix} follows a primary
 \textbf{Hybrid Architectures} &
 Token-level routing, draft-verification, uncertainty-aware skipping, and edge--cloud distribution. &
 API cost, edge--cloud bandwidth, and latency thresholds. &
-\mbox{S2}, \mbox{S13}, \mbox{S27}, \mbox{S32}, \mbox{S33}, \mbox{S45}, \mbox{S46}, \mbox{S48}, \mbox{S49}, \mbox{S53}. \\
+\mbox{S3}, \mbox{S5}, \mbox{S10}, \mbox{S13}, \mbox{S14}, \mbox{S15}, \mbox{S24}, \mbox{S40}, \mbox{S48}, \mbox{S49}. \\
 
 \textbf{Multi-Agent Systems} &
 Role specialization, iterative verification, adversarial debate, and feedback loops. &
 Reasoning depth, logical accuracy, and complex task decomposition. &
-\mbox{S1}, \mbox{S6}, \mbox{S7}, \mbox{S11}, \mbox{S15}, \mbox{S16}, \mbox{S20}, \mbox{S29}, \mbox{S37}, \mbox{S43}, \mbox{S51}, \mbox{S52}, \mbox{S54}. \\
+\mbox{S6}, \mbox{S9}, \mbox{S16}, \mbox{S18}, \mbox{S21}, \mbox{S23}, \mbox{S26}, \mbox{S29}, \mbox{S37}, \mbox{S43}, \mbox{S52}, \mbox{S53}, \mbox{S54}. \\
 
 \textbf{Retrieval-Centered (RAG)} &
 Adaptive retrieval planning, context expansion, fact-grounding, and action-space constraint. &
 Hallucination reduction, data privacy, and strict domain accuracy. &
-\mbox{S4}, \mbox{S10}, \mbox{S21}, \mbox{S30}, \mbox{S31}, \mbox{S44}. \\
+\mbox{S11}, \mbox{S17}, \mbox{S30}, \mbox{S38}, \mbox{S39}, \mbox{S47}. \\
 
 \textbf{Ensembles and Heterogeneous Fusion} &
-Tabular transformation, cross-modal late fusion, and prompt-guided multimodal sampling. &
+Tabular transformation, cross-modal late fusion, and prompt-guided multimodal sampling; also the residual category for studies without a distinct collaborative mechanism. &
 Hardware limits on central processing units (CPUs) and edge devices, and non-text modality processing. &
-\mbox{S3}, \mbox{S5}, \mbox{S8}, \mbox{S9}, \mbox{S12}, \mbox{S14}, \mbox{S17}, \mbox{S18}, \mbox{S19}, \mbox{S22}, \mbox{S23}, \mbox{S24}, \mbox{S25}, \mbox{S26}, \mbox{S28}, \mbox{S34}, \mbox{S35}, \mbox{S36}, \mbox{S38}, \mbox{S39}, \mbox{S40}, \mbox{S41}, \mbox{S42}, \mbox{S47}, \mbox{S50}. \\
+\mbox{S1}, \mbox{S2}, \mbox{S4}, \mbox{S7}, \mbox{S8}, \mbox{S12}, \mbox{S19}, \mbox{S20}, \mbox{S22}, \mbox{S25}, \mbox{S27}, \mbox{S28}, \mbox{S31}, \mbox{S32}, \mbox{S33}, \mbox{S34}, \mbox{S35}, \mbox{S36}, \mbox{S41}, \mbox{S42}, \mbox{S44}, \mbox{S45}, \mbox{S46}, \mbox{S50}, \mbox{S51}. \\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -119,7 +119,7 @@ Before addressing the specific research questions, we present a systematic map o
 \label{fig:publication-years}
 \end{figure}
 
-\textbf{Architecture distribution.} Using the non-exclusive, multi-label coding applied during the first qualitative-coding pass (Section~\ref{sec:synthesis_protocol}), hybrid architectures---comprising token-level verification, query-level routing, and task-decomposition systems---constitute the largest tagged group (27 studies), followed by multi-agent systems (18 studies), retrieval-augmented designs (12 studies), and ensemble approaches (6 studies). Because several studies combine multiple patterns (e.g., multi-agent systems that also employ RAG), these per-study labels are not mutually exclusive and the aggregate count exceeds 54; this is a deliberately different coding scheme from the primary-category assignment in Table~\ref{tab:concept-matrix}, and the two counts should not be compared directly. Hybrid designs grew as a proportion of the corpus between 2024 and 2025, while ensemble-only studies remained stable. Multi-agent architectures increased substantially in 2025, consistent with the broader uptake of agentic frameworks in the literature.
+\textbf{Architecture distribution.} Using the non-exclusive, multi-label coding applied during the first qualitative-coding pass (Section~\ref{sec:synthesis_protocol}), hybrid architectures---comprising token-level verification, query-level routing, and task-decomposition systems---constitute the largest tagged group (27 studies), followed by multi-agent systems (18 studies), retrieval-augmented designs (12 studies), and ensemble approaches (6 studies). Because several studies combine multiple patterns (e.g., multi-agent systems that also employ RAG), these per-study labels are not mutually exclusive and the aggregate count exceeds 54; this is a deliberately different coding scheme from the primary-category assignment in Table~\ref{tab:concept-matrix}, and the two counts should not be compared directly. The ensemble label is the one case in which the primary-category count (25 studies) exceeds the multi-label count (6 studies): the primary-category scheme requires every study to be placed in exactly one of four patterns, so studies that exhibit no distinct hybrid, multi-agent, or retrieval-centered mechanism---single-model comparisons, distillation pipelines, and standalone SLM evaluations---are assigned to the ensemble and heterogeneous-fusion category even where the first pass did not tag them as ensembles. Hybrid designs grew as a proportion of the corpus between 2024 and 2025, while ensemble-only studies remained stable. Multi-agent architectures increased substantially in 2025, consistent with the broader uptake of agentic frameworks in the literature.
 
 Figure~\ref{fig:domain-distribution} visualizes the distribution of applied domains across the literature. The studies are heavily concentrated in areas requiring strict logical reasoning, such as software engineering, mathematics, and related logical-reasoning tasks (11 studies, 20.4\%), and fields governed by severe privacy and latency constraints, namely healthcare and medicine (10 studies, 18.5\%) and telecommunications, edge, and networking (10 studies, 18.5\%). This distribution confirms that hybrid and multi-agent systems are primarily engineered to solve domain-specific operational bottlenecks rather than general-purpose generative tasks.
 
@@ -162,7 +162,7 @@ Figure~\ref{fig:domain-distribution} visualizes the distribution of applied doma
 \subsection{RQ1: Comparative Performance of Hybrid and Multi-Agent Systems}
 \label{sec:rq1}
 
-The review shows that both hybrid and multi-agent architectures can outperform standalone small-model baselines, but their advantages emerge through different forms of coordination rather than parameter scaling alone. Hybrid systems achieve their strongest gains when computation is selectively distributed between local small models and stronger remote models. Token-level edge--cloud collaboration improves small-model performance without requiring full-query escalation: draft-verification, low-confidence routing, and uncertainty-aware skipping allow small models to approach LLM-level quality while invoking the larger model selectively (S13, S48, S49). At the sub-task level, structured task decomposition and cloud--edge allocation also maintain reasoning accuracy comparable to the best baselines (S14). In domain-specific settings, hybrid orchestration can outperform larger general-purpose models: a fine-tuned Phi-2 (2.7B) combined with retrieval, reranking, hybrid search, and long-context support achieves 84.20\% accuracy, exceeding GPT-4o mini (82.05\%) and GPT-4o (80.80\%) on telecommunications question answering (QA) (S17).
+The review shows that both hybrid and multi-agent architectures can outperform standalone small-model baselines, but their advantages emerge through different forms of coordination rather than parameter scaling alone. Hybrid systems achieve their strongest gains when computation is selectively distributed between local small models and stronger remote models. Token-level edge--cloud collaboration improves small-model performance without requiring full-query escalation: draft-verification, low-confidence routing, and uncertainty-aware skipping allow small models to approach LLM-level quality while invoking the larger model selectively (S13, S48, S49). At the sub-task level, structured task decomposition and cloud--edge allocation also maintain reasoning accuracy comparable to the best baselines (S14). In domain-specific settings, hybrid orchestration allows a much smaller model to close the gap with larger general-purpose models: a fine-tuned Phi-2 (2.7B) combined with two-stage retrieval, cross-encoder reranking, and long-context support reaches 81.20\% accuracy on telecommunications question answering (QA)---a 30\% gain over the base Phi-2 and on par with substantially larger LLMs, at higher faithfulness (S17).
 
 Multi-agent systems, by contrast, show their comparative strength when performance depends on role specialization, critique, verification, and distributed reasoning. A three-agent Phi-3-based architecture performs on par with human experts in conceptual genomics tasks, although its gains weaken on more complex code-generation workflows, indicating that multi-agent benefits remain task-sensitive (S52). In reasoning-intensive question answering, a Proponent--Opponent--Arbitrator structure built on compact models such as Qwen2.5 0.5B and DeepSeek-R1 1.5B surpasses both single-agent reasoning and vanilla LLM baselines (S43). Likewise, assistant--checker collaboration supported by memory and feedback loops enables small-model multi-agent systems to approach or exceed larger baselines across database, knowledge-graph, and code-correction tasks (S29). Overall, the findings indicate that hybrid systems are most effective when the main challenge is balancing accuracy with latency and cost through adaptive routing, whereas multi-agent systems are most effective when the task benefits from explicit decomposition of reasoning roles and iterative verification. Thus, the comparative performance advantage of both architecture families is driven primarily by orchestration strategy, not by model size alone.
 
@@ -190,7 +190,7 @@ Token-level orchestration is most visible in verification-oriented hybrid system
 
 Query-level routing appears when the system selects a processing path for the full input rather than for individual tokens. S16 exemplifies retrieval-based expert routing at the dialogue level, while S10 shows that instance-level model selection can also be effective in customer-review analysis. These designs are most useful when ``easy'' and ``hard'' cases can be separated in a semantically meaningful way before full generation begins.
 
-RAG is a major control mechanism across the included studies even when the architecture is classified as hybrid rather than purely RAG. S17, S11, S39, and S47 use retrieval not only to expand context but also to constrain the action space of a smaller model. In these studies, retrieval acts as a coordination layer that narrows ambiguity, grounds the answer in domain evidence, and reduces reliance on raw model scale alone.
+RAG is a major control mechanism across the included studies even when the architecture is assigned to another primary pattern in Table~\ref{tab:concept-matrix} rather than to the retrieval-centered category. S17, S11, S39, and S47 use retrieval not only to expand context but also to constrain the action space of a smaller model. In these studies, retrieval acts as a coordination layer that narrows ambiguity, grounds the answer in domain evidence, and reduces reliance on raw model scale alone.
 
 Task decomposition is increasingly important in the recent literature. S14 uses a task decomposer, dependency graph, and plug-and-play adapter to allocate subtasks between local and remote models. S53 uses a feedback-integrated workflow that gathers structured feedback from multiple perspectives before revising the prompt of the smaller model. Related role-based decomposition also appears in S23, S29, and S52. Across these studies, the common idea is that small models remain viable when the workflow can be partitioned into specialist stages rather than handled as a single undifferentiated generation step.
 
@@ -253,16 +253,16 @@ Figure~\ref{fig:decision-flowchart} summarizes these patterns as a practitioner-
         {\textbf{Define primary deployment constraint}};
 
   \node[dec, below=of start] (d1) {Data privacy or hallucination risk is the main constraint?};
-  \node[res, right=2.0cm of d1] (r1) {\textbf{RAG architecture}\\[2pt]S4, S10, S21,\\S30, S31, S44};
+  \node[res, right=2.0cm of d1] (r1) {\textbf{RAG architecture}\\[2pt]S17, S19, S23, S30};
 
   \node[dec, below=of d1] (d2) {Strict, interactive-style latency budget (e.g., real-time or voice, sub-second user-facing response)?};
-  \node[res, right=2.0cm of d2] (r2) {\textbf{Hybrid token routing}\\[2pt]S2, S13, S27,\\S32, S33, S45};
+  \node[res, right=2.0cm of d2] (r2) {\textbf{Hybrid token routing}\\[2pt]S37, S40, S48, S49};
 
   \node[dec, below=of d2] (d3) {Multi-step reasoning or complex, decomposable task?};
-  \node[res, right=2.0cm of d3] (r3) {\textbf{Multi-agent decomp.}\\[2pt]S1, S6, S7,\\S15, S16, S43};
+  \node[res, right=2.0cm of d3] (r3) {\textbf{Multi-agent decomp.}\\[2pt]S15, S29, S43, S52};
 
   \node[dec, below=of d3] (d4) {Non-text or multimodal input?};
-  \node[res, right=2.0cm of d4] (r4) {\textbf{Ensemble / fusion}\\[2pt]S3, S5, S8,\\S22, S23, S24};
+  \node[res, right=2.0cm of d4] (r4) {\textbf{Ensemble / fusion}\\[2pt]S1, S8, S19, S20};
 
   \node[res, below=of d4, fill=black!4, text width=5.6cm] (r5)
         {Monolithic LLM baseline may be sufficient; validate against one before adopting a collaborative design};
